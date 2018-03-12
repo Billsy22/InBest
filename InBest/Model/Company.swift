@@ -8,53 +8,20 @@
 
 import Foundation
 
-struct Company: Decodable {
+class Company {
     
     // MARK: -  Properties
-    let name: String
-    let metaData: MetaDataDictionary
-    let timeSeries: [TimeSeriesDailyDictionary]
+    let name: String = ""
+    let symbol: String
     
-    private enum CodingKeys: String, CodingKey {
-        case name
-        case metaData = "Meta Data"
-        case timeSeries = "Time Series (Daily)"
-    }
-    // MARK: -  JSON Parsing
-    struct MetaDataDictionary: Decodable {
-        
-        // Property
-        let symbol: String
-        
-        // CodingKeys
-        private enum CodingKeys: String, CodingKey {
-            case symbol = "Symbol"
-        }
-    }
+    // MARK: -  Constant keys
+    private let SymbolKey = "Symbol"
     
-    struct TimeSeriesDailyDictionary: Decodable {
+    // MARK: -  Initializer
+    
+    init?(dictionary: [String: Any]) {
+        guard let symbol = dictionary[SymbolKey] as? String else { return nil }
         
-        let day: Day
-        
-        private enum CodingKeys: String, CodingKey {
-            case day = "2018-03-09"
-        }
-        
-        struct Day {
-            
-            // Properties
-            let open: String
-            let close: String
-            let high: String
-            let low: String
-            
-            // CodingKeys
-            private enum CodingKeys: String, CodingKey {
-                case open
-                case close
-                case high
-                case low
-            }
-        }
+        self.symbol = symbol
     }
 }
