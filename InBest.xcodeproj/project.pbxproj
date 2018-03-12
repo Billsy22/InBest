@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E11C2056D9100077D539 /* AppDelegate.swift */; };
-		1608E11F2056D9100077D539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E11E2056D9100077D539 /* ViewController.swift */; };
 		1608E1222056D9100077D539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1608E1202056D9100077D539 /* Main.storyboard */; };
 		1608E1242056D9100077D539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1608E1232056D9100077D539 /* Assets.xcassets */; };
 		1608E1272056D9100077D539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1608E1252056D9100077D539 /* LaunchScreen.storyboard */; };
+		1608E1312056DA220077D539 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608E1302056DA220077D539 /* CloudKit.framework */; };
+		1608E1382056E1700077D539 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1372056E1700077D539 /* Company.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1608E1192056D9100077D539 /* InBest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InBest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1608E11C2056D9100077D539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1608E11E2056D9100077D539 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1608E1212056D9100077D539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1608E1232056D9100077D539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1608E1262056D9100077D539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1608E1282056D9100077D539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1608E12E2056DA0D0077D539 /* InBest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InBest.entitlements; sourceTree = "<group>"; };
+		1608E1302056DA220077D539 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1608E1372056E1700077D539 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1608E1312056DA220077D539 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				1608E11B2056D9100077D539 /* InBest */,
 				1608E11A2056D9100077D539 /* Products */,
+				1608E12F2056DA220077D539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +59,63 @@
 		1608E11B2056D9100077D539 /* InBest */ = {
 			isa = PBXGroup;
 			children = (
-				1608E11C2056D9100077D539 /* AppDelegate.swift */,
-				1608E11E2056D9100077D539 /* ViewController.swift */,
-				1608E1202056D9100077D539 /* Main.storyboard */,
-				1608E1232056D9100077D539 /* Assets.xcassets */,
-				1608E1252056D9100077D539 /* LaunchScreen.storyboard */,
-				1608E1282056D9100077D539 /* Info.plist */,
+				1608E12E2056DA0D0077D539 /* InBest.entitlements */,
+				1608E1362056DA6C0077D539 /* Model */,
+				1608E1352056DA630077D539 /* Model Controllers */,
+				1608E1342056DA5C0077D539 /* View Controllers */,
+				1608E1332056DA4E0077D539 /* Views */,
+				1608E1322056DA470077D539 /* Resources */,
 			);
 			path = InBest;
+			sourceTree = "<group>";
+		};
+		1608E12F2056DA220077D539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1608E1302056DA220077D539 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1608E1322056DA470077D539 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1608E11C2056D9100077D539 /* AppDelegate.swift */,
+				1608E1232056D9100077D539 /* Assets.xcassets */,
+				1608E1282056D9100077D539 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1608E1332056DA4E0077D539 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1608E1202056D9100077D539 /* Main.storyboard */,
+				1608E1252056D9100077D539 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1608E1342056DA5C0077D539 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1608E1352056DA630077D539 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		1608E1362056DA6C0077D539 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1608E1372056E1700077D539 /* Company.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +151,14 @@
 					1608E1182056D9100077D539 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1608E11F2056D9100077D539 /* ViewController.swift in Sources */,
 				1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */,
+				1608E1382056E1700077D539 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +336,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InBest/InBest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ5N56B84J;
-				INFOPLIST_FILE = InBest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InBest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TAYLORBILLS.InBest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +352,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InBest/InBest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ5N56B84J;
-				INFOPLIST_FILE = InBest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InBest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TAYLORBILLS.InBest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
