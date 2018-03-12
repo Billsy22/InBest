@@ -12,9 +12,14 @@ struct Company: Decodable {
     
     // MARK: -  Properties
     let name: String
-    let symbol: MetaDataDictionary
-    let pricePoints: [TimeSeriesDailyDictionary]
+    let metaData: MetaDataDictionary
+    let timeSeries: [TimeSeriesDailyDictionary]
     
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case metaData = "Meta Data"
+        case timeSeries = "Time Series (Daily)"
+    }
     // MARK: -  JSON Parsing
     struct MetaDataDictionary: Decodable {
         
@@ -29,18 +34,27 @@ struct Company: Decodable {
     
     struct TimeSeriesDailyDictionary: Decodable {
         
-        // Properties
-        let open: String
-        let close: String
-        let high: String
-        let low: String
+        let day: Day
         
-        // CodingKeys
         private enum CodingKeys: String, CodingKey {
-            case open
-            case close
-            case high
-            case low
+            case day = "2018-03-09"
+        }
+        
+        struct Day {
+            
+            // Properties
+            let open: String
+            let close: String
+            let high: String
+            let low: String
+            
+            // CodingKeys
+            private enum CodingKeys: String, CodingKey {
+                case open
+                case close
+                case high
+                case low
+            }
         }
     }
 }
