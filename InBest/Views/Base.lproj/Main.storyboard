@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eg4-bq-fEL">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Didot.ttc">
+            <string>Didot</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="InBest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XzA-2V-Rl8">
+                                <rect key="frame" x="0.0" y="15" width="375" height="660"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InBest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdP-Dm-xLO">
+                                        <rect key="frame" x="114.33333333333333" y="0.0" width="146.33333333333337" height="62.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="50"/>
+                                        <color key="textColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FinalDollarSign" translatesAutoresizingMaskIntoConstraints="NO" id="gLD-RI-iPg">
+                                        <rect key="frame" x="172.66666666666666" y="216.33333333333331" width="30" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tof-tN-6yG"/>
+                                            <constraint firstAttribute="width" constant="30" id="zTF-O7-1ZM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-FT-Ftd">
+                                        <rect key="frame" x="28" y="430" width="319" height="230"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-Fo-vZb">
+                                                <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
+                                                <state key="normal" title="New Budget" backgroundImage="Button">
+                                                    <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-58-o4q">
+                                                <rect key="frame" x="0.0" y="85" width="319" height="60"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
+                                                <state key="normal" title="Current Investments" backgroundImage="Button">
+                                                    <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-n4-qlt">
+                                                <rect key="frame" x="0.0" y="170" width="319" height="60"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
+                                                <state key="normal" title="Past Investments" backgroundImage="Button">
+                                                    <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AF2-n4-qlt" firstAttribute="width" secondItem="v8p-FT-Ftd" secondAttribute="width" id="3gs-p6-XIh"/>
+                                            <constraint firstItem="fAc-58-o4q" firstAttribute="width" secondItem="v8p-FT-Ftd" secondAttribute="width" id="WIW-Jv-4hZ"/>
+                                            <constraint firstItem="pc9-Fo-vZb" firstAttribute="width" secondItem="v8p-FT-Ftd" secondAttribute="width" id="iDP-cc-usp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="v8p-FT-Ftd" firstAttribute="width" secondItem="XzA-2V-Rl8" secondAttribute="width" multiplier="0.85" id="BNz-Nh-G9M"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41290020942687988" green="0.60596340894699097" blue="0.44963705539703369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XzA-2V-Rl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nhq-nn-eeg"/>
+                            <constraint firstItem="XzA-2V-Rl8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ox3-ls-Bno"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XzA-2V-Rl8" secondAttribute="bottom" constant="15" id="mSd-8g-PYk"/>
+                            <constraint firstItem="XzA-2V-Rl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="tmn-LS-j9A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CrL-BE-bzq"/>
+                    <connections>
+                        <outlet property="moneyImageHieghtConstraint" destination="tof-tN-6yG" id="ekp-9X-Trw"/>
+                        <outlet property="moneyImageView" destination="gLD-RI-iPg" id="kRd-hX-54l"/>
+                        <outlet property="moneyImageWidthConstraint" destination="zTF-O7-1ZM" id="9oO-I0-qZV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="690.39999999999998" y="132.26600985221674"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Au5-KV-g9P">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EkX-ui-ja9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eg4-bq-fEL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="GjT-44-akL">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.41290020942687988" green="0.60596340894699097" blue="0.44963705539703369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qOs-pt-074"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-49" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button" width="269" height="60"/>
+        <image name="FinalDollarSign" width="41" height="91"/>
+    </resources>
 </document>
