@@ -12,8 +12,6 @@ class MainViewController: UIViewController {
     
     // MARK: -  Properties
     @IBOutlet weak var moneyImageView: UIImageView!
-    @IBOutlet weak var moneyImageHieghtConstraint: NSLayoutConstraint!
-    @IBOutlet weak var moneyImageWidthConstraint: NSLayoutConstraint!
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
@@ -25,10 +23,10 @@ class MainViewController: UIViewController {
         super.viewDidAppear(animated)
         
         
-       animateMoneyImageView()
+        animateMoneyImageView()
         
     }
-
+    
     func animateMoneyImageView() {
         UIView.animate(withDuration: 4.0, animations: {
             let originPoint = self.moneyImageView.center
@@ -46,17 +44,17 @@ class MainViewController: UIViewController {
                 self.animateMoneyImageView()
                 
             }
-    }
+        }
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
