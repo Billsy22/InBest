@@ -16,18 +16,18 @@ class MainViewController: UIViewController {
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        BudgetController.shared.load()
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
         animateMoneyImageView()
-        
     }
     
     func animateMoneyImageView() {
+        moneyImageView.frame.size.height = 60
+        moneyImageView.frame.size.width = 30
         UIView.animate(withDuration: 4.0, animations: {
             let originPoint = self.moneyImageView.center
             self.moneyImageView.frame.size.height *= 5

@@ -35,13 +35,14 @@ class BudgetController {
                 print("Error loading form the cloud: \(error.localizedDescription)")
                 return
             }
-                guard let records = records else { return }
+            guard let records = records else { print("No records found"); return }
             var budgetsPulled: [Budget] = []
             for record in records {
                 guard let newBudget = Budget(record: record) else { continue }
                 budgetsPulled.append(newBudget)
             }
             self.budgets = budgetsPulled
+            print(self.budgets.count)
         }
     }
 }

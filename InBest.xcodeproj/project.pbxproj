@@ -20,6 +20,7 @@
 		1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25E205828630087F9B3 /* NewBudgetViewController.swift */; };
 		1645F26120582C690087F9B3 /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26020582C690087F9B3 /* BudgetController.swift */; };
 		1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26220582D7C0087F9B3 /* CloudKitManager.swift */; };
+		1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		1645F25E205828630087F9B3 /* NewBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBudgetViewController.swift; sourceTree = "<group>"; };
 		1645F26020582C690087F9B3 /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
 		1645F26220582D7C0087F9B3 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingBudgetsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				1608E13B2057207B0077D539 /* MainViewController.swift */,
 				1645F25A205823A90087F9B3 /* SearchTableViewController.swift */,
 				1645F25E205828630087F9B3 /* NewBudgetViewController.swift */,
+				1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */,
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
 				1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */,
+				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

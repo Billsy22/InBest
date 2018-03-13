@@ -45,7 +45,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-Fo-vZb">
                                                 <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                 <state key="normal" title="New Budget" backgroundImage="Button">
                                                     <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -55,14 +55,17 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-58-o4q">
                                                 <rect key="frame" x="0.0" y="85" width="319" height="60"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
-                                                <state key="normal" title="Current Investments" backgroundImage="Button">
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                <state key="normal" title="Existing Budgets" backgroundImage="Button">
                                                     <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Z8g-St-vSX" kind="show" id="XJc-ei-7MD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-n4-qlt">
                                                 <rect key="frame" x="0.0" y="170" width="319" height="60"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                                 <state key="normal" title="Past Investments" backgroundImage="Button">
                                                     <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -123,6 +126,7 @@
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="createBudgetButtonTapped:" destination="eN7-hZ-ipZ" eventType="touchUpInside" id="uuP-Av-DK8"/>
+                                    <segue destination="D6U-tX-qUe" kind="show" identifier="toCompanySearch" id="kuv-XN-3Nm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoX-Zx-OXj">
@@ -136,29 +140,48 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yU6-9p-yyf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hXP-Pr-z2J">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="cMh-3F-859"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="budgetPicker" destination="TrC-Iz-sI9" id="sSe-4E-YXp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As9-di-DrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1418" y="-499"/>
+            <point key="canvasLocation" x="1474" y="-560"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Existing Budgets Table View Controller-->
         <scene sceneID="Abe-9a-pyq">
             <objects>
-                <tableViewController id="Z8g-St-vSX" sceneMemberID="viewController">
+                <tableViewController id="Z8g-St-vSX" customClass="ExistingBudgetsTableViewController" customModule="InBest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kkY-bR-HuY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aSL-Yh-VpM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="budgetCell" textLabel="ZxP-gv-1Bj" detailTextLabel="yIZ-ff-hse" style="IBUITableViewCellStyleValue1" id="aSL-Yh-VpM">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aSL-Yh-VpM" id="jbb-0U-sDj">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZxP-gv-1Bj">
+                                            <rect key="frame" x="16.000000000000004" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yIZ-ff-hse">
+                                            <rect key="frame" x="315" y="11.999999999999998" width="44" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -170,14 +193,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC8-NF-5DZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2327" y="180"/>
+            <point key="canvasLocation" x="1474" y="132"/>
         </scene>
         <!--Search Table View Controller-->
         <scene sceneID="OOZ-Nr-qzw">
             <objects>
                 <tableViewController id="D6U-tX-qUe" customClass="SearchTableViewController" customModule="InBest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1WO-dp-uQK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="R2i-hw-o19">
@@ -200,10 +223,11 @@
                             <outlet property="delegate" destination="D6U-tX-qUe" id="MCx-aC-HCV"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="pRX-ib-30M"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eE8-eG-cgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="-1218"/>
+            <point key="canvasLocation" x="2322" y="-560"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Au5-KV-g9P">
