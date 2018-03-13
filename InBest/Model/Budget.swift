@@ -17,10 +17,10 @@ class Budget {
     let ckRecordID: CKRecordID?
     var asCKRecord: CKRecord {
         let record: CKRecord
-        if ckRecordID == nil {
-            record = CKRecord(recordType: "Budget")
+        if let recordID = ckRecordID {
+            record = CKRecord(recordType: "Budget", recordID: recordID)
         } else {
-            record = CKRecord(recordType: "Budget", recordID: ckRecordID!)
+            record = CKRecord(recordType: "Budget")
         }
         record.setObject(date as CKRecordValue, forKey: "DateCreated")
         record.setObject(amount as CKRecordValue, forKey: "Amount")

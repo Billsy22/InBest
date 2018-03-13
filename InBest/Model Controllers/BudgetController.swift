@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CloudKit
 
 class BudgetController {
     
@@ -17,14 +18,11 @@ class BudgetController {
     
     // MARK: -  CRUD
     
-    func createNewBudget(on date: Date, of amount: Double) {
-        let budget = Budget(date: date, amount: amount)
-        ckManager.save(budget: budget) { (_, error) in
+    func save(budget: Budget) {
+        ckManager.saveRecordsToCloudKit(records: [budget.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
-                print("Error saving tot he cloud: \(error.localizedDescription)")
+                print("\(error.localizedDescription)")
                 return
-            } else {
-                self.budgets.insert(budget, at: 0)
             }
         }
     }

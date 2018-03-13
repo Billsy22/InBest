@@ -16,9 +16,18 @@ class CloudKitManager {
     
     // MARK: -  Save/Load
     
-    func save(budget: Budget, completion: @escaping((CKRecord?, Error?) -> Void)) {
-        publicDB.save(budget.asCKRecord, completionHandler: completion)
-        print("Saved")
+    func saveRecordsToCloudKit(records: [CKRecord], database: CKDatabase, perRecordCompletion: ((CKRecord?, Error?) -> Void)?, completion: (([CKRecord]?, [CKRecordID]?, Error?) -> Void)?) {
+        
+        let operation = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
+        
+        operation.queuePriority = .high
+        operation.qualityOfService = .userInteractive
+        operation.savePolicy = .changedKeys
+        
+        operation.perRecordCompletionBlock = perRecordCompletion
+        operation.modifyRecordsCompletionBlock = completion
+        
+        database.add(operation)
     }
     
     func fetchBudget(completion: @escaping(([CKRecord]?, Error?) -> Void)) {

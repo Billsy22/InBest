@@ -43,14 +43,14 @@ class ExistingBudgetsTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    /*
+
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "selectedBudgetDetail" {
+            guard let detailVC = segue.destination as? BudgetDetailTableViewController else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let budget = BudgetController.shared.budgets[indexPath.row]
+            detailVC.budget = budget
+        }
     }
-    */
-
 }

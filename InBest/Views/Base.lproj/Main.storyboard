@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -126,7 +127,7 @@
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="createBudgetButtonTapped:" destination="eN7-hZ-ipZ" eventType="touchUpInside" id="uuP-Av-DK8"/>
-                                    <segue destination="D6U-tX-qUe" kind="show" identifier="toCompanySearch" id="kuv-XN-3Nm"/>
+                                    <segue destination="oY7-dB-fO1" kind="show" identifier="newBudgetDetail" id="sT5-vw-ev0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoX-Zx-OXj">
@@ -140,9 +141,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yU6-9p-yyf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hXP-Pr-z2J">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="cMh-3F-859"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="hXP-Pr-z2J"/>
                     <connections>
                         <outlet property="budgetPicker" destination="TrC-Iz-sI9" id="sSe-4E-YXp"/>
                     </connections>
@@ -183,6 +182,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="oY7-dB-fO1" kind="show" identifier="selectedBudgetDetail" id="OWx-RT-41c"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -195,12 +197,50 @@
             </objects>
             <point key="canvasLocation" x="1474" y="132"/>
         </scene>
+        <!--Budget Detail Table View Controller-->
+        <scene sceneID="GIa-Xx-HdI">
+            <objects>
+                <tableViewController id="oY7-dB-fO1" customClass="BudgetDetailTableViewController" customModule="InBest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="59T-WY-tTb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="investmentCell" id="agW-yy-2BE">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="agW-yy-2BE" id="2uM-HJ-sEV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oY7-dB-fO1" id="ATo-44-cfQ"/>
+                            <outlet property="delegate" destination="oY7-dB-fO1" id="WTb-Jn-kzz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5t4-pD-Zd3">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="done" id="mlS-Z6-jCr">
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="oY7-dB-fO1" id="pXC-Cr-Ru9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="7cP-h8-rPI"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hk1-Z4-qB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2231" y="132"/>
+        </scene>
         <!--Search Table View Controller-->
         <scene sceneID="OOZ-Nr-qzw">
             <objects>
                 <tableViewController id="D6U-tX-qUe" customClass="SearchTableViewController" customModule="InBest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1WO-dp-uQK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="R2i-hw-o19">
@@ -223,11 +263,13 @@
                             <outlet property="delegate" destination="D6U-tX-qUe" id="MCx-aC-HCV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pRX-ib-30M"/>
+                    <navigationItem key="navigationItem" id="pRX-ib-30M">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="E6F-it-s7B"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eE8-eG-cgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322" y="-560"/>
+            <point key="canvasLocation" x="4546" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Au5-KV-g9P">
@@ -253,4 +295,7 @@
         <image name="Button" width="269" height="60"/>
         <image name="FinalDollarSign" width="41" height="91"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OWx-RT-41c"/>
+    </inferredMetricsTieBreakers>
 </document>

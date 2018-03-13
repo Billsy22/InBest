@@ -44,7 +44,6 @@ class NewBudgetViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     @IBAction func createBudgetButtonTapped(_ sender: Any) {
         guard let amountPicked = Double(amountPicked) else { return }
         print("The picker selected: \(amountPicked)")
-        BudgetController.shared.createNewBudget(on: Date(), of: amountPicked)
     }
     
     // MARK: - Navigation
@@ -52,11 +51,10 @@ class NewBudgetViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let amountPicked = Double(amountPicked) else { return }
-        if segue.identifier == "toCompanySearch" {
-            guard let companySearchTVC = segue.destination as? SearchTableViewController else { return }
-//            let budget = Budget(date: Date(), amount: amountPicked)
-            let amount = amountPicked
-            companySearchTVC.amount = amount
+        if segue.identifier == "newBudgetDetail" {
+            guard let detailVC = segue.destination as? BudgetDetailTableViewController else { return }
+            let budget = Budget(date: Date(), amount: amountPicked)
+            detailVC.budget = budget
         }
     }
 }
