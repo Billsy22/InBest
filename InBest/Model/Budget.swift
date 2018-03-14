@@ -14,7 +14,8 @@ class Budget {
     // MARK: -  Properties
     let date: Date
     let amount: Double
-    let ckRecordID: CKRecordID?
+    var ckRecordID: CKRecordID?
+    
     var asCKRecord: CKRecord {
         let record: CKRecord
         if let recordID = ckRecordID {
@@ -24,6 +25,9 @@ class Budget {
         }
         record.setObject(date as CKRecordValue, forKey: "DateCreated")
         record.setObject(amount as CKRecordValue, forKey: "Amount")
+        
+        ckRecordID = record.recordID
+        
         return record
     }
     

@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As9-di-DrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234" y="-563"/>
+            <point key="canvasLocation" x="2247" y="-563"/>
         </scene>
         <!--Existing Budgets Table View Controller-->
         <scene sceneID="Abe-9a-pyq">
@@ -246,13 +246,16 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4La-TP-nUO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="companyCell" id="4La-TP-nUO">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4La-TP-nUO" id="bMg-hb-QTm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fQw-mw-vlZ" kind="show" id="Bdn-fc-k7T"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -266,6 +269,21 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="3806" y="-563"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YN7-qQ-QfS">
+            <objects>
+                <viewController id="fQw-mw-vlZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJv-Cn-GbG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dzG-r3-15Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CwJ-DX-gpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4775" y="-563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Au5-KV-g9P">

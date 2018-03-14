@@ -16,15 +16,25 @@ class BudgetController {
     let ckManager = CloudKitManager()
     var budgets: [Budget] = []
     
+    var sortedBudgets: [Budget] {
+        return budgets.sorted(by: <#T##(Budget, Budget) throws -> Bool#>)
+    }
+    
     // MARK: -  CRUD
     
     func save(budget: Budget) {
+        
+        budgets.insert(budget, at: 0)
+        print(budgets.count)
+        
         ckManager.saveRecordsToCloudKit(records: [budget.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
                 print("\(error.localizedDescription)")
                 return
             }
+            print("saved")
         }
+//        load()
     }
     
     func load() {
@@ -40,7 +50,7 @@ class BudgetController {
                 budgetsPulled.append(newBudget)
             }
             self.budgets = budgetsPulled
-            print(self.budgets.count)
+            print("loaded")
         }
     }
     

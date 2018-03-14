@@ -14,6 +14,7 @@ class ExistingBudgetsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -22,7 +22,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.dimsBackgroundDuringPresentation = false
-        
     }
     
     // MARK: -  SearchController
