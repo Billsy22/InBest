@@ -36,4 +36,8 @@ class CloudKitManager {
         publicDB.perform(query, inZoneWith: nil, completionHandler: completion)
         print("Loaded")
     }
+    
+    func delete(budget: Budget, completion: @escaping((CKRecordID?, Error?) -> Void)) {
+        publicDB.delete(withRecordID: budget.ckRecordID!, completionHandler: completion)
+    }
 }

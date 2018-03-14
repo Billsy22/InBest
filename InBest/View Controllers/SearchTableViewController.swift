@@ -8,18 +8,29 @@
 
 import UIKit
 
-class SearchTableViewController: UITableViewController {
+class SearchTableViewController: UITableViewController, UISearchResultsUpdating {
     
     // MARK: -  Properties
-    var amount: Double?
+    var budget: Budget?
 
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let amount = amount else { return }
-        navigationItem.title = "\(amount)"
+        guard let budget = budget else { return }
+        navigationItem.title = "\(budget.amount)"
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        
     }
-
+    
+    // MARK: -  SearchController
+    func updateSearchResults(for searchController: UISearchController) {
+        print("updating")
+    }
+    
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,5 +56,4 @@ class SearchTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

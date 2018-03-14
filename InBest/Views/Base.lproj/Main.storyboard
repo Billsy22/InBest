@@ -35,47 +35,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FinalDollarSign" translatesAutoresizingMaskIntoConstraints="NO" id="gLD-RI-iPg">
-                                        <rect key="frame" x="172.66666666666666" y="216.33333333333331" width="30" height="60"/>
+                                        <rect key="frame" x="172.66666666666666" y="301.33333333333331" width="30" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="tof-tN-6yG"/>
                                             <constraint firstAttribute="width" constant="30" id="zTF-O7-1ZM"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-FT-Ftd">
-                                        <rect key="frame" x="28" y="430" width="319" height="230"/>
+                                        <rect key="frame" x="28" y="600" width="319" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-Fo-vZb">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-58-o4q">
                                                 <rect key="frame" x="0.0" y="0.0" width="319" height="60"/>
                                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
-                                                <state key="normal" title="New Budget" backgroundImage="Button">
-                                                    <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="eN7-hZ-ipZ" kind="show" id="XCG-iU-S7l"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-58-o4q">
-                                                <rect key="frame" x="0.0" y="85" width="319" height="60"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
-                                                <state key="normal" title="Existing Budgets" backgroundImage="Button">
+                                                <state key="normal" title="My Budgets" backgroundImage="Button">
                                                     <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="Z8g-St-vSX" kind="show" id="XJc-ei-7MD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-n4-qlt">
-                                                <rect key="frame" x="0.0" y="170" width="319" height="60"/>
-                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
-                                                <state key="normal" title="Past Investments" backgroundImage="Button">
-                                                    <color key="titleColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="AF2-n4-qlt" firstAttribute="width" secondItem="v8p-FT-Ftd" secondAttribute="width" id="3gs-p6-XIh"/>
                                             <constraint firstItem="fAc-58-o4q" firstAttribute="width" secondItem="v8p-FT-Ftd" secondAttribute="width" id="WIW-Jv-4hZ"/>
-                                            <constraint firstItem="pc9-Fo-vZb" firstAttribute="width" secondItem="v8p-FT-Ftd" secondAttribute="width" id="iDP-cc-usp"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -148,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="As9-di-DrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1474" y="-560"/>
+            <point key="canvasLocation" x="2234" y="-563"/>
         </scene>
         <!--Existing Budgets Table View Controller-->
         <scene sceneID="Abe-9a-pyq">
@@ -192,6 +173,13 @@
                             <outlet property="delegate" destination="Z8g-St-vSX" id="OQb-vQ-b7c"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Wkw-7w-GK0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SqP-OD-Yso">
+                            <connections>
+                                <segue destination="eN7-hZ-ipZ" kind="show" id="7k2-yj-4oG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC8-NF-5DZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,23 +212,32 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="done" id="mlS-Z6-jCr">
                                 <connections>
-                                    <action selector="doneButtonTapped:" destination="oY7-dB-fO1" id="pXC-Cr-Ru9"/>
+                                    <action selector="doneButtonTapped:" destination="oY7-dB-fO1" id="ddn-Bd-vDr"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="add" id="7cP-h8-rPI"/>
+                            <barButtonItem systemItem="add" id="7cP-h8-rPI">
+                                <connections>
+                                    <segue destination="D6U-tX-qUe" kind="show" identifier="searchTableViewController" id="duU-N9-kdw"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <segue destination="RZe-6i-qBa" kind="unwind" identifier="toBudgetList" unwindAction="unwindToExistingBudgetsVCWithSegue:" id="xRR-Ni-bJB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hk1-Z4-qB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RZe-6i-qBa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2231" y="132"/>
+            <point key="canvasLocation" x="3028" y="132"/>
         </scene>
         <!--Search Table View Controller-->
         <scene sceneID="OOZ-Nr-qzw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eE8-eG-cgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="D6U-tX-qUe" customClass="SearchTableViewController" customModule="InBest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1WO-dp-uQK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="R2i-hw-o19">
@@ -267,9 +264,8 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="E6F-it-s7B"/>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eE8-eG-cgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4546" y="132"/>
+            <point key="canvasLocation" x="3806" y="-563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Au5-KV-g9P">
@@ -296,6 +292,6 @@
         <image name="FinalDollarSign" width="41" height="91"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OWx-RT-41c"/>
+        <segue reference="sT5-vw-ev0"/>
     </inferredMetricsTieBreakers>
 </document>

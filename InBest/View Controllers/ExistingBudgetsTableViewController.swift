@@ -11,7 +11,7 @@ import UIKit
 class ExistingBudgetsTableViewController: UITableViewController {
     
     // MARK: -  Properties
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,9 +20,9 @@ class ExistingBudgetsTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return BudgetController.shared.budgets.count
     }
@@ -37,13 +37,13 @@ class ExistingBudgetsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            let budget = BudgetController.shared.budgets[indexPath.row]
+            BudgetController.shared.delete(budget: budget)
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+        tableView.reloadData()
     }
-
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectedBudgetDetail" {
@@ -53,4 +53,6 @@ class ExistingBudgetsTableViewController: UITableViewController {
             detailVC.budget = budget
         }
     }
+    
+    @IBAction func unwindToExistingBudgetsVC(segue:UIStoryboardSegue) { }
 }

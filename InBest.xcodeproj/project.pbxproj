@@ -15,13 +15,13 @@
 		1608E1382056E1700077D539 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1372056E1700077D539 /* Company.swift */; };
 		1608E13A2056FE440077D539 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1392056FE440077D539 /* Day.swift */; };
 		1608E13C2057207B0077D539 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E13B2057207B0077D539 /* MainViewController.swift */; };
-		1645F25B205823A90087F9B3 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25A205823A90087F9B3 /* SearchTableViewController.swift */; };
 		1645F25D205827BC0087F9B3 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25C205827BC0087F9B3 /* Budget.swift */; };
 		1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25E205828630087F9B3 /* NewBudgetViewController.swift */; };
 		1645F26120582C690087F9B3 /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26020582C690087F9B3 /* BudgetController.swift */; };
 		1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26220582D7C0087F9B3 /* CloudKitManager.swift */; };
 		1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */; };
 		1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */; };
+		1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,13 +36,13 @@
 		1608E1372056E1700077D539 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		1608E1392056FE440077D539 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		1608E13B2057207B0077D539 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		1645F25A205823A90087F9B3 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		1645F25C205827BC0087F9B3 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		1645F25E205828630087F9B3 /* NewBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBudgetViewController.swift; sourceTree = "<group>"; };
 		1645F26020582C690087F9B3 /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
 		1645F26220582D7C0087F9B3 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingBudgetsTableViewController.swift; sourceTree = "<group>"; };
 		1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailTableViewController.swift; sourceTree = "<group>"; };
+		1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 				1645F25E205828630087F9B3 /* NewBudgetViewController.swift */,
 				1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */,
 				1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */,
-				1645F25A205823A90087F9B3 /* SearchTableViewController.swift */,
+				1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -230,10 +230,10 @@
 				1608E13A2056FE440077D539 /* Day.swift in Sources */,
 				1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */,
 				1645F25D205827BC0087F9B3 /* Budget.swift in Sources */,
-				1645F25B205823A90087F9B3 /* SearchTableViewController.swift in Sources */,
 				1608E1382056E1700077D539 /* Company.swift in Sources */,
 				1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */,
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
+				1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */,
 				1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */,
 				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,
 			);

@@ -40,17 +40,14 @@ class BudgetDetailTableViewController: UITableViewController {
     @IBAction func doneButtonTapped(_ sender: Any) {
         guard let budget = budget else { return }
         BudgetController.shared.save(budget: budget)
-        navigationController?.popToViewController(ExistingBudgetsTableViewController(), animated: true)
+        performSegue(withIdentifier: "toBudgetList", sender: self)
     }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "searchTableViewController" {
+            
+        }
     }
-    */
 
 }

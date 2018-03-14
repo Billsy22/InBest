@@ -43,4 +43,15 @@ class BudgetController {
             print(self.budgets.count)
         }
     }
+    
+    func delete(budget: Budget) {
+        ckManager.delete(budget: budget) { (_, error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+        }
+        guard let index = self.budgets.index(of: budget) else { return }
+        self.budgets.remove(at: index)
+    }
 }
