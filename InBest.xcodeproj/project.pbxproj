@@ -22,6 +22,9 @@
 		1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */; };
 		1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */; };
 		1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */; };
+		1645F26D20599AE30087F9B3 /* AllExchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = 1645F26C20599AE30087F9B3 /* AllExchanges.json */; };
+		1645F26F2059BE9D0087F9B3 /* CompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26E2059BE9D0087F9B3 /* CompanyController.swift */; };
+		1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F2702059D6370087F9B3 /* SearchResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingBudgetsTableViewController.swift; sourceTree = "<group>"; };
 		1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailTableViewController.swift; sourceTree = "<group>"; };
 		1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		1645F26C20599AE30087F9B3 /* AllExchanges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllExchanges.json; sourceTree = "<group>"; };
+		1645F26E2059BE9D0087F9B3 /* CompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyController.swift; sourceTree = "<group>"; };
+		1645F2702059D6370087F9B3 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				1645F26020582C690087F9B3 /* BudgetController.swift */,
+				1645F26E2059BE9D0087F9B3 /* CompanyController.swift */,
+				1645F2702059D6370087F9B3 /* SearchResultsController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 				1645F25C205827BC0087F9B3 /* Budget.swift */,
 				1608E1372056E1700077D539 /* Company.swift */,
 				1608E1392056FE440077D539 /* Day.swift */,
+				1645F26C20599AE30087F9B3 /* AllExchanges.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1608E1272056D9100077D539 /* LaunchScreen.storyboard in Resources */,
+				1645F26D20599AE30087F9B3 /* AllExchanges.json in Resources */,
 				1608E1242056D9100077D539 /* Assets.xcassets in Resources */,
 				1608E1222056D9100077D539 /* Main.storyboard in Resources */,
 			);
@@ -226,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1645F26120582C690087F9B3 /* BudgetController.swift in Sources */,
+				1645F26F2059BE9D0087F9B3 /* CompanyController.swift in Sources */,
 				1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */,
 				1608E13A2056FE440077D539 /* Day.swift in Sources */,
 				1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */,
@@ -235,6 +246,7 @@
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
 				1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */,
 				1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */,
+				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
 				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

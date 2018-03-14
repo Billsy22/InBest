@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         BudgetController.shared.load()
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        CompanyController.shared.loadAllCompanies()
     }
     
     override func viewDidAppear(_ animated: Bool) {

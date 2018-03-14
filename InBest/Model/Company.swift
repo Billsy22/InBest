@@ -11,17 +11,14 @@ import Foundation
 class Company {
     
     // MARK: -  Properties
-    let name: String = ""
+    let name: String
     let symbol: String
     
-    // MARK: -  Constant keys
-    private let SymbolKey = "Symbol"
-    
     // MARK: -  Initializer
-    
-    init?(dictionary: [String: Any]) {
-        guard let symbol = dictionary[SymbolKey] as? String else { return nil }
-        
+    init?(symbol: String?, dictionary: [String: Any]) {
+        guard let symbol = symbol,
+            let name = dictionary["Name"] as? String else { return nil }
         self.symbol = symbol
+        self.name = name
     }
 }

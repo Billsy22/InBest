@@ -25,12 +25,12 @@ class ExistingBudgetsTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return BudgetController.shared.budgets.count
+        return BudgetController.shared.sortedBudgets.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "budgetCell", for: indexPath)
-        let budget = BudgetController.shared.budgets[indexPath.row]
+        let budget = BudgetController.shared.sortedBudgets[indexPath.row]
         cell.textLabel?.text = "\(budget.date)"
         cell.detailTextLabel?.text = "\(budget.amount)"
         return cell
@@ -38,7 +38,7 @@ class ExistingBudgetsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let budget = BudgetController.shared.budgets[indexPath.row]
+            let budget = BudgetController.shared.sortedBudgets[indexPath.row]
             BudgetController.shared.delete(budget: budget)
             tableView.deleteRows(at: [indexPath], with: .left)
         }
@@ -50,7 +50,7 @@ class ExistingBudgetsTableViewController: UITableViewController {
         if segue.identifier == "selectedBudgetDetail" {
             guard let detailVC = segue.destination as? BudgetDetailTableViewController else { return }
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let budget = BudgetController.shared.budgets[indexPath.row]
+            let budget = BudgetController.shared.sortedBudgets[indexPath.row]
             detailVC.budget = budget
         }
     }

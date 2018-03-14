@@ -15,16 +15,15 @@ class BudgetController {
     static let shared = BudgetController()
     let ckManager = CloudKitManager()
     var budgets: [Budget] = []
-    
     var sortedBudgets: [Budget] {
-        return budgets.sorted(by: <#T##(Budget, Budget) throws -> Bool#>)
+        return budgets.sorted(by: { $0.date < $1.date })
     }
     
     // MARK: -  CRUD
     
     func save(budget: Budget) {
         
-        budgets.insert(budget, at: 0)
+        budgets.append(budget)
         print(budgets.count)
         
         ckManager.saveRecordsToCloudKit(records: [budget.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
