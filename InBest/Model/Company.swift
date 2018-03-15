@@ -21,3 +21,10 @@ class Company {
         self.name = name
     }
 }
+
+extension Company: Equatable {
+    static func ==(lhs: Company, rhs: Company) -> Bool {
+        return lhs.name == rhs.name &&
+        lhs.symbol == rhs.symbol
+    }
+}

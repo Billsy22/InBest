@@ -22,3 +22,11 @@ class Investment {
         self.numberOfShares = numberOfShares
     }
 }
+
+extension Investment: Equatable {
+    static func ==(lhs: Investment, rhs: Investment) -> Bool {
+        return lhs.company == rhs.company &&
+        lhs.amountOfMoney == rhs.amountOfMoney &&
+        lhs.numberOfShares == rhs.numberOfShares
+    }
+}

@@ -32,7 +32,7 @@ class ExistingBudgetsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "budgetCell", for: indexPath)
         let budget = BudgetController.shared.sortedBudgets[indexPath.row]
         cell.textLabel?.text = "\(budget.date)"
-        cell.detailTextLabel?.text = "\(budget.amount)"
+        cell.detailTextLabel?.text = "\(budget.initialAmount)"
         return cell
     }
     

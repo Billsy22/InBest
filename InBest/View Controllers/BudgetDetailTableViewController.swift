@@ -33,7 +33,7 @@ class BudgetDetailTableViewController: UITableViewController {
     // MARK: -  Update Views
     func updateViews() {
         guard let budget = budget else { return }
-        navigationItem.title = "\(budget.amount)"
+        navigationItem.title = "\(budget.initialAmount)"
     }
     
     // MARK: -  Actions

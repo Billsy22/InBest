@@ -53,7 +53,7 @@ class NewBudgetViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         guard let amountPicked = Double(amountPicked) else { return }
         if segue.identifier == "newBudgetDetail" {
             guard let detailVC = segue.destination as? BudgetDetailTableViewController else { return }
-            let budget = Budget(date: Date(), amount: amountPicked)
+            let budget = Budget(date: Date(), initialAmount: amountPicked)
             detailVC.budget = budget
         }
     }
