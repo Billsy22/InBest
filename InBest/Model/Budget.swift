@@ -13,9 +13,9 @@ class Budget {
     
     // MARK: -  Properties
     let date: Date
-    let amount: Double
+    var amount: Double
     var ckRecordID: CKRecordID?
-    
+    var investments: [Investment] = []
     var asCKRecord: CKRecord {
         let record: CKRecord
         if let recordID = ckRecordID {

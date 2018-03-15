@@ -45,13 +45,15 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         return cell
     }
     
-    /*
      // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
+        if segue.identifier == "toCompanyInfo" {
+            guard let companyInfoVC = segue.destination as? StockInfoViewController else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let company = SearchResultsController.shared.searchedCompanies[indexPath.row]
+            guard let budget = self.budget else { return }
+            companyInfoVC.company = company
+            companyInfoVC.budget = budget
+        }
      }
-     */
 }

@@ -15,9 +15,8 @@ class Company {
     let symbol: String
     
     // MARK: -  Initializer
-    init?(symbol: String?, dictionary: [String: Any]) {
-        guard let symbol = symbol,
-            let name = dictionary["Name"] as? String else { return nil }
+    init?(symbol: String, dictionary: [String: Any]) {
+        guard let name = dictionary["Name"] as? String else { return nil }
         self.symbol = symbol
         self.name = name
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Day {
+class StockInfo {
     
     // MARK: -  Properties
     let date: String
@@ -18,15 +18,15 @@ class Day {
     let close: String
     
     // MARK: -  Keys
-    private let HighKey = "high"
-    private let LowKey = "low"
-    private let OpenKey = "open"
-    private let CloseKey = "close"
+    private let HighKey = "2. high"
+    private let LowKey = "3. low"
+    private let OpenKey = "1. open"
+    private let CloseKey = "4. close"
     
     // MARK: -  Initializer
     init?(date: String, dictionary: [String: Any]) {
         guard let high = dictionary[HighKey] as? String,
-        let low = dictionary[LowKey] as? String,
+            let low = dictionary[LowKey] as? String,
             let open = dictionary[OpenKey] as? String,
             let close = dictionary[CloseKey] as? String else { return nil }
         

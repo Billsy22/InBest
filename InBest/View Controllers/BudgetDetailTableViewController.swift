@@ -43,11 +43,13 @@ class BudgetDetailTableViewController: UITableViewController {
         performSegue(withIdentifier: "toBudgetList", sender: self)
     }
     
-//    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "searchTableViewController" {
-//
-//        }
-//    }
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "searchTableViewController" {
+            guard let searchVC = segue.destination as? SearchTableViewController else { return }
+            guard let budget = budget else { return }
+            searchVC.budget = budget
+        }
+    }
 
 }

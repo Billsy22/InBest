@@ -18,14 +18,13 @@ class BudgetController {
     var sortedBudgets: [Budget] {
         return budgets.sorted(by: { $0.date < $1.date })
     }
+    var investments: [Investment] = []
     
-    // MARK: -  CRUD
-    
+    // MARK: -  B
+    // Save/Update Budget
     func save(budget: Budget) {
-        
         budgets.append(budget)
         print(budgets.count)
-        
         ckManager.saveRecordsToCloudKit(records: [budget.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
                 print("\(error.localizedDescription)")
@@ -33,9 +32,9 @@ class BudgetController {
             }
             print("saved")
         }
-//        load()
     }
     
+    // Load Budgets
     func load() {
         ckManager.fetchBudget { (records, error) in
             if let error = error {
@@ -53,6 +52,7 @@ class BudgetController {
         }
     }
     
+    // Delete Budget
     func delete(budget: Budget) {
         ckManager.delete(budget: budget) { (_, error) in
             if let error = error {
@@ -62,5 +62,21 @@ class BudgetController {
         }
         guard let index = self.budgets.index(of: budget) else { return }
         self.budgets.remove(at: index)
+    }
+    
+    // Make an investment
+    func investIn(company: Company, amountOfMoney: Double, fromBudget: ) {
+        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
+            let stockInfo = StockInfoController.shared.stockInfo[0]
+            guard let stockPrice = Double(stockInfo.close) else { return }
+            let numberOfShares = amountOfMoney * stockPrice
+            let investment = Investment(company: company, amountOfMoney: amountOfMoney, numberOfShares: numberOfShares)
+            self.investments.append(investment)
+        }
+    }
+    
+    // Sell investment
+    func sell(investment: Investment) {
+        
     }
 }
