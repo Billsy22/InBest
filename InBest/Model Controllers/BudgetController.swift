@@ -64,32 +64,4 @@ class BudgetController {
         guard let index = self.budgets.index(of: budget) else { return }
         self.budgets.remove(at: index)
     }
-    
-    // Make an investment
-    func investIn(company: Company, amountOfMoney: Double, fromBudget budget: Budget) {
-        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
-            let stockInfo = StockInfoController.shared.stockInfo[0]
-            guard let stockPrice = Double(stockInfo.close) else { return }
-            if budget.currentAmount >= amountOfMoney {
-            let numberOfShares = amountOfMoney * stockPrice
-            let investment = Investment(company: company, amountOfMoney: amountOfMoney, numberOfShares: numberOfShares)
-            self.investments.append(investment)
-            budget.currentAmount -= amountOfMoney
-            } else {
-                print("not enough money")
-                return
-            }
-        }
-    }
-    
-    // Sell investment
-    func sell(stockFrom company: Company, into budget: Budget, andRemoveIndex: Investment) {
-        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
-            let stockInfo = StockInfoController.shared.stockInfo[0]
-            guard let stockPrice = Double(stockInfo.close) else { return }
-            budget.currentAmount += stockPrice
-            guard let index = self.investments.index(of: andRemoveIndex) else { return }
-            self.investments.remove(at: index)
-        }
-    }
 }

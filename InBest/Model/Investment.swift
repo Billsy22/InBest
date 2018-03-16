@@ -12,13 +12,15 @@ class Investment {
     
     // MARK: -  Properties
     let company: Company
-    var amountOfMoney: Double
+    let initialAmountOfMoney: Double
+    var currentAmount: Double
     var numberOfShares: Double
     
     // MARK: -  Initializer
-    init(company: Company, amountOfMoney: Double, numberOfShares: Double) {
+    init(company: Company, initialAmountOfMoney: Double, numberOfShares: Double) {
         self.company = company
-        self.amountOfMoney = amountOfMoney
+        self.initialAmountOfMoney = initialAmountOfMoney
+        self.currentAmount = initialAmountOfMoney
         self.numberOfShares = numberOfShares
     }
 }
@@ -26,7 +28,7 @@ class Investment {
 extension Investment: Equatable {
     static func ==(lhs: Investment, rhs: Investment) -> Bool {
         return lhs.company == rhs.company &&
-        lhs.amountOfMoney == rhs.amountOfMoney &&
+        lhs.initialAmountOfMoney == rhs.initialAmountOfMoney &&
         lhs.numberOfShares == rhs.numberOfShares
     }
 }

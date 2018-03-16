@@ -31,6 +31,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return StockInfoController.shared.stockInfo.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockInfoCell", for: indexPath)
         let stockInfo = StockInfoController.shared.stockInfo[indexPath.row]

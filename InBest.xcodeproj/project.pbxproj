@@ -28,7 +28,7 @@
 		1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBDF205ABEF300859CAF /* StockInfoController.swift */; };
 		1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE1205AD12800859CAF /* StockInfoViewController.swift */; };
 		1672FBE6205AF26700859CAF /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE5205AF26700859CAF /* Investment.swift */; };
-		1672FBE8205B2F9E00859CAF /* MathFunctionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE7205B2F9E00859CAF /* MathFunctionsController.swift */; };
+		1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE7205B2F9E00859CAF /* InvestmentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,7 @@
 		1672FBDF205ABEF300859CAF /* StockInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoController.swift; sourceTree = "<group>"; };
 		1672FBE1205AD12800859CAF /* StockInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
 		1672FBE5205AF26700859CAF /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
-		1672FBE7205B2F9E00859CAF /* MathFunctionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunctionsController.swift; sourceTree = "<group>"; };
+		1672FBE7205B2F9E00859CAF /* InvestmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 				1645F26E2059BE9D0087F9B3 /* CompanyController.swift */,
 				1645F2702059D6370087F9B3 /* SearchResultsController.swift */,
 				1672FBDF205ABEF300859CAF /* StockInfoController.swift */,
-				1672FBE7205B2F9E00859CAF /* MathFunctionsController.swift */,
+				1672FBE7205B2F9E00859CAF /* InvestmentController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 				1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */,
 				1608E13A2056FE440077D539 /* StockInfo.swift in Sources */,
 				1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */,
-				1672FBE8205B2F9E00859CAF /* MathFunctionsController.swift in Sources */,
+				1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */,
 				1645F25D205827BC0087F9B3 /* Budget.swift in Sources */,
 				1608E1382056E1700077D539 /* Company.swift in Sources */,
 				1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */,
