@@ -30,9 +30,9 @@ class CloudKitManager {
         database.add(operation)
     }
     
-    func fetchBudget(completion: @escaping(([CKRecord]?, Error?) -> Void)) {
+    func fetchRecordOf(type: String, completion: @escaping(([CKRecord]?, Error?) -> Void)) {
         let predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: "Budget", predicate: predicate)
+        let query = CKQuery(recordType: type, predicate: predicate)
         publicDB.perform(query, inZoneWith: nil, completionHandler: completion)
         print("Loaded")
     }

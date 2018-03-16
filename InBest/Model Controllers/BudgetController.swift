@@ -21,11 +21,13 @@ class BudgetController {
     }
     var investments: [Investment] = []
     
-    // MARK: -  B
+    // MARK: -  CRUD
     // Save/Update Budget
     func save(budget: Budget) {
-        budgets.append(budget)
         print(budgets.count)
+        if !budgets.contains(budget) {
+            self.budgets.append(budget)
+        }
         ckManager.saveRecordsToCloudKit(records: [budget.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
                 print("\(error.localizedDescription)")
@@ -37,7 +39,7 @@ class BudgetController {
     
     // Load Budgets
     func load() {
-        ckManager.fetchBudget { (records, error) in
+        ckManager.fetchRecordOf(type: "Budget", completion: { (records, error) in
             if let error = error {
                 print("Error loading form the cloud: \(error.localizedDescription)")
                 return
@@ -49,7 +51,44 @@ class BudgetController {
                 budgetsPulled.append(newBudget)
             }
             self.budgets = budgetsPulled
+            for budget in budgetsPulled {
+                self.fetchInvestmentsFor(budget: budget, completion: {
+                    for investment in budget.investments {
+                        self.fetchCompany(investedIn: investment, completion: {
+                            print("Budgets Loaded")
+                        })
+                    }
+                })
+            }
             print("loaded")
+        })
+    }
+    
+    // Fetch Investments
+    func fetchInvestmentsFor(budget: Budget, completion: @escaping() -> Void) {
+        ckManager.fetchRecordOf(type: "Investment") { (records, error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+            guard let records = records else { completion(); return }
+            let investments = records.flatMap( { Investment(cloudKitRecord: $0) })
+            budget.investments = investments
+            completion()
+        }
+    }
+    
+    // Fetch Companies
+    func fetchCompany(investedIn: Investment, completion: @escaping() -> Void) {
+        ckManager.fetchRecordOf(type: "Company") { (records, error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+            guard let records = records else { completion(); return }
+            let company = Company(cloudKitRecord: records[0])
+            investedIn.company = company
+            completion()
         }
     }
     

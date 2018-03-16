@@ -7,17 +7,48 @@
 //
 
 import Foundation
+import CloudKit
 
 class Investment {
     
     // MARK: -  Properties
-    let company: Company
+    weak var budget: Budget?
+    var company: Company? = nil
     let initialAmountOfMoney: Double
     var currentAmount: Double
-    var numberOfShares: Double
+    let numberOfShares: Double
+    var ckRecordID: CKRecordID?
+    var asCKRecord: CKRecord {
+        let record: CKRecord
+        if let recordID = ckRecordID {
+            record = CKRecord(recordType: "Investment", recordID: recordID)
+        } else {
+            record = CKRecord(recordType: "Investment")
+        }
+        record.setObject(initialAmountOfMoney as CKRecordValue, forKey: "InitialAmountOfMoney")
+        record.setObject(currentAmount as CKRecordValue, forKey: "CurrentAmount")
+        record.setObject(numberOfShares as CKRecordValue, forKey: "NumberOfShares")
+        if let budget = budget, let budgetRecordID = budget.ckRecordID {
+            let budgetReference = CKReference(recordID: budgetRecordID, action: .deleteSelf)
+            record.setObject(budgetReference, forKey: "BudgetReference")
+        }
+        return record
+    }
     
     // MARK: -  Initializer
-    init(company: Company, initialAmountOfMoney: Double, numberOfShares: Double) {
+    init?(cloudKitRecord: CKRecord) {
+        guard let initialAMountOfMoney = cloudKitRecord["InitialAmountOfMoney"] as? Double,
+            let currentAmountOfMoney = cloudKitRecord["CurrentAmountOfMoney"] as? Double,
+            let numberOfShares = cloudKitRecord["NumberOfShares"] as? Double else { return nil }
+        
+        self.initialAmountOfMoney = initialAMountOfMoney
+        self.currentAmount = currentAmountOfMoney
+        self.numberOfShares = numberOfShares
+        self.ckRecordID = cloudKitRecord.recordID
+    }
+    
+    init(company: Company?, initialAmountOfMoney: Double, numberOfShares: Double, budget: Budget) {
+        self.budget = budget
         self.company = company
         self.initialAmountOfMoney = initialAmountOfMoney
         self.currentAmount = initialAmountOfMoney

@@ -21,9 +21,12 @@ class InvestmentController {
             guard let stockPrice = Double(stockInfo.close) else { return }
             if budget.currentAmount >= amountOfMoney {
                 let numberOfShares = amountOfMoney / stockPrice
-                let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares)
+                let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
+                
+                
                 budget.investments.append(investment)
                 budget.currentAmount -= amountOfMoney
+                BudgetController.shared.save(budget: budget)
             } else {
                 print("not enough money")
                 return
@@ -39,6 +42,7 @@ class InvestmentController {
             budget.currentAmount += investment.numberOfShares * stockPrice
             guard let index = budget.investments.index(of: investment) else { return }
             budget.investments.remove(at: index)
+            BudgetController.shared.save(budget: budget)
         }
     }
     

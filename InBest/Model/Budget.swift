@@ -27,9 +27,7 @@ class Budget {
         record.setObject(date as CKRecordValue, forKey: "DateCreated")
         record.setObject(initialAmount as CKRecordValue, forKey: "InitialAmount")
         record.setObject(currentAmount as CKRecordValue, forKey: "CurrentAmount")
-        record.setObject(investments as CKRecordValue, forKey: "Investments")
         ckRecordID = record.recordID
-        
         return record
     }
     
@@ -38,18 +36,17 @@ class Budget {
         self.date = date
         self.initialAmount = initialAmount
         self.currentAmount = initialAmount
-        self.ckRecordID = nil
     }
     
     init?(record: CKRecord) {
         guard let date = record.object(forKey: "DateCreated") as? Date,
             let initialAmount = record.object(forKey: "InitialAmount") as? Double,
-            let currentAmount = record.object(forKey: "CurrentAmount") as? Double,
-            let investments = record.object(forKey: "Investments") as? [Investment] else { return nil }
+            let currentAmount = record.object(forKey: "CurrentAmount") as? Double else { return nil }
+        
         self.date = date
         self.initialAmount = initialAmount
         self.currentAmount = currentAmount
-        self.investments = investments
+        self.investments = []
         self.ckRecordID = record.recordID
     }
 }

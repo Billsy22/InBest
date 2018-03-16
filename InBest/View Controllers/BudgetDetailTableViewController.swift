@@ -34,7 +34,8 @@ class BudgetDetailTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "investmentCell", for: indexPath)
         guard let budget = budget else { return UITableViewCell() }
         let investment = budget.investments[indexPath.row]
-        cell.textLabel?.text = investment.company.name
+        guard let company = investment.company else { return UITableViewCell() }
+        cell.textLabel?.text = company.name
         cell.detailTextLabel?.text = "\(investment.currentAmount)"
         return cell
     }
