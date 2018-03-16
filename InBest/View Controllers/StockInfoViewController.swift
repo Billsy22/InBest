@@ -17,6 +17,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var currentPriceLabel: UILabel!
     var budget: Budget?
     var company: Company?
+    var stockInfo: StockInfo?
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
@@ -40,15 +41,18 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "BuyStock" {
+            guard let buyStock = segue.destination as? BuyStockViewController else { return }
+            guard let company = company,
+                let budget = budget,
+                let stockInfo = stockInfo else { return }
+            buyStock.budget = budget
+            buyStock.company = company
+            buyStock.stockInfo = stockInfo
+        }
+    }
     
     // MARK: -  UpdateViews
     func updateViews() {
@@ -58,7 +62,9 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
-                self.currentPriceLabel.text = StockInfoController.shared.stockInfo[0].close
+                self.stockInfo = StockInfoController.shared.stockInfo[0]
+                guard let stockInfo = self.stockInfo else { return }
+                self.currentPriceLabel.text = stockInfo.close
                 self.stockInfoTableView.reloadData()
             }
         }

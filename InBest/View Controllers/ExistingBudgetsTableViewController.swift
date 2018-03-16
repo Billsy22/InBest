@@ -10,11 +10,9 @@ import UIKit
 
 class ExistingBudgetsTableViewController: UITableViewController {
     
-    // MARK: -  Properties
-    
+    // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {

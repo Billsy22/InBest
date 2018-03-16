@@ -29,6 +29,7 @@
 		1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE1205AD12800859CAF /* StockInfoViewController.swift */; };
 		1672FBE6205AF26700859CAF /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE5205AF26700859CAF /* Investment.swift */; };
 		1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE7205B2F9E00859CAF /* InvestmentController.swift */; };
+		16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		1672FBE1205AD12800859CAF /* StockInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
 		1672FBE5205AF26700859CAF /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		1672FBE7205B2F9E00859CAF /* InvestmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentController.swift; sourceTree = "<group>"; };
+		16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */,
 				1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */,
 				1672FBE1205AD12800859CAF /* StockInfoViewController.swift */,
+				16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */,
 				1645F25D205827BC0087F9B3 /* Budget.swift in Sources */,
 				1608E1382056E1700077D539 /* Company.swift in Sources */,
+				16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */,
 				1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */,
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
 				1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */,

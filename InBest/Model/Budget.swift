@@ -25,8 +25,9 @@ class Budget {
             record = CKRecord(recordType: "Budget")
         }
         record.setObject(date as CKRecordValue, forKey: "DateCreated")
-        record.setObject(initialAmount as CKRecordValue, forKey: "Amount")
-        
+        record.setObject(initialAmount as CKRecordValue, forKey: "InitialAmount")
+        record.setObject(currentAmount as CKRecordValue, forKey: "CurrentAmount")
+        record.setObject(investments as CKRecordValue, forKey: "Investments")
         ckRecordID = record.recordID
         
         return record
@@ -42,10 +43,13 @@ class Budget {
     
     init?(record: CKRecord) {
         guard let date = record.object(forKey: "DateCreated") as? Date,
-            let amount = record.object(forKey: "Amount") as? Double else { return nil }
+            let initialAmount = record.object(forKey: "InitialAmount") as? Double,
+            let currentAmount = record.object(forKey: "CurrentAmount") as? Double,
+            let investments = record.object(forKey: "Investments") as? [Investment] else { return nil }
         self.date = date
-        self.initialAmount = amount
-        self.currentAmount = amount
+        self.initialAmount = initialAmount
+        self.currentAmount = currentAmount
+        self.investments = investments
         self.ckRecordID = record.recordID
     }
 }
@@ -53,6 +57,6 @@ class Budget {
 extension Budget: Equatable {
     static func ==(lhs: Budget, rhs: Budget) -> Bool {
         return lhs.date == rhs.date &&
-        lhs.initialAmount == rhs.initialAmount
+            lhs.initialAmount == rhs.initialAmount
     }
 }

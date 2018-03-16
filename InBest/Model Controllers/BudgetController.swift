@@ -17,7 +17,7 @@ class BudgetController {
     let ckManager = CloudKitManager()
     var budgets: [Budget] = []
     var sortedBudgets: [Budget] {
-        return budgets.sorted(by: { $0.date < $1.date })
+        return budgets.sorted(by: { $0.date > $1.date })
     }
     var investments: [Investment] = []
     
