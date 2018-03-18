@@ -15,15 +15,18 @@ class BudgetController {
     // MARK: -  Properties
     static let shared = BudgetController()
     let ckManager = CloudKitManager()
-    var budgets: [Budget] = []
+    var budgets: [Budget] = [] {
+        didSet {
+            NotificationCenter.default.post(name: Notification.Name("budgetsSet"), object: nil)
+        }
+    }
     var sortedBudgets: [Budget] {
         return budgets.sorted(by: { $0.date > $1.date })
     }
-    var investments: [Investment] = []
     
     // MARK: -  CRUD
     // Save/Update Budget
-    func save(budget: Budget) {
+    func save(budget: Budget, completion: @escaping() -> Void) {
         print(budgets.count)
         if !budgets.contains(budget) {
             self.budgets.append(budget)

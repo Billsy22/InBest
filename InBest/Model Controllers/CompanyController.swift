@@ -12,10 +12,26 @@ class CompanyController {
     
     // MARK: -  Properties
     static let shared = CompanyController()
-    var companies: [Company] = []
-    
+    let ckManager = CloudKitManager()
+    var companyJsonLoaded: [Company] = []
+    var Company: Company? {
+        didSet {
+            print("Company Set")
+            NotificationCenter.default.post(name: Notification.Name("CompanySet"), object: nil)
+        }
+    }
     // MARK: -  CRUD
+    // Save Company for investment
+    func save(company: Company) {
+        ckManager.saveRecordsToCloudKit(records: [company.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+        }
+    }
     
+    // Load all companies json at the start
     func loadAllCompanies() {
         guard let path = Bundle.main.path(forResource: "AllExchanges", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
@@ -28,11 +44,11 @@ class CompanyController {
                 guard let company = Company(symbol: symbol, dictionary: dictionary) else { return }
                 companies.append(company)
             }
-            self.companies = companies
+            self.companyJsonLoaded = companies
         } catch let error {
             print("\(error.localizedDescription)")
         }
         print("Companies Loaded")
-        print(self.companies.count)
+        print(self.companyJsonLoaded.count)
     }
 }

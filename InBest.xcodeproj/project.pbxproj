@@ -149,10 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				1645F26020582C690087F9B3 /* BudgetController.swift */,
+				1672FBE7205B2F9E00859CAF /* InvestmentController.swift */,
 				1645F26E2059BE9D0087F9B3 /* CompanyController.swift */,
 				1645F2702059D6370087F9B3 /* SearchResultsController.swift */,
 				1672FBDF205ABEF300859CAF /* StockInfoController.swift */,
-				1672FBE7205B2F9E00859CAF /* InvestmentController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				1645F25C205827BC0087F9B3 /* Budget.swift */,
+				1672FBE5205AF26700859CAF /* Investment.swift */,
 				1608E1372056E1700077D539 /* Company.swift */,
 				1608E1392056FE440077D539 /* StockInfo.swift */,
-				1672FBE5205AF26700859CAF /* Investment.swift */,
 				1645F26C20599AE30087F9B3 /* AllExchanges.json */,
 			);
 			path = Model;

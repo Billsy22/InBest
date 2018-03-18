@@ -12,8 +12,27 @@ class InvestmentController {
     
     // MARK: -  Properties
     static let shared = InvestmentController()
+    let ckManager = CloudKitManager()
+    var investments: [Investment] = [] {
+        didSet {
+            print("Investments set")
+            NotificationCenter.default.post(name: Notification.Name("InvestmentsSet"), object: nil)
+        }
+    }
     
     // MARK: -  CRUD
+    
+    // Save Investments
+    func save(investment: Investment, completion: @escaping() -> Void) {
+        ckManager.saveRecordsToCloudKit(records: [investment.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+            print("investment saved")
+        }
+    }
+    
     // Make an investment
     func investIn(company: Company, amountOfMoney: Double, fromBudget budget: Budget) {
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
@@ -22,11 +41,10 @@ class InvestmentController {
             if budget.currentAmount >= amountOfMoney {
                 let numberOfShares = amountOfMoney / stockPrice
                 let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
-                
-                
-                budget.investments.append(investment)
-                budget.currentAmount -= amountOfMoney
-                BudgetController.shared.save(budget: budget)
+                self.save(investment: investment, completion: {
+                    self.investments.append(investment)
+                    budget.currentAmount -= amountOfMoney
+                })
             } else {
                 print("not enough money")
                 return

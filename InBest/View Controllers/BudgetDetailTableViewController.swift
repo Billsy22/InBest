@@ -11,7 +11,11 @@ import UIKit
 class BudgetDetailTableViewController: UITableViewController {
 
     // MARK: -  Properties
-    var budget: Budget?
+    var budget: Budget? {
+        didSet {
+            NotificationCenter.default.post(name: Notification.Name("BudgetSaved"), object: <#T##Any?#>)
+        }
+    }
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
