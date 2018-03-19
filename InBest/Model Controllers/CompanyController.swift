@@ -23,6 +23,7 @@ class CompanyController {
                 print("Error Saving Company: \(error.localizedDescription)")
                 return
             }
+            print("Company Saved")
         }
     }
     

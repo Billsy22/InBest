@@ -13,23 +13,22 @@ class InvestmentController {
     // MARK: -  Properties
     static let shared = InvestmentController()
     let ckManager = CloudKitManager()
-    var investments: [Investment] = [] {
-        didSet {
-            print("Investments set")
-            NotificationCenter.default.post(name: NotificationName.investmentsSet, object: nil)
-        }
-    }
+    var investments: [Investment] = []
     
     // MARK: -  CRUD
     
     // Save Investments
     func save(investment: Investment, completion: @escaping() -> Void) {
-        ckManager.saveRecordsToCloudKit(records: [investment.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
+        
+        guard let company = investment.company else { return }
+        ckManager.saveRecordsToCloudKit(records: [investment.asCKRecord, company.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
                 print("Error Saving Investment: \(error.localizedDescription)")
+                print("Error Saving Company: \(error.localizedDescription)")
                 return
             }
             print("investment saved")
+            completion()
         }
     }
     
@@ -54,9 +53,9 @@ class InvestmentController {
 //    }
 //    
     // Create Investment
-    func create(investment: Investment) {
+    func create(investment: Investment, inBudget budget: Budget) {
+        budget.investments.append(investment)
         self.save(investment: investment) {
-            self.investments.append(investment)
         }
     }
     

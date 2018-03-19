@@ -55,12 +55,10 @@ class BudgetController {
                 budgetsPulled.append(newBudget)
             }
             self.budgets = budgetsPulled
-            for budget in budgetsPulled {
+            for budget in self.budgets {
                 self.fetchInvestmentsFor(budget: budget, completion: {
                     for investment in budget.investments {
-                        self.fetchCompany(investedIn: investment, completion: {
-                            
-                        })
+                        self.fetchCompany(investment: investment, completion: {})
                     }
                 })
             }
@@ -83,7 +81,7 @@ class BudgetController {
     }
     
     // Fetch Companies
-    func fetchCompany(investedIn: Investment, completion: @escaping() -> Void) {
+    func fetchCompany(investment: Investment, completion: @escaping() -> Void) {
         ckManager.fetchRecordOf(type: "Company") { (records, error) in
             if let error = error {
                 print("Error fetching company for investment: \(error.localizedDescription)")
@@ -91,7 +89,7 @@ class BudgetController {
             }
             guard let records = records else { completion(); return }
             guard let company = Company(cloudKitRecord: records[0]) else { completion(); return }
-            investedIn.company = company
+            investment.company = company
             completion()
         }
     }

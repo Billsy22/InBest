@@ -19,7 +19,8 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     @IBOutlet weak var tableView: UITableView!
     var budget: Budget?
     var investment: Investment?
-    var stockInfo: StockInfo?
+    var currentPrice: StockInfo?
+    var lastWeekHighs: [StockInfo?] = []
     
     
     // MARK: -  Life Cycles
@@ -33,12 +34,12 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     // MARK: -  Table View Data Source Functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return StockInfoController.shared.stockInfo.count
+        return lastWeekHighs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
-        let stockInfo = StockInfoController.shared.stockInfo[indexPath.row]
+        guard let stockInfo = lastWeekHighs[indexPath.row] else { return UITableViewCell() }
         cell.textLabel?.text = stockInfo.date
         cell.detailTextLabel?.text = stockInfo.high
         return cell
@@ -62,10 +63,21 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
-                self.stockInfo = StockInfoController.shared.stockInfo[0]
-                guard let stockInfo = self.stockInfo else { return }
-                self.pricePerShareLabel.text = "\(stockInfo.close)"
+            self.currentPrice = StockInfoController.shared.stockInfo[0]
+            guard let currentPrice = self.currentPrice else { return }
+                self.pricePerShareLabel.text = "\(currentPrice.close)"
+                self.updateTableViewInfo()
                 self.tableView.reloadData()
+            }
+        }
+    }
+    
+    func updateTableViewInfo() {
+        guard let investment = investment else { return }
+        guard let company = investment.company else { return }
+        StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {
+            DispatchQueue.main.async {
+                self.lastWeekHighs = StockInfoController.shared.stockInfo
             }
         }
     }

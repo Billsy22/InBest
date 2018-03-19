@@ -42,7 +42,7 @@ class BudgetDetailTableViewController: UITableViewController {
         return cell
     }
     
-    // MARK: -  Update Views
+        // MARK: -  Update Views
     func updateViews() {
         guard let budget = budget else { return }
         navigationItem.title = "\(budget.currentAmount)"
@@ -64,8 +64,8 @@ class BudgetDetailTableViewController: UITableViewController {
                     CompanyController.shared.save(company: company)
                 })
             }
-            self.performSegue(withIdentifier: "toBudgetList", sender: self)
         }
+        self.performSegue(withIdentifier: "toBudgetList", sender: self)
     }
     
     // MARK: - Navigation

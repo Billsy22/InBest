@@ -60,7 +60,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         navigationItem.title = "\(budget.currentAmount)"
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
-        StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {
+        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
                 self.stockInfo = StockInfoController.shared.stockInfo[0]
                 guard let stockInfo = self.stockInfo else { return }
@@ -68,5 +68,9 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.stockInfoTableView.reloadData()
             }
         }
+    }
+    
+    func updateTableView() {
+        guard let company = company else { return }
     }
 }

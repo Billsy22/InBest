@@ -38,7 +38,7 @@ class Investment {
     // MARK: -  Initializer
     init?(cloudKitRecord: CKRecord) {
         guard let initialAMountOfMoney = cloudKitRecord["InitialAmountOfMoney"] as? Double,
-            let currentAmountOfMoney = cloudKitRecord["CurrentAmountOfMoney"] as? Double,
+            let currentAmountOfMoney = cloudKitRecord["CurrentAmount"] as? Double,
             let numberOfShares = cloudKitRecord["NumberOfShares"] as? Double else { return nil }
         
         self.initialAmountOfMoney = initialAMountOfMoney

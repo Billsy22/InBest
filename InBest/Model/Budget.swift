@@ -16,7 +16,12 @@ class Budget {
     let initialAmount: Double
     var currentAmount: Double
     var ckRecordID: CKRecordID?
-    var investments: [Investment] = []
+    var investments: [Investment] = [] {
+        didSet {
+            print("Investments set")
+            NotificationCenter.default.post(name: NotificationName.investmentsSet, object: nil)
+        }
+    }
     var asCKRecord: CKRecord {
         let record: CKRecord
         if let recordID = ckRecordID {

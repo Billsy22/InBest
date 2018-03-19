@@ -52,11 +52,10 @@ class StockInfoController {
                     guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
-                
-                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
+                daysArray.sort(by: { $0.date > $1.date })
                 var dayCounter = 0
                 var pulledStockInfo: [StockInfo] = []
-                for stockInfo in sortedArray {
+                for stockInfo in daysArray {
                     if dayCounter < 7 {
                         pulledStockInfo.append(stockInfo)
                         dayCounter += 1
@@ -68,118 +67,6 @@ class StockInfoController {
                 completion()
             } catch let error {
                 print("Error parsing last weeks stock info: \(error.localizedDescription) *** \(error) ***")
-                completion()
-            }
-            
-            }.resume()
-    }
-    
-    // Month View
-    func fetchLastMonthsStockInfo(symbol: String, completion: @escaping() -> Void) {
-        guard let baseURL = baseURL else { return }
-        let lastWeekStockTypeQuery = URLQueryItem(name: "function", value: "TIME_SERIES_DAILY")
-        let companySymbolQuery = URLQueryItem(name: "symbol", value: symbol)
-        let apiKeyQuery = URLQueryItem(name: "apikey", value: apiKey)
-        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-        components?.queryItems = [lastWeekStockTypeQuery, companySymbolQuery, apiKeyQuery]
-        guard let url = components?.url else { return }
-        print(url)
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            do {
-                if let error = error {
-                    print("Error fetching last months information: \(error.localizedDescription)")
-                    completion()
-                    return
-                }
-                guard let data = data else {
-                    completion()
-                    return
-                }
-                guard let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any] else {
-                    completion()
-                    return
-                }
-                guard let dailyDictionary = jsonDictionary["Time Series (Daily)"] as? [String: [String: Any]] else {
-                    completion()
-                    return
-                }
-                var daysArray: [StockInfo] = []
-                for (date, dictionary) in dailyDictionary {
-                    guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
-                    daysArray.append(stockInfo)
-                }
-                
-                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
-                var dayCounter = 0
-                var pulledStockInfo: [StockInfo] = []
-                for stockInfo in sortedArray {
-                    if dayCounter < 31 {
-                        pulledStockInfo.append(stockInfo)
-                        dayCounter += 1
-                    } else {
-                        break
-                    }
-                }
-                self.stockInfo = pulledStockInfo
-                completion()
-            } catch let error {
-                print("Error parsing last months stock info: \(error.localizedDescription)")
-                completion()
-            }
-            
-            }.resume()
-    }
-    
-    // Year View
-    func fetchLastYearsStockInfoFor(symbol: String, completion: @escaping() -> Void) {
-        guard let baseURL = baseURL else { return }
-        let lastWeekStockTypeQuery = URLQueryItem(name: "function", value: "TIME_SERIES_DAILY")
-        let companySymbolQuery = URLQueryItem(name: "symbol", value: symbol)
-        let apiKeyQuery = URLQueryItem(name: "apikey", value: apiKey)
-        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-        components?.queryItems = [lastWeekStockTypeQuery, companySymbolQuery, apiKeyQuery]
-        guard let url = components?.url else { return }
-        print(url)
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            do {
-                if let error = error {
-                    print("Error fetching last years stock information: \(error.localizedDescription)")
-                    completion()
-                    return
-                }
-                guard let data = data else {
-                    completion()
-                    return
-                }
-                guard let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any] else {
-                    completion()
-                    return
-                }
-                guard let dailyDictionary = jsonDictionary["Time Series (Daily)"] as? [String: [String: Any]] else {
-                    completion()
-                    return
-                }
-                var daysArray: [StockInfo] = []
-                for (date, dictionary) in dailyDictionary {
-                    guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
-                    daysArray.append(stockInfo)
-                }
-                
-                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
-                var dayCounter = 0
-                var pulledStockInfo: [StockInfo] = []
-                for stockInfo in sortedArray {
-                    if dayCounter < 365 {
-                        pulledStockInfo.append(stockInfo)
-                        dayCounter += 1
-                    } else {
-                        break
-                    }
-                }
-                self.stockInfo = pulledStockInfo
-                completion()
-            } catch let error {
-                print("Error: \(error.localizedDescription) *** \(error) ***")
                 completion()
             }
             
@@ -212,31 +99,32 @@ class StockInfoController {
                     completion()
                     return
                 }
-                guard let dailyDictionary = jsonDictionary["Time Series (Daily)"] as? [String: [String: Any]] else {
+                guard let dailyDictionary = jsonDictionary["Time Series (1min)"] as? [String: [String: Any]] else {
                     completion()
                     return
                 }
                 var daysArray: [StockInfo] = []
                 for (date, dictionary) in dailyDictionary {
-                    guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
+                    
+                    guard stockInfo = StockInfo(date: formattedDate, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
-                
-                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
+
+                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date < $1.date } )
                 var dayCounter = 0
                 var pulledStockInfo: [StockInfo] = []
                 for stockInfo in sortedArray {
-                    if dayCounter < 7 {
+                    if dayCounter < 1 {
                         pulledStockInfo.append(stockInfo)
                         dayCounter += 1
                     } else {
                         break
                     }
                 }
-                self.stockInfo = pulledStockInfo
+                self.stockInfo = daysArray
                 completion()
             } catch let error {
-                print("Error parsing last years stock info: \(error.localizedDescription)")
+                print("Error parsing current stock info: \(error.localizedDescription)")
                 completion()
             }
             
