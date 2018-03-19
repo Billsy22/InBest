@@ -14,18 +14,13 @@ class CompanyController {
     static let shared = CompanyController()
     let ckManager = CloudKitManager()
     var companyJsonLoaded: [Company] = []
-    var Company: Company? {
-        didSet {
-            print("Company Set")
-            NotificationCenter.default.post(name: Notification.Name("CompanySet"), object: nil)
-        }
-    }
+
     // MARK: -  CRUD
     // Save Company for investment
     func save(company: Company) {
         ckManager.saveRecordsToCloudKit(records: [company.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
-                print("\(error.localizedDescription)")
+                print("Error Saving Company: \(error.localizedDescription)")
                 return
             }
         }
@@ -46,9 +41,9 @@ class CompanyController {
             }
             self.companyJsonLoaded = companies
         } catch let error {
-            print("\(error.localizedDescription)")
+            print("Error Loading Company: \(error.localizedDescription)")
         }
-        print("Companies Loaded")
         print(self.companyJsonLoaded.count)
+        print("Companies Loaded")
     }
 }

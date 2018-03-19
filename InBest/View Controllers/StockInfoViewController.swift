@@ -57,7 +57,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: -  UpdateViews
     func updateViews() {
         guard let company = company, let budget = budget else { return }
-        navigationItem.title = "\(budget.initialAmount)"
+        navigationItem.title = "\(budget.currentAmount)"
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {

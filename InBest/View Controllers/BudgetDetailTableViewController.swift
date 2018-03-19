@@ -11,20 +11,18 @@ import UIKit
 class BudgetDetailTableViewController: UITableViewController {
 
     // MARK: -  Properties
-    var budget: Budget? {
-        didSet {
-            NotificationCenter.default.post(name: Notification.Name("BudgetSaved"), object: <#T##Any?#>)
-        }
-    }
+    var budget: Budget?
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+        NotificationCenter.default.addObserver(self, selector: #selector(loadInvestments), name: NotificationName.investmentsSet, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateViews()
         tableView.reloadData()
     }
 
@@ -50,11 +48,24 @@ class BudgetDetailTableViewController: UITableViewController {
         navigationItem.title = "\(budget.currentAmount)"
     }
     
+    @objc func loadInvestments() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
     // MARK: -  Actions
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let budget = budget else { return }
-        BudgetController.shared.save(budget: budget)
-        performSegue(withIdentifier: "toBudgetList", sender: self)
+        BudgetController.shared.save(budget: budget) {
+            for investment in budget.investments {
+                InvestmentController.shared.save(investment: investment, completion: {
+                    guard let company = investment.company else { return }
+                    CompanyController.shared.save(company: company)
+                })
+            }
+            self.performSegue(withIdentifier: "toBudgetList", sender: self)
+        }
     }
     
     // MARK: - Navigation
@@ -63,6 +74,13 @@ class BudgetDetailTableViewController: UITableViewController {
             guard let searchVC = segue.destination as? SearchTableViewController else { return }
             guard let budget = budget else { return }
             searchVC.budget = budget
+        } else if segue.identifier == "investmentDetail" {
+            guard let investmentDetailVC = segue.destination as? InvestmentDetailViewController else { return }
+            guard let budget = budget else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let investment = budget.investments[indexPath.row]
+            investmentDetailVC.budget = budget
+            investmentDetailVC.investment = investment
         }
     }
     

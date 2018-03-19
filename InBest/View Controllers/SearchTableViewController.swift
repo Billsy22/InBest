@@ -19,7 +19,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         companySearchBar.delegate = self
         guard let budget = budget else { return }
-        navigationItem.title = "\(budget.initialAmount)"
+        navigationItem.title = "\(budget.currentAmount)"
     }
     
     // MARK: -  SearchBar Delegate Method

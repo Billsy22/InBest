@@ -17,7 +17,8 @@ class BudgetController {
     let ckManager = CloudKitManager()
     var budgets: [Budget] = [] {
         didSet {
-            NotificationCenter.default.post(name: Notification.Name("budgetsSet"), object: nil)
+            print("Budgets Set")
+            NotificationCenter.default.post(name: NotificationName.budgetsSet, object: nil)
         }
     }
     var sortedBudgets: [Budget] {
@@ -27,7 +28,6 @@ class BudgetController {
     // MARK: -  CRUD
     // Save/Update Budget
     func save(budget: Budget, completion: @escaping() -> Void) {
-        print(budgets.count)
         if !budgets.contains(budget) {
             self.budgets.append(budget)
         }
@@ -36,8 +36,9 @@ class BudgetController {
                 print("\(error.localizedDescription)")
                 return
             }
-            print("saved")
         }
+        print("Budget Count: \(self.budgets.count)")
+        print("Budget Saved")
     }
     
     // Load Budgets
@@ -58,12 +59,12 @@ class BudgetController {
                 self.fetchInvestmentsFor(budget: budget, completion: {
                     for investment in budget.investments {
                         self.fetchCompany(investedIn: investment, completion: {
-                            print("Budgets Loaded")
+                            
                         })
                     }
                 })
             }
-            print("loaded")
+            print("Budgets Loaded")
         })
     }
     
@@ -71,7 +72,7 @@ class BudgetController {
     func fetchInvestmentsFor(budget: Budget, completion: @escaping() -> Void) {
         ckManager.fetchRecordOf(type: "Investment") { (records, error) in
             if let error = error {
-                print("\(error.localizedDescription)")
+                print("Error Fetching Investments: \(error.localizedDescription)")
                 return
             }
             guard let records = records else { completion(); return }
@@ -85,11 +86,11 @@ class BudgetController {
     func fetchCompany(investedIn: Investment, completion: @escaping() -> Void) {
         ckManager.fetchRecordOf(type: "Company") { (records, error) in
             if let error = error {
-                print("\(error.localizedDescription)")
+                print("Error fetching company for investment: \(error.localizedDescription)")
                 return
             }
             guard let records = records else { completion(); return }
-            let company = Company(cloudKitRecord: records[0])
+            guard let company = Company(cloudKitRecord: records[0]) else { completion(); return }
             investedIn.company = company
             completion()
         }
@@ -99,11 +100,11 @@ class BudgetController {
     func delete(budget: Budget) {
         ckManager.delete(budget: budget) { (_, error) in
             if let error = error {
-                print("\(error.localizedDescription)")
+                print("Error Deleting budget: \(error.localizedDescription)")
                 return
             }
+            guard let index = self.budgets.index(of: budget) else { return }
+            self.budgets.remove(at: index)
         }
-        guard let index = self.budgets.index(of: budget) else { return }
-        self.budgets.remove(at: index)
     }
 }

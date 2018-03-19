@@ -34,7 +34,7 @@ class CloudKitManager {
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: type, predicate: predicate)
         publicDB.perform(query, inZoneWith: nil, completionHandler: completion)
-        print("Loaded")
+        print("\(type)s Loaded from the Cloud")
     }
     
     func delete(budget: Budget, completion: @escaping((CKRecordID?, Error?) -> Void)) {

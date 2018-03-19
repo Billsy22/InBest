@@ -25,6 +25,8 @@
 		1645F26D20599AE30087F9B3 /* AllExchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = 1645F26C20599AE30087F9B3 /* AllExchanges.json */; };
 		1645F26F2059BE9D0087F9B3 /* CompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26E2059BE9D0087F9B3 /* CompanyController.swift */; };
 		1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F2702059D6370087F9B3 /* SearchResultsController.swift */; };
+		1651928E206009D00051D11C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651928D206009D00051D11C /* Constants.swift */; };
+		165192902060130A0051D11C /* InvestmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651928F2060130A0051D11C /* InvestmentDetailViewController.swift */; };
 		1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBDF205ABEF300859CAF /* StockInfoController.swift */; };
 		1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE1205AD12800859CAF /* StockInfoViewController.swift */; };
 		1672FBE6205AF26700859CAF /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE5205AF26700859CAF /* Investment.swift */; };
@@ -54,6 +56,8 @@
 		1645F26C20599AE30087F9B3 /* AllExchanges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllExchanges.json; sourceTree = "<group>"; };
 		1645F26E2059BE9D0087F9B3 /* CompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyController.swift; sourceTree = "<group>"; };
 		1645F2702059D6370087F9B3 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		1651928D206009D00051D11C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1651928F2060130A0051D11C /* InvestmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDetailViewController.swift; sourceTree = "<group>"; };
 		1672FBDF205ABEF300859CAF /* StockInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoController.swift; sourceTree = "<group>"; };
 		1672FBE1205AD12800859CAF /* StockInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
 		1672FBE5205AF26700859CAF /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				1645F26220582D7C0087F9B3 /* CloudKitManager.swift */,
+				1651928D206009D00051D11C /* Constants.swift */,
 				1608E11C2056D9100077D539 /* AppDelegate.swift */,
 				1608E1232056D9100077D539 /* Assets.xcassets */,
 				1608E1282056D9100077D539 /* Info.plist */,
@@ -141,6 +146,7 @@
 				1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */,
 				1672FBE1205AD12800859CAF /* StockInfoViewController.swift */,
 				16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */,
+				1651928F2060130A0051D11C /* InvestmentDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1645F26120582C690087F9B3 /* BudgetController.swift in Sources */,
+				1651928E206009D00051D11C /* Constants.swift in Sources */,
 				1645F26F2059BE9D0087F9B3 /* CompanyController.swift in Sources */,
 				1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */,
 				1608E13A2056FE440077D539 /* StockInfo.swift in Sources */,
@@ -267,6 +274,7 @@
 				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
 				1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */,
 				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,
+				165192902060130A0051D11C /* InvestmentDetailViewController.swift in Sources */,
 				1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

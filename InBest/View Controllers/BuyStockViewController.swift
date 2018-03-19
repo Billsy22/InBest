@@ -42,18 +42,14 @@ class BuyStockViewController: UIViewController {
     @IBAction func buyButtonTapped(_ sender: Any) {
         guard let company = company,
             let budget = budget,
+            let stockInfo = stockInfo,
             let amountAsString = moneyTextField.text, !amountAsString.isEmpty else { return }
         guard let amountOfMoney = Double(amountAsString) else { return }
-        InvestmentController.shared.investIn(company: company, amountOfMoney: amountOfMoney, fromBudget: budget)
-        performSegue(withIdentifier: "unwindToBudgetDetailVC", sender: self)
+        guard let currentPrice = Double(stockInfo.close) else { return }
+        let numberOfShares = amountOfMoney / currentPrice
+        let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
+        InvestmentController.shared.create(investment: investment)
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     }
-     */
     
     // MARK: -  UpdateViews
     func updateInitialViews() {

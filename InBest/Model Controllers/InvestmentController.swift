@@ -16,7 +16,7 @@ class InvestmentController {
     var investments: [Investment] = [] {
         didSet {
             print("Investments set")
-            NotificationCenter.default.post(name: Notification.Name("InvestmentsSet"), object: nil)
+            NotificationCenter.default.post(name: NotificationName.investmentsSet, object: nil)
         }
     }
     
@@ -26,29 +26,37 @@ class InvestmentController {
     func save(investment: Investment, completion: @escaping() -> Void) {
         ckManager.saveRecordsToCloudKit(records: [investment.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
             if let error = error {
-                print("\(error.localizedDescription)")
+                print("Error Saving Investment: \(error.localizedDescription)")
                 return
             }
             print("investment saved")
         }
     }
     
-    // Make an investment
-    func investIn(company: Company, amountOfMoney: Double, fromBudget budget: Budget) {
-        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
-            let stockInfo = StockInfoController.shared.stockInfo[0]
-            guard let stockPrice = Double(stockInfo.close) else { return }
-            if budget.currentAmount >= amountOfMoney {
-                let numberOfShares = amountOfMoney / stockPrice
-                let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
-                self.save(investment: investment, completion: {
-                    self.investments.append(investment)
-                    budget.currentAmount -= amountOfMoney
-                })
-            } else {
-                print("not enough money")
-                return
-            }
+//    // Make an investment
+//    func investIn(company: Company, amountOfMoney: Double, fromBudget budget: Budget) {
+//        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
+//            let stockInfo = StockInfoController.shared.stockInfo[0]
+//            guard let stockPrice = Double(stockInfo.close) else { return }
+//            if budget.currentAmount >= amountOfMoney {
+//                let numberOfShares = amountOfMoney / stockPrice
+//                let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
+//                self.investments.append(investment)
+//                budget.currentAmount -= amountOfMoney
+//                self.save(investment: investment, completion: {
+//                    print("Bought Stock")
+//                })
+//            } else {
+//                print("not enough money")
+//                return
+//            }
+//        }
+//    }
+//    
+    // Create Investment
+    func create(investment: Investment) {
+        self.save(investment: investment) {
+            self.investments.append(investment)
         }
     }
     
@@ -57,10 +65,12 @@ class InvestmentController {
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             let stockInfo = StockInfoController.shared.stockInfo[0]
             guard let stockPrice = Double(stockInfo.close) else { return }
-            budget.currentAmount += investment.numberOfShares * stockPrice
+            budget.currentAmount += (investment.numberOfShares * stockPrice)
             guard let index = budget.investments.index(of: investment) else { return }
             budget.investments.remove(at: index)
-            BudgetController.shared.save(budget: budget)
+            BudgetController.shared.save(budget: budget, completion: {
+                print("Stock Sold")
+            })
         }
     }
     

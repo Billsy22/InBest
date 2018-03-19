@@ -13,7 +13,7 @@ class Investment {
     
     // MARK: -  Properties
     weak var budget: Budget?
-    var company: Company? = nil
+    var company: Company?
     let initialAmountOfMoney: Double
     var currentAmount: Double
     let numberOfShares: Double

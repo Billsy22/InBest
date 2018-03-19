@@ -31,7 +31,7 @@ class StockInfoController {
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             do {
                 if let error = error {
-                    print("Error fetching stock information: \(error.localizedDescription)")
+                    print("Error fetching last weeks stock information: \(error.localizedDescription)")
                     completion()
                     return
                 }
@@ -67,7 +67,7 @@ class StockInfoController {
                 self.stockInfo = pulledStockInfo
                 completion()
             } catch let error {
-                print("Error: \(error.localizedDescription)")
+                print("Error parsing last weeks stock info: \(error.localizedDescription) *** \(error) ***")
                 completion()
             }
             
@@ -87,7 +87,7 @@ class StockInfoController {
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             do {
                 if let error = error {
-                    print("Error fetching stock information: \(error.localizedDescription)")
+                    print("Error fetching last months information: \(error.localizedDescription)")
                     completion()
                     return
                 }
@@ -123,7 +123,7 @@ class StockInfoController {
                 self.stockInfo = pulledStockInfo
                 completion()
             } catch let error {
-                print("Error: \(error.localizedDescription)")
+                print("Error parsing last months stock info: \(error.localizedDescription)")
                 completion()
             }
             
@@ -143,7 +143,7 @@ class StockInfoController {
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             do {
                 if let error = error {
-                    print("Error fetching stock information: \(error.localizedDescription)")
+                    print("Error fetching last years stock information: \(error.localizedDescription)")
                     completion()
                     return
                 }
@@ -179,7 +179,7 @@ class StockInfoController {
                 self.stockInfo = pulledStockInfo
                 completion()
             } catch let error {
-                print("Error: \(error.localizedDescription)")
+                print("Error: \(error.localizedDescription) *** \(error) ***")
                 completion()
             }
             
@@ -236,7 +236,7 @@ class StockInfoController {
                 self.stockInfo = pulledStockInfo
                 completion()
             } catch let error {
-                print("Error: \(error.localizedDescription)")
+                print("Error parsing last years stock info: \(error.localizedDescription)")
                 completion()
             }
             

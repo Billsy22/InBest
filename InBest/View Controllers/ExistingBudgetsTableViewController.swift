@@ -13,6 +13,7 @@ class ExistingBudgetsTableViewController: UITableViewController {
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(loadBudgets), name: NotificationName.budgetsSet, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,6 +42,11 @@ class ExistingBudgetsTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .left)
         }
         tableView.reloadData()
+    }
+    
+    // MARK: -  Load Budgets
+    @objc func loadBudgets() {
+        self.tableView.reloadData()
     }
     
     // MARK: - Navigation

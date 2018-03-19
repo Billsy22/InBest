@@ -17,7 +17,7 @@ class SearchResultsController {
     // MARK: -  CRUD
     func fetchCompanyInfoFor(searchTerm: String) {
         var companies: [Company] = []
-        for company in CompanyController.shared.companies {
+        for company in CompanyController.shared.companyJsonLoaded {
             if company.name.lowercased().contains(searchTerm.lowercased()) || company.symbol.lowercased().contains(searchTerm.lowercased()) {
                 companies.append(company)
             }
