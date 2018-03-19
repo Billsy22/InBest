@@ -105,23 +105,23 @@ class StockInfoController {
                 }
                 var daysArray: [StockInfo] = []
                 for (date, dictionary) in dailyDictionary {
-                    
-                    guard stockInfo = StockInfo(date: formattedDate, dictionary: dictionary) else { return }
+                    guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
 
-                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date < $1.date } )
+                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
                 var dayCounter = 0
                 var pulledStockInfo: [StockInfo] = []
                 for stockInfo in sortedArray {
                     if dayCounter < 1 {
+                        print("\(stockInfo.date)")
                         pulledStockInfo.append(stockInfo)
                         dayCounter += 1
                     } else {
                         break
                     }
                 }
-                self.stockInfo = daysArray
+                self.stockInfo = pulledStockInfo
                 completion()
             } catch let error {
                 print("Error parsing current stock info: \(error.localizedDescription)")

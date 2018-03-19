@@ -36,7 +36,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockInfoCell", for: indexPath)
         let stockInfo = StockInfoController.shared.stockInfo[indexPath.row]
-        cell.textLabel?.text = stockInfo.date
+        cell.textLabel?.text = stockInfo.dateString
         cell.detailTextLabel?.text = stockInfo.high
         return cell
     }

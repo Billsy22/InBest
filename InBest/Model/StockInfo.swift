@@ -18,8 +18,12 @@ class StockInfo {
     let close: String
     
     var date: Date {
-        guard let date = DateFormat.shared.formatDateFrom(string: dateString) else { return Date() }
-        return date
+        if let date = DateFormat.shared.formatDateFrom(string: dateString) {
+            return date
+        } else {
+            guard let date = DateFormat.shared.formatCurrentStockDateFrom(string: dateString) else { print("Wrong Format"); return Date() }
+            return date
+        }
     }
     
     // MARK: -  Keys

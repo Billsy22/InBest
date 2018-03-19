@@ -28,4 +28,21 @@ class DateFormat {
         guard let date = dateFormatter.date(from: dateAsString) else { return nil }
         return date
     }
+    
+    func formatCurrentStockDateFrom(string: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//        dateFormatter.timeZone = TimeZone(abbreviation: "EST")
+        let myDate = dateFormatter.date(from: string)
+        return myDate
+    }
+    
+    func formatDateFrom(date: Date) -> String {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.string(from: date)
+    }
 }
+
+

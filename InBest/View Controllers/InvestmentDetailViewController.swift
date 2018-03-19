@@ -40,7 +40,7 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
         guard let stockInfo = lastWeekHighs[indexPath.row] else { return UITableViewCell() }
-        cell.textLabel?.text = stockInfo.date
+        cell.textLabel?.text = stockInfo.dateString
         cell.detailTextLabel?.text = stockInfo.high
         return cell
     }
