@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StockInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StockInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITableViewDataSourcePrefetching {
     
     // MARK: -  Properties
     @IBOutlet weak var stockInfoTableView: UITableView!
@@ -18,27 +18,49 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     var budget: Budget?
     var company: Company?
     var stockInfo: StockInfo?
+    var weeklyStocks: [StockInfo?] = []
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         stockInfoTableView.delegate = self
         stockInfoTableView.dataSource = self
+//        stockInfoTableView.prefetchDataSource = self
         updateViews()
     }
     
     // MARK: -  Table View Data Source Functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return StockInfoController.shared.stockInfo.count
+        let weeklyStocksTop7 = weeklyStocks.prefix(7)
+        return weeklyStocksTop7.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockInfoCell", for: indexPath)
-        let stockInfo = StockInfoController.shared.stockInfo[indexPath.row]
+        guard let stockInfo = weeklyStocks[indexPath.row] else { return UITableViewCell() }
         cell.textLabel?.text = stockInfo.dateString
         cell.detailTextLabel?.text = stockInfo.high
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        for indexPath in indexPaths {
+            let dayStockInfo = weeklyStocks[indexPath.row]
+            
+            guard let company = company else { return }
+            //            StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol, completion: {
+            //
+            //            })
+            guard let url = StockInfoController.shared.baseURL else { return }
+            let queryItemsDictionary = ["function" : "TIME_SERIES_DAILY", "symbol" : company.symbol, "apikey" : StockInfoController.shared.apiKey]
+            let builtURL = URLHelper.url(searchTerms: queryItemsDictionary, to: url)
+            let cell = tableView.cellForRow(at: indexPath)
+            print("Prefethcing \(company.name)")
+            URLSession.shared.dataTask(with: builtURL)
+            cell?.textLabel?.text = "\(String(describing: dayStockInfo?.date))"
+            cell?.detailTextLabel?.text = "\(String(describing: dayStockInfo?.high))"
+        }
     }
     
     // MARK: - Navigation
@@ -62,15 +84,25 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
-                self.stockInfo = StockInfoController.shared.stockInfo[0]
+                self.stockInfo = StockInfoController.shared.sortedStockInfo[0]
                 guard let stockInfo = self.stockInfo else { return }
                 self.currentPriceLabel.text = stockInfo.close
-                self.stockInfoTableView.reloadData()
             }
+            self.updateTableView()
         }
     }
     
     func updateTableView() {
         guard let company = company else { return }
+        StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {
+            DispatchQueue.main.async {
+                self.weeklyStocks = StockInfoController.shared.sortedStockInfo
+                self.stockInfoTableView.reloadData()
+            }
+        }
     }
+}
+
+extension StockInfoViewController {
+    
 }

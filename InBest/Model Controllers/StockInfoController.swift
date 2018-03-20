@@ -14,6 +14,9 @@ class StockInfoController {
     static let shared = StockInfoController()
     var company: Company?
     var stockInfo: [StockInfo] = []
+    var sortedStockInfo: [StockInfo] {
+        return stockInfo.sorted(by: {$0.date > $1.date})
+    }
     let baseURL = URL(string: "https://www.alphavantage.co/query")
     let apiKey = "S4O23N9DGVQMZCNP"
     
@@ -52,18 +55,18 @@ class StockInfoController {
                     guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
-                daysArray.sort(by: { $0.date > $1.date })
-                var dayCounter = 0
-                var pulledStockInfo: [StockInfo] = []
-                for stockInfo in daysArray {
-                    if dayCounter < 7 {
-                        pulledStockInfo.append(stockInfo)
-                        dayCounter += 1
-                    } else {
-                        break
-                    }
-                }
-                self.stockInfo = pulledStockInfo
+//                daysArray.sort(by: { $0.date > $1.date })
+//                var dayCounter = 0
+//                var pulledStockInfo: [StockInfo] = []
+//                for stockInfo in daysArray {
+//                    if dayCounter < 7 {
+//                        pulledStockInfo.append(stockInfo)
+//                        dayCounter += 1
+//                    } else {
+//                        break
+//                    }
+//                }
+                self.stockInfo = daysArray
                 completion()
             } catch let error {
                 print("Error parsing last weeks stock info: \(error.localizedDescription) *** \(error) ***")
@@ -108,20 +111,20 @@ class StockInfoController {
                     guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
-
-                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
-                var dayCounter = 0
-                var pulledStockInfo: [StockInfo] = []
-                for stockInfo in sortedArray {
-                    if dayCounter < 1 {
-                        print("\(stockInfo.date)")
-                        pulledStockInfo.append(stockInfo)
-                        dayCounter += 1
-                    } else {
-                        break
-                    }
-                }
-                self.stockInfo = pulledStockInfo
+//
+//                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
+//                var dayCounter = 0
+//                var pulledStockInfo: [StockInfo] = []
+//                for stockInfo in sortedArray {
+//                    if dayCounter < 1 {
+//                        print("\(stockInfo.date)")
+//                        pulledStockInfo.append(stockInfo)
+//                        dayCounter += 1
+//                    } else {
+//                        break
+//                    }
+//                }
+                self.stockInfo = daysArray
                 completion()
             } catch let error {
                 print("Error parsing current stock info: \(error.localizedDescription)")

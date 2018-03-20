@@ -32,6 +32,7 @@
 		1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE1205AD12800859CAF /* StockInfoViewController.swift */; };
 		1672FBE6205AF26700859CAF /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE5205AF26700859CAF /* Investment.swift */; };
 		1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE7205B2F9E00859CAF /* InvestmentController.swift */; };
+		16800B2920615C5F00554E9C /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16800B2820615C5F00554E9C /* URLHelper.swift */; };
 		16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		1672FBE1205AD12800859CAF /* StockInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
 		1672FBE5205AF26700859CAF /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
 		1672FBE7205B2F9E00859CAF /* InvestmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentController.swift; sourceTree = "<group>"; };
+		16800B2820615C5F00554E9C /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				1651929120605BC20051D11C /* DateFormat.swift */,
+				16800B2820615C5F00554E9C /* URLHelper.swift */,
 				1645F26220582D7C0087F9B3 /* CloudKitManager.swift */,
 				1651928D206009D00051D11C /* Constants.swift */,
 				1608E11C2056D9100077D539 /* AppDelegate.swift */,
@@ -265,6 +268,7 @@
 				1645F26F2059BE9D0087F9B3 /* CompanyController.swift in Sources */,
 				1651929220605BC20051D11C /* DateFormat.swift in Sources */,
 				1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */,
+				16800B2920615C5F00554E9C /* URLHelper.swift in Sources */,
 				1608E13A2056FE440077D539 /* StockInfo.swift in Sources */,
 				1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */,
 				1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */,

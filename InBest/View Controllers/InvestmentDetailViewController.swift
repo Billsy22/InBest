@@ -66,9 +66,8 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
             self.currentPrice = StockInfoController.shared.stockInfo[0]
             guard let currentPrice = self.currentPrice else { return }
                 self.pricePerShareLabel.text = "\(currentPrice.close)"
-                self.updateTableViewInfo()
-                self.tableView.reloadData()
             }
+            self.updateTableViewInfo()
         }
     }
     
@@ -78,6 +77,7 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
                 self.lastWeekHighs = StockInfoController.shared.stockInfo
+                self.tableView.reloadData()
             }
         }
     }
