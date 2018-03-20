@@ -25,10 +25,12 @@ class Investment {
         } else {
             record = CKRecord(recordType: "Investment")
         }
+        ckRecordID = record.recordID
         record.setObject(initialAmountOfMoney as CKRecordValue, forKey: "InitialAmountOfMoney")
         record.setObject(currentAmount as CKRecordValue, forKey: "CurrentAmount")
         record.setObject(numberOfShares as CKRecordValue, forKey: "NumberOfShares")
-        if let budget = budget, let budgetRecordID = budget.ckRecordID {
+        if let budget = budget,
+            let budgetRecordID = budget.ckRecordID {
             let budgetReference = CKReference(recordID: budgetRecordID, action: .deleteSelf)
             record.setObject(budgetReference, forKey: "BudgetReference")
         }
@@ -60,6 +62,8 @@ extension Investment: Equatable {
     static func ==(lhs: Investment, rhs: Investment) -> Bool {
         return lhs.company == rhs.company &&
         lhs.initialAmountOfMoney == rhs.initialAmountOfMoney &&
-        lhs.numberOfShares == rhs.numberOfShares
+        lhs.numberOfShares == rhs.numberOfShares &&
+        lhs.budget == rhs.budget &&
+        lhs.ckRecordID == rhs.ckRecordID
     }
 }

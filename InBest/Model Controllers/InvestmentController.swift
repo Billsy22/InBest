@@ -53,10 +53,11 @@ class InvestmentController {
 //    }
 //    
     // Create Investment
-    func create(investment: Investment, inBudget budget: Budget) {
+    @discardableResult func createInvestmentWith(company: Company, initialAmountOfMoney: Double, numberOfShares: Double, budget: Budget) -> Investment {
+        let investment = Investment(company: company, initialAmountOfMoney: initialAmountOfMoney, numberOfShares: numberOfShares, budget: budget)
+        company.investment = investment
         budget.investments.append(investment)
-        self.save(investment: investment) {
-        }
+        return investment
     }
     
     // Sell investment

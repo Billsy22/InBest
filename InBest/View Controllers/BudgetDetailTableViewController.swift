@@ -58,14 +58,8 @@ class BudgetDetailTableViewController: UITableViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let budget = budget else { return }
         BudgetController.shared.save(budget: budget) {
-            for investment in budget.investments {
-                InvestmentController.shared.save(investment: investment, completion: {
-                    guard let company = investment.company else { return }
-                    CompanyController.shared.save(company: company)
-                })
-            }
+            self.performSegue(withIdentifier: "toBudgetList", sender: self)
         }
-        self.performSegue(withIdentifier: "toBudgetList", sender: self)
     }
     
     // MARK: - Navigation

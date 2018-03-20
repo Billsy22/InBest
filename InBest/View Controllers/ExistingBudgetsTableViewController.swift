@@ -24,7 +24,7 @@ class ExistingBudgetsTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return BudgetController.shared.sortedBudgets.count
+        return BudgetController.shared.budgets.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,12 +41,13 @@ class ExistingBudgetsTableViewController: UITableViewController {
             BudgetController.shared.delete(budget: budget)
             tableView.deleteRows(at: [indexPath], with: .left)
         }
-        tableView.reloadData()
     }
     
     // MARK: -  Load Budgets
     @objc func loadBudgets() {
-        self.tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - Navigation

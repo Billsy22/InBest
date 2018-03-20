@@ -19,14 +19,11 @@ class CloudKitManager {
     func saveRecordsToCloudKit(records: [CKRecord], database: CKDatabase, perRecordCompletion: ((CKRecord?, Error?) -> Void)?, completion: (([CKRecord]?, [CKRecordID]?, Error?) -> Void)?) {
         
         let operation = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
-        
         operation.queuePriority = .high
         operation.qualityOfService = .userInteractive
         operation.savePolicy = .changedKeys
-        
         operation.perRecordCompletionBlock = perRecordCompletion
         operation.modifyRecordsCompletionBlock = completion
-        
         database.add(operation)
     }
     
@@ -37,7 +34,24 @@ class CloudKitManager {
         print("\(type)s Loaded from the Cloud")
     }
     
-    func delete(budget: Budget, completion: @escaping((CKRecordID?, Error?) -> Void)) {
-        publicDB.delete(withRecordID: budget.ckRecordID!, completionHandler: completion)
+    // MARK: - Delete
+    
+    func deleteRecordWithID(_ recordID: CKRecordID, completion: ((_ recordID: CKRecordID?, _ error: Error?) -> Void)?) {
+        
+        publicDB.delete(withRecordID: recordID) { (recordID, error) in
+            completion?(recordID, error)
+        }
+    }
+    
+    func deleteRecordsWithID(_ recordIDs: [CKRecordID], completion: ((_ records: [CKRecord]?, _ recordIDs: [CKRecordID]?, _ error: Error?) -> Void)?) {
+        
+        let operation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: recordIDs)
+        operation.savePolicy = .changedKeys
+        operation.queuePriority = .high
+        operation.qualityOfService = .userInteractive
+        
+        operation.modifyRecordsCompletionBlock = completion
+        
+        publicDB.add(operation)
     }
 }

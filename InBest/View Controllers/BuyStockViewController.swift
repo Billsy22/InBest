@@ -47,8 +47,7 @@ class BuyStockViewController: UIViewController {
         guard let amountOfMoney = Double(amountAsString) else { return }
         guard let currentPrice = Double(stockInfo.close) else { return }
         let numberOfShares = amountOfMoney / currentPrice
-        let investment = Investment(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
-        InvestmentController.shared.create(investment: investment, inBudget: budget)
+        InvestmentController.shared.createInvestmentWith(company: company, initialAmountOfMoney: amountOfMoney, numberOfShares: numberOfShares, budget: budget)
         BudgetController.shared.save(budget: budget) {
             budget.currentAmount -= amountOfMoney
         }

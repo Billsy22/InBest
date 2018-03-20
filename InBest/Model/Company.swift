@@ -23,14 +23,17 @@ class Company {
         } else {
             record = CKRecord(recordType: "Company")
         }
+        ckRecordID = record.recordID
         record.setObject(name as CKRecordValue, forKey: "Name")
         record.setObject(symbol as CKRecordValue, forKey: "Symbol")
-        if let investment = investment, let investmentRecordID = investment.ckRecordID {
+        if let investment = investment,
+            let investmentRecordID = investment.ckRecordID {
             let investmentReference = CKReference(recordID: investmentRecordID, action: .deleteSelf)
             record.setObject(investmentReference, forKey: "InvestmentReference")
         }
         return record
     }
+    
     // MARK: -  Initializer
     init?(cloudKitRecord: CKRecord) {
         guard let name = cloudKitRecord["Name"] as? String,
@@ -53,6 +56,7 @@ class Company {
 extension Company: Equatable {
     static func ==(lhs: Company, rhs: Company) -> Bool {
         return lhs.name == rhs.name &&
-        lhs.symbol == rhs.symbol
+        lhs.symbol == rhs.symbol &&
+        lhs.ckRecordID == rhs.ckRecordID
     }
 }

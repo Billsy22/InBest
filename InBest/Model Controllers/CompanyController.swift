@@ -16,16 +16,6 @@ class CompanyController {
     var companyJsonLoaded: [Company] = []
 
     // MARK: -  CRUD
-    // Save Company for investment
-    func save(company: Company) {
-        ckManager.saveRecordsToCloudKit(records: [company.asCKRecord], database: ckManager.publicDB, perRecordCompletion: nil) { (records, _, error) in
-            if let error = error {
-                print("Error Saving Company: \(error.localizedDescription)")
-                return
-            }
-            print("Company Saved")
-        }
-    }
     
     // Load all companies json at the start
     func loadAllCompanies() {

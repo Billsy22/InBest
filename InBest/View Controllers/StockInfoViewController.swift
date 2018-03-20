@@ -64,7 +64,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
-                self.stockInfo = StockInfoController.shared.sortedStockInfo[0]
+                self.stockInfo = StockInfoController.shared.sortedStockInfo.first
                 guard let stockInfo = self.stockInfo else { return }
                 self.currentPriceLabel.text = stockInfo.close
             }
