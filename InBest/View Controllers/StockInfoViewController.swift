@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StockInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITableViewDataSourcePrefetching {
+class StockInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: -  Properties
     @IBOutlet weak var stockInfoTableView: UITableView!
@@ -25,7 +25,6 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         stockInfoTableView.delegate = self
         stockInfoTableView.dataSource = self
-//        stockInfoTableView.prefetchDataSource = self
         updateViews()
     }
     
@@ -42,25 +41,6 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.textLabel?.text = stockInfo.dateString
         cell.detailTextLabel?.text = stockInfo.high
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        for indexPath in indexPaths {
-            let dayStockInfo = weeklyStocks[indexPath.row]
-            
-            guard let company = company else { return }
-            //            StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol, completion: {
-            //
-            //            })
-            guard let url = StockInfoController.shared.baseURL else { return }
-            let queryItemsDictionary = ["function" : "TIME_SERIES_DAILY", "symbol" : company.symbol, "apikey" : StockInfoController.shared.apiKey]
-            let builtURL = URLHelper.url(searchTerms: queryItemsDictionary, to: url)
-            let cell = tableView.cellForRow(at: indexPath)
-            print("Prefethcing \(company.name)")
-            URLSession.shared.dataTask(with: builtURL)
-            cell?.textLabel?.text = "\(String(describing: dayStockInfo?.date))"
-            cell?.detailTextLabel?.text = "\(String(describing: dayStockInfo?.high))"
-        }
     }
     
     // MARK: - Navigation

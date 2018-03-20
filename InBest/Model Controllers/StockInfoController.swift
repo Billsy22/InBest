@@ -55,17 +55,6 @@ class StockInfoController {
                     guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
-//                daysArray.sort(by: { $0.date > $1.date })
-//                var dayCounter = 0
-//                var pulledStockInfo: [StockInfo] = []
-//                for stockInfo in daysArray {
-//                    if dayCounter < 7 {
-//                        pulledStockInfo.append(stockInfo)
-//                        dayCounter += 1
-//                    } else {
-//                        break
-//                    }
-//                }
                 self.stockInfo = daysArray
                 completion()
             } catch let error {
@@ -111,19 +100,6 @@ class StockInfoController {
                     guard let stockInfo = StockInfo(date: date, dictionary: dictionary) else { return }
                     daysArray.append(stockInfo)
                 }
-//
-//                let sortedArray: [StockInfo] = daysArray.sorted(by: { $0.date > $1.date } )
-//                var dayCounter = 0
-//                var pulledStockInfo: [StockInfo] = []
-//                for stockInfo in sortedArray {
-//                    if dayCounter < 1 {
-//                        print("\(stockInfo.date)")
-//                        pulledStockInfo.append(stockInfo)
-//                        dayCounter += 1
-//                    } else {
-//                        break
-//                    }
-//                }
                 self.stockInfo = daysArray
                 completion()
             } catch let error {
