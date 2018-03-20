@@ -44,17 +44,10 @@ class NewBudgetViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     @IBAction func createBudgetButtonTapped(_ sender: Any) {
         guard let amountPicked = Double(amountPicked) else { return }
         print("The picker selected: \(amountPicked)")
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let amountPicked = Double(amountPicked) else { return }
-        if segue.identifier == "newBudgetDetail" {
-            guard let detailVC = segue.destination as? BudgetDetailTableViewController else { return }
-            let budget = Budget(date: Date(), initialAmount: amountPicked)
-            detailVC.budget = budget
+        let budget = Budget(date: Date(), initialAmount: amountPicked)
+        BudgetController.shared.save(budget: budget) {
+            print("New Budget Created")
         }
+        navigationController?.popViewController(animated: true)
     }
 }

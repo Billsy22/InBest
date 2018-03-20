@@ -46,7 +46,7 @@ class BudgetDetailTableViewController: UITableViewController {
     func updateViews() {
         guard let budget = budget else { return }
         navigationItem.title = "\(budget.currentAmount)"
-    }
+    } 
     
     @objc func loadInvestments() {
         DispatchQueue.main.async {
@@ -58,8 +58,8 @@ class BudgetDetailTableViewController: UITableViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let budget = budget else { return }
         BudgetController.shared.save(budget: budget) {
-            self.performSegue(withIdentifier: "toBudgetList", sender: self)
         }
+        self.performSegue(withIdentifier: "toBudgetList", sender: self)
     }
     
     // MARK: - Navigation

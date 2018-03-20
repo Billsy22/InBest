@@ -108,7 +108,6 @@
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="createBudgetButtonTapped:" destination="eN7-hZ-ipZ" eventType="touchUpInside" id="uuP-Av-DK8"/>
-                                    <segue destination="oY7-dB-fO1" kind="show" identifier="newBudgetDetail" id="sT5-vw-ev0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoX-Zx-OXj">
@@ -314,7 +313,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-0c-SaY">
-                                <rect key="frame" x="0.0" y="131" width="375" height="487"/>
+                                <rect key="frame" x="0.0" y="151.33333333333334" width="375" height="466.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dayCell" textLabel="ayp-fg-b3w" detailTextLabel="AQK-TT-ePa" style="IBUITableViewCellStyleValue1" id="u4R-ZP-O0J">
@@ -352,7 +351,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PnY-TU-Vlf">
-                                <rect key="frame" x="83.333333333333329" y="15.000000000000007" width="208.66666666666669" height="101.66666666666669"/>
+                                <rect key="frame" x="83.333333333333329" y="15" width="208.66666666666669" height="122"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xyv-Zh-4Tr" userLabel="Company Info">
                                         <rect key="frame" x="97.333333333333329" y="0.0" width="14" height="40.666666666666664"/>
@@ -371,25 +370,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-ha-gw9" userLabel="Current Stock Info">
-                                        <rect key="frame" x="0.0" y="40.666666666666657" width="208.66666666666666" height="20.333333333333329"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price Per Share:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b32-oH-MBl">
-                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mR-cA-D9N">
-                                                <rect key="frame" x="194.66666666666669" y="0.0" width="14" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="doc-D2-Se6">
-                                        <rect key="frame" x="25.333333333333343" y="61.000000000000007" width="158" height="20.333333333333336"/>
+                                        <rect key="frame" x="25.333333333333343" y="40.666666666666657" width="158" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invested Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbM-dW-DJy">
                                                 <rect key="frame" x="0.0" y="0.0" width="134" height="20.333333333333332"/>
@@ -405,8 +387,42 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-gs-pN3">
+                                        <rect key="frame" x="34.333333333333343" y="61.000000000000007" width="140.33333333333334" height="20.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shares Owned:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyw-UY-Az8">
+                                                <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JV-Ew-Mkv">
+                                                <rect key="frame" x="126.33333333333331" y="0.0" width="14" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-ha-gw9" userLabel="Current Stock Info">
+                                        <rect key="frame" x="0.0" y="81.333333333333343" width="208.66666666666666" height="20.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price Per Share:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b32-oH-MBl">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mR-cA-D9N">
+                                                <rect key="frame" x="194.66666666666669" y="0.0" width="14" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WFK-Wh-lWY">
-                                        <rect key="frame" x="17.666666666666671" y="81.333333333333343" width="173.66666666666663" height="20.333333333333329"/>
+                                        <rect key="frame" x="17.666666666666671" y="101.66666666666666" width="173.66666666666663" height="20.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Sell Amout:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn5-QG-B1w">
                                                 <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="20.333333333333332"/>
@@ -445,6 +461,7 @@
                         <outlet property="investedAmountLabel" destination="F3h-vc-F9Y" id="aRN-8J-oD3"/>
                         <outlet property="pricePerShareLabel" destination="8mR-cA-D9N" id="kHa-rK-Lf4"/>
                         <outlet property="sellAmountLabel" destination="JTv-aa-PCs" id="HXV-O2-cnp"/>
+                        <outlet property="sharesLabel" destination="4JV-Ew-Mkv" id="hY8-bh-aNF"/>
                         <outlet property="tableView" destination="4Py-0c-SaY" id="cke-sQ-djs"/>
                     </connections>
                 </viewController>
@@ -623,7 +640,7 @@
                                                         </constraints>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -714,7 +731,4 @@
         <image name="Button" width="269" height="60"/>
         <image name="FinalDollarSign" width="41" height="91"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="OWx-RT-41c"/>
-    </inferredMetricsTieBreakers>
 </document>

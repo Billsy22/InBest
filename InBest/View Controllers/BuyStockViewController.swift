@@ -36,6 +36,7 @@ class BuyStockViewController: UIViewController {
             guard let currentPrice = Double(stockInfo.close) else { return }
             let yourShares = moneyInput / currentPrice
             yourSharesLabel.text = "\(yourShares)"
+            moneyTextField.resignFirstResponder()
         }
     }
     

@@ -21,7 +21,7 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     var investment: Investment?
     var currentPrice: StockInfo?
     var lastWeekHighs: [StockInfo?] = []
-    
+    @IBOutlet weak var sharesLabel: UILabel!
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
@@ -61,11 +61,16 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         guard let company = investment.company else { return }
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
+        investedAmountLabel.text = "\(investment.initialAmountOfMoney)"
+        sharesLabel.text = "\(investment.numberOfShares)"
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
             self.currentPrice = StockInfoController.shared.stockInfo[0]
             guard let currentPrice = self.currentPrice else { return }
+                guard let currentPriceAsDouble = Double(currentPrice.close) else { return }
                 self.pricePerShareLabel.text = "\(currentPrice.close)"
+                let sellAmount = investment.numberOfShares * currentPriceAsDouble
+                self.sellAmountLabel.text = "\(sellAmount)"
             }
             self.updateTableViewInfo()
         }
