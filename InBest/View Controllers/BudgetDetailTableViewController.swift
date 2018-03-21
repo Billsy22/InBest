@@ -18,6 +18,7 @@ class BudgetDetailTableViewController: UITableViewController {
         super.viewDidLoad()
         updateViews()
         NotificationCenter.default.addObserver(self, selector: #selector(loadInvestments), name: NotificationName.investmentsSet, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadNavigationItem), name: NotificationName.budgetAmountChanged, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,12 +46,18 @@ class BudgetDetailTableViewController: UITableViewController {
         // MARK: -  Update Views
     func updateViews() {
         guard let budget = budget else { return }
-        navigationItem.title = "$\(budget.currentAmount)"
+        navigationItem.title = "$\(budget.currentAmount.roundedToMoney())"
     } 
     
     @objc func loadInvestments() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
+        }
+    }
+    
+    @objc func reloadNavigationItem() {
+        DispatchQueue.main.async {
+            self.view.layoutIfNeeded()
         }
     }
     

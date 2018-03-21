@@ -16,7 +16,7 @@ class Investment {
     var company: Company?
     let initialAmountOfMoney: Double
     var currentAmount: Double
-    let numberOfShares: Double
+    let numberOfShares: Int
     var ckRecordID: CKRecordID?
     var asCKRecord: CKRecord {
         let record: CKRecord
@@ -41,7 +41,7 @@ class Investment {
     init?(cloudKitRecord: CKRecord) {
         guard let initialAMountOfMoney = cloudKitRecord["InitialAmountOfMoney"] as? Double,
             let currentAmountOfMoney = cloudKitRecord["CurrentAmount"] as? Double,
-            let numberOfShares = cloudKitRecord["NumberOfShares"] as? Double else { return nil }
+            let numberOfShares = cloudKitRecord["NumberOfShares"] as? Int else { return nil }
         
         self.initialAmountOfMoney = initialAMountOfMoney
         self.currentAmount = currentAmountOfMoney
@@ -49,7 +49,7 @@ class Investment {
         self.ckRecordID = cloudKitRecord.recordID
     }
     
-    init(company: Company?, initialAmountOfMoney: Double, numberOfShares: Double, budget: Budget) {
+    init(company: Company?, initialAmountOfMoney: Double, numberOfShares: Int, budget: Budget) {
         self.budget = budget
         self.company = company
         self.initialAmountOfMoney = initialAmountOfMoney

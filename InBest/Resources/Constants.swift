@@ -12,4 +12,5 @@ enum NotificationName {
     
     static let budgetsSet = Notification.Name("BudgetsSet")
     static let investmentsSet = Notification.Name("InvestmentsSet")
+    static let budgetAmountChanged = NSNotification.Name("BudgetAmountChanged")
 }

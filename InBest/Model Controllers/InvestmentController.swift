@@ -17,7 +17,7 @@ class InvestmentController {
     
     // MARK: -  CRUD
     // Create Investment
-    @discardableResult func createInvestmentWith(company: Company, initialAmountOfMoney: Double, numberOfShares: Double, budget: Budget) -> Investment {
+    @discardableResult func createInvestmentWith(company: Company, initialAmountOfMoney: Double, numberOfShares: Int, budget: Budget) -> Investment {
         let investment = Investment(company: company, initialAmountOfMoney: initialAmountOfMoney, numberOfShares: numberOfShares, budget: budget)
         company.investment = investment
         budget.investments.append(investment)
@@ -26,18 +26,14 @@ class InvestmentController {
     }
     
     // Sell investment
-    func sell(stockFrom company: Company, into budget: Budget, investment: Investment) {
-        StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
-            guard let stockInfo = StockInfoController.shared.stockInfo.last else { return }
-            guard let stockPrice = Double(stockInfo.close) else { return }
-            budget.currentAmount += (investment.numberOfShares * stockPrice)
+    func sell(stockFrom company: Company, into budget: Budget, investment: Investment, atPrice: Double) {
+            budget.currentAmount += (Double(investment.numberOfShares) * atPrice)
             guard let index = budget.investments.index(of: investment) else { return }
             budget.investments.remove(at: index)
             self.delete(investment: investment)
             BudgetController.shared.save(budget: budget, completion: {
                 print("Stock Sold")
-            })
-        }
+        })
     }
     
     //Change in investment

@@ -331,7 +331,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQK-TT-ePa">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQK-TT-ePa">
                                                     <rect key="frame" x="316" y="11.999999999999998" width="44" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -676,7 +676,6 @@
                                         <state key="normal" title="Buy"/>
                                         <connections>
                                             <action selector="buyButtonTapped:" destination="qDE-Ml-E7Q" eventType="touchUpInside" id="hOp-fb-Myc"/>
-                                            <segue destination="Gxm-wr-xQr" kind="unwind" identifier="unwindToBudgetDetailVC" unwindAction="unwindToBudgetDetailVCWithSegue:" id="GvB-EL-0VF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -701,6 +700,7 @@
                         <outlet property="pricePerShareLabel" destination="G16-RX-v2e" id="Zoy-Z8-axB"/>
                         <outlet property="sharesTextField" destination="2dp-2d-w8X" id="cS8-ys-tmP"/>
                         <outlet property="yourCostsLabel" destination="YUc-KC-0wr" id="9Xx-Um-Fbk"/>
+                        <segue destination="Gxm-wr-xQr" kind="unwind" identifier="unwindToBudgetDetailVCWithSegue" unwindAction="unwindToBudgetDetailVCWithSegue:" id="n0h-ue-gBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEC-rK-o5S" userLabel="First Responder" sceneMemberID="firstResponder"/>

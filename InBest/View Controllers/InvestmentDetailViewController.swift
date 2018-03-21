@@ -28,7 +28,7 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        updateViews()
+        updateTableViewInfo()
     }
     
     // MARK: -  Table View Data Source Functions
@@ -41,16 +41,20 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
         guard let stockInfo = lastWeekHighs[indexPath.row] else { return UITableViewCell() }
-        cell.textLabel?.text = stockInfo.dateString
-        cell.detailTextLabel?.text = stockInfo.high
+        cell.textLabel?.text = DateFormat.shared.convert(date: stockInfo.date)
+        guard let highPrice = Double(stockInfo.high),
+            let lowPrice = Double(stockInfo.low) else { return UITableViewCell() }
+        cell.detailTextLabel?.text = "High: \(highPrice.roundedToMoney())\nLow: \(lowPrice.roundedToMoney())"
         return cell
     }
     
     // MARK: -  Action
     @IBAction func sellButtonTapped(_ sender: Any) {
-        guard let investment = investment, let budget = budget else { return }
+        guard let investment = investment, let budget = budget,
+        let currentPrice = currentPrice else { return }
         guard let company = investment.company else { return }
-        InvestmentController.shared.sell(stockFrom: company, into: budget, investment: investment)
+        guard let sellPrice = Double(currentPrice.close) else { return }
+        InvestmentController.shared.sell(stockFrom: company, into: budget, investment: investment, atPrice: sellPrice)
         navigationController?.popViewController(animated: true)
     }
     
@@ -62,18 +66,18 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         guard let company = investment.company else { return }
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
-        investedAmountLabel.text = "\(investment.initialAmountOfMoney)"
+        investedAmountLabel.text = "$\(investment.initialAmountOfMoney)"
         sharesLabel.text = "\(investment.numberOfShares)"
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
-            self.currentPrice = StockInfoController.shared.stockInfo[0]
+            self.currentPrice = StockInfoController.shared.sortedStockInfo.first
             guard let currentPrice = self.currentPrice else { return }
                 guard let currentPriceAsDouble = Double(currentPrice.close) else { return }
-                self.pricePerShareLabel.text = "\(currentPrice.close)"
-                let sellAmount = investment.numberOfShares * currentPriceAsDouble
-                self.sellAmountLabel.text = "\(sellAmount)"
+                self.pricePerShareLabel.text = "$\(currentPriceAsDouble.roundedToMoney())"
+                let sellAmount = Double(investment.numberOfShares) * currentPriceAsDouble
+                self.sellAmountLabel.text = "$\(sellAmount.roundedToMoney())"
+                print(currentPrice.dateString)
             }
-            self.updateTableViewInfo()
         }
     }
     
@@ -82,9 +86,10 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         guard let company = investment.company else { return }
         StockInfoController.shared.fetchLastWeeksStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
-                self.lastWeekHighs = StockInfoController.shared.stockInfo
+                self.lastWeekHighs = StockInfoController.shared.sortedStockInfo
                 self.tableView.reloadData()
             }
         }
+        updateViews()
     }
 }

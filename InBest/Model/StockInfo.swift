@@ -11,7 +11,7 @@ import Foundation
 class StockInfo {
     
     // MARK: -  Properties
-    let dateString: String
+    var dateString: String
     let high: String
     let low: String
     let open: String

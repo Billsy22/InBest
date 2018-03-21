@@ -17,7 +17,11 @@ class Budget {
         return DateFormat.shared.convert(date: date)
     }
     let initialAmount: Double
-    var currentAmount: Double
+    var currentAmount: Double {
+        didSet {
+            NotificationCenter.default.post(name: NotificationName.budgetAmountChanged, object: nil)
+        }
+    }
     var ckRecordID: CKRecordID?
     var investments: [Investment] = [] {
         didSet {
