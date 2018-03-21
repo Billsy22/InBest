@@ -38,14 +38,14 @@ class BudgetDetailTableViewController: UITableViewController {
         let investment = budget.investments[indexPath.row]
         guard let company = investment.company else { return UITableViewCell() }
         cell.textLabel?.text = company.name
-        cell.detailTextLabel?.text = "\(investment.currentAmount)"
+        cell.detailTextLabel?.text = "Initial Investment:\n$\(investment.initialAmountOfMoney.roundedToMoney())"
         return cell
     }
     
         // MARK: -  Update Views
     func updateViews() {
         guard let budget = budget else { return }
-        navigationItem.title = "\(budget.currentAmount)"
+        navigationItem.title = "$\(budget.currentAmount)"
     } 
     
     @objc func loadInvestments() {

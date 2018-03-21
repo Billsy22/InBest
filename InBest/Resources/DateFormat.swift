@@ -14,33 +14,31 @@ class DateFormat {
     static let shared = DateFormat()
     
     // MARK: -  Format functions
-    func formatDateFrom(string: String) -> Date? {
+    func convertDateFrom(string: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         guard let date = dateFormatter.date(from: string) else { return nil }
         return date
     }
     
-    func formatDateFrom(date: Date) -> Date? {
+    func format(date: Date) -> Date? {
+        let dateFormatterSet = DateFormatter()
+        dateFormatterSet.dateFormat = "MMMM dd, yyyy"
         let dateAsString = "\(date)"
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        guard let date = dateFormatter.date(from: dateAsString) else { return nil }
-        return date
+        guard let formattedDate = dateFormatterSet.date(from: dateAsString) else { return nil }
+        return formattedDate
     }
     
     func formatCurrentStockDateFrom(string: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//        dateFormatter.timeZone = TimeZone(abbreviation: "EST")
         let myDate = dateFormatter.date(from: string)
         return myDate
     }
     
-    func formatDateFrom(date: Date) -> String {
-        
+    func convert(date: Date) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "MMMM dd, yyyy"
         return dateFormatter.string(from: date)
     }
 }

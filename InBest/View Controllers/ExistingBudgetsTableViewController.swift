@@ -30,8 +30,8 @@ class ExistingBudgetsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "budgetCell", for: indexPath)
         let budget = BudgetController.shared.sortedBudgets[indexPath.row]
-        cell.textLabel?.text = "\(budget.date)"
-        cell.detailTextLabel?.text = "\(budget.initialAmount)"
+        cell.textLabel?.text = "Start Date:\n\(budget.dateAsString)"
+        cell.detailTextLabel?.text = "Start Amount:\n\(budget.initialAmount)"
         return cell
     }
     

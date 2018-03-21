@@ -34,7 +34,8 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     // MARK: -  Table View Data Source Functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lastWeekHighs.count
+        let lastSeven = lastWeekHighs.prefix(7)
+        return lastSeven.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

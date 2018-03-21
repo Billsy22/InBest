@@ -25,7 +25,7 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         stockInfoTableView.delegate = self
         stockInfoTableView.dataSource = self
-        updateViews()
+        updateTableView()
     }
     
     // MARK: -  Table View Data Source Functions
@@ -38,8 +38,11 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockInfoCell", for: indexPath)
         guard let stockInfo = weeklyStocks[indexPath.row] else { return UITableViewCell() }
-        cell.textLabel?.text = stockInfo.dateString
-        cell.detailTextLabel?.text = stockInfo.high
+        guard let stockHigh = Double(stockInfo.high),
+            let stockLow = Double(stockInfo.low) else { return UITableViewCell() }
+        let formattedDateString = DateFormat.shared.convert(date: stockInfo.date)
+        cell.textLabel?.text = formattedDateString
+        cell.detailTextLabel?.text = "High: $\(stockHigh.roundedToMoney())\nLow: $\(stockLow.roundedToMoney())"
         return cell
     }
     
@@ -59,16 +62,16 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: -  UpdateViews
     func updateViews() {
         guard let company = company, let budget = budget else { return }
-        navigationItem.title = "\(budget.currentAmount)"
+        navigationItem.title = "$\(budget.currentAmount.roundedToMoney())"
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
             DispatchQueue.main.async {
                 self.stockInfo = StockInfoController.shared.sortedStockInfo.first
                 guard let stockInfo = self.stockInfo else { return }
-                self.currentPriceLabel.text = stockInfo.close
+                guard let currentPrice = Double(stockInfo.close) else { return }
+                self.currentPriceLabel.text = "$\(currentPrice.roundedToMoney())"
             }
-            self.updateTableView()
         }
     }
     
@@ -80,9 +83,6 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.stockInfoTableView.reloadData()
             }
         }
+        updateViews()
     }
-}
-
-extension StockInfoViewController {
-    
 }

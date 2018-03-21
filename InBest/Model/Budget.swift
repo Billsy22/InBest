@@ -12,7 +12,10 @@ import CloudKit
 class Budget {
     
     // MARK: -  Properties
-    let date: Date
+    var date: Date
+    var dateAsString: String {
+        return DateFormat.shared.convert(date: date)
+    }
     let initialAmount: Double
     var currentAmount: Double
     var ckRecordID: CKRecordID?

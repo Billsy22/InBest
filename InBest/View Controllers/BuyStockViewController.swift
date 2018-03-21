@@ -30,12 +30,12 @@ class BuyStockViewController: UIViewController {
     @IBAction func calculateCostButtonTapped(_ sender: Any) {
         guard let budget = budget,
             let stockInfo = stockInfo,
-        let moneyInputText = sharesTextField.text, !moneyInputText.isEmpty else { return }
-        guard let moneyInput = Double(moneyInputText) else { return }
-        if budget.currentAmount >= moneyInput {
-            guard let currentPrice = Double(stockInfo.close) else { return }
-            let yourShares = moneyInput / currentPrice
-            yourCostsLabel.text = "\(yourShares)"
+        let sharesInputText = sharesTextField.text, !sharesInputText.isEmpty else { return }
+        guard let sharesInput = Double(sharesInputText) else { return }
+        guard let currentPrice = Double(stockInfo.close) else { return }
+        if budget.currentAmount >= sharesInput * currentPrice {
+            let yourCost = sharesInput * currentPrice
+            yourCostsLabel.text = "\(yourCost.roundedToMoney())"
             sharesTextField.resignFirstResponder()
         }
     }

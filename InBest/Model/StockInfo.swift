@@ -18,7 +18,7 @@ class StockInfo {
     let close: String
     
     var date: Date {
-        if let date = DateFormat.shared.formatDateFrom(string: dateString) {
+        if let date = DateFormat.shared.convertDateFrom(string: dateString) {
             return date
         } else {
             guard let date = DateFormat.shared.formatCurrentStockDateFrom(string: dateString) else { print("Wrong Format"); return Date() }

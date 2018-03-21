@@ -34,6 +34,14 @@ class BudgetController {
     
     // MARK: -  CRUD
     // Save/Update Budget
+    func createBudgetOn(date: Date, initialAmount: Double) {
+        let budget = Budget(date: date, initialAmount: initialAmount)
+        budgets.append(budget)
+        save(budget: budget) {
+            print("BudgetCreated")
+        }
+    }
+    
     func save(budget: Budget, completion: @escaping() -> Void) {
         if !budgets.contains(budget) {
             self.budgets.append(budget)
