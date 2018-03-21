@@ -622,19 +622,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jSx-GL-hDo">
-                                        <rect key="frame" x="23" y="233" width="299" height="32.333333333333314"/>
+                                        <rect key="frame" x="23" y="234" width="299" height="30"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h21-iB-Ws2">
-                                                <rect key="frame" x="0.0" y="0.0" width="137.33333333333334" height="32.333333333333336"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="h21-iB-Ws2">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.33333333333334" height="30"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-rh-aXs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="32.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shares:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-rh-aXs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dp-2d-w8X">
-                                                        <rect key="frame" x="16.999999999999993" y="0.0" width="120.33333333333331" height="32.333333333333336"/>
+                                                        <rect key="frame" x="63.999999999999993" y="0.0" width="120.33333333333331" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="1pj-2x-dI2"/>
                                                         </constraints>
@@ -645,25 +645,25 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoL-zJ-fqr">
-                                                <rect key="frame" x="183" y="0.0" width="116" height="32.333333333333336"/>
-                                                <state key="normal" title="Calculate Shares"/>
+                                                <rect key="frame" x="199" y="0.0" width="100" height="30"/>
+                                                <state key="normal" title="Calculate Cost"/>
                                                 <connections>
-                                                    <action selector="calculateSharesButtonTapped:" destination="qDE-Ml-E7Q" eventType="touchUpInside" id="jAI-5Z-bdz"/>
+                                                    <action selector="calculateCostButtonTapped:" destination="qDE-Ml-E7Q" eventType="touchUpInside" id="jAI-5Z-bdz"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ySu-zG-DMX">
-                                        <rect key="frame" x="79.666666666666686" y="437.66666666666663" width="186" height="20.333333333333314"/>
+                                        <rect key="frame" x="140.33333333333334" y="436.66666666666663" width="64.333333333333343" height="20.333333333333314"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shares You Will Own:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="619-nZ-1pV">
-                                                <rect key="frame" x="0.0" y="0.0" width="162" height="20.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="619-nZ-1pV">
+                                                <rect key="frame" x="0.0" y="0.0" width="40.333333333333336" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-KC-0wr">
-                                                <rect key="frame" x="172" y="0.0" width="14" height="20.333333333333332"/>
+                                                <rect key="frame" x="50.333333333333314" y="0.0" width="14" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -697,9 +697,9 @@
                     <connections>
                         <outlet property="companyNameLabel" destination="qg8-AZ-ENf" id="OrX-HY-70X"/>
                         <outlet property="companySymbolLabel" destination="ecK-bs-zNO" id="UWK-1T-4cs"/>
-                        <outlet property="moneyTextField" destination="2dp-2d-w8X" id="cS8-ys-tmP"/>
                         <outlet property="pricePerShareLabel" destination="G16-RX-v2e" id="Zoy-Z8-axB"/>
-                        <outlet property="yourSharesLabel" destination="YUc-KC-0wr" id="9Xx-Um-Fbk"/>
+                        <outlet property="sharesTextField" destination="2dp-2d-w8X" id="cS8-ys-tmP"/>
+                        <outlet property="yourCostsLabel" destination="YUc-KC-0wr" id="9Xx-Um-Fbk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEC-rK-o5S" userLabel="First Responder" sceneMemberID="firstResponder"/>

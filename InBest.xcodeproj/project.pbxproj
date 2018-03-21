@@ -34,6 +34,7 @@
 		1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE7205B2F9E00859CAF /* InvestmentController.swift */; };
 		16800B2920615C5F00554E9C /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16800B2820615C5F00554E9C /* URLHelper.swift */; };
 		16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */; };
+		168EC8662062AA4500BCC2BE /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC8652062AA4500BCC2BE /* DoubleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		1672FBE7205B2F9E00859CAF /* InvestmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentController.swift; sourceTree = "<group>"; };
 		16800B2820615C5F00554E9C /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewController.swift; sourceTree = "<group>"; };
+		168EC8652062AA4500BCC2BE /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		1608E1322056DA470077D539 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				168EC8652062AA4500BCC2BE /* DoubleExtension.swift */,
 				1651929120605BC20051D11C /* DateFormat.swift */,
 				16800B2820615C5F00554E9C /* URLHelper.swift */,
 				1645F26220582D7C0087F9B3 /* CloudKitManager.swift */,
@@ -279,6 +282,7 @@
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
 				1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */,
 				1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */,
+				168EC8662062AA4500BCC2BE /* DoubleExtension.swift in Sources */,
 				1672FBE6205AF26700859CAF /* Investment.swift in Sources */,
 				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
 				1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */,

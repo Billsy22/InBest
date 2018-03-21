@@ -14,8 +14,8 @@ class BuyStockViewController: UIViewController {
     @IBOutlet weak var companyNameLabel: UILabel!
     @IBOutlet weak var companySymbolLabel: UILabel!
     @IBOutlet weak var pricePerShareLabel: UILabel!
-    @IBOutlet weak var yourSharesLabel: UILabel!
-    @IBOutlet weak var moneyTextField: UITextField!
+    @IBOutlet weak var yourCostsLabel: UILabel!
+    @IBOutlet weak var sharesTextField: UITextField!
     var budget: Budget?
     var company: Company?
     var stockInfo: StockInfo?
@@ -27,16 +27,16 @@ class BuyStockViewController: UIViewController {
     }
     
     // MARK: -  Actions
-    @IBAction func calculateSharesButtonTapped(_ sender: Any) {
+    @IBAction func calculateCostButtonTapped(_ sender: Any) {
         guard let budget = budget,
             let stockInfo = stockInfo,
-        let moneyInputText = moneyTextField.text, !moneyInputText.isEmpty else { return }
+        let moneyInputText = sharesTextField.text, !moneyInputText.isEmpty else { return }
         guard let moneyInput = Double(moneyInputText) else { return }
         if budget.currentAmount >= moneyInput {
             guard let currentPrice = Double(stockInfo.close) else { return }
             let yourShares = moneyInput / currentPrice
-            yourSharesLabel.text = "\(yourShares)"
-            moneyTextField.resignFirstResponder()
+            yourCostsLabel.text = "\(yourShares)"
+            sharesTextField.resignFirstResponder()
         }
     }
     
@@ -44,7 +44,7 @@ class BuyStockViewController: UIViewController {
         guard let company = company,
             let budget = budget,
             let stockInfo = stockInfo,
-            let amountAsString = moneyTextField.text, !amountAsString.isEmpty else { return }
+            let amountAsString = sharesTextField.text, !amountAsString.isEmpty else { return }
         guard let amountOfMoney = Double(amountAsString) else { return }
         guard let currentPrice = Double(stockInfo.close) else { return }
         let numberOfShares = amountOfMoney / currentPrice

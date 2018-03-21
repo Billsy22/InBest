@@ -43,7 +43,6 @@ class MainViewController: UIViewController {
                 self.moneyImageView.center = originPoint
             }) { (_) in
                 self.animateMoneyImageView()
-                
             }
         }
     }
