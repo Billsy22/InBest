@@ -25,7 +25,6 @@ class Investment {
         } else {
             record = CKRecord(recordType: "Investment")
         }
-        ckRecordID = record.recordID
         record.setObject(initialAmountOfMoney as CKRecordValue, forKey: "InitialAmountOfMoney")
         record.setObject(currentAmount as CKRecordValue, forKey: "CurrentAmount")
         record.setObject(numberOfShares as CKRecordValue, forKey: "NumberOfShares")
@@ -34,6 +33,7 @@ class Investment {
             let budgetReference = CKReference(recordID: budgetRecordID, action: .deleteSelf)
             record.setObject(budgetReference, forKey: "BudgetReference")
         }
+        ckRecordID = record.recordID
         return record
     }
     

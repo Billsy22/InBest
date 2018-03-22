@@ -49,6 +49,70 @@
             endingLineNumber = "51"
             landmarkName = "buyButtonTapped(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InBest.BuyStockViewController.buyButtonTapped(Any) -&gt; ()"
+                  moduleName = "InBest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorbills/Desktop/DevMountain/Personal%20Capstone/InBest/InBest/InBest/View%20Controllers/BuyStockViewController.swift"
+                  timestampString = "543450926.016126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1563">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.UIAlertAction) -&gt; () in InBest.BuyStockViewController.buyButtonTapped(Any) -&gt; ()"
+                  moduleName = "InBest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/taylorbills/Desktop/DevMountain/Personal%20Capstone/InBest/InBest/InBest/View%20Controllers/BuyStockViewController.swift"
+                  timestampString = "543450926.021585"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InBest/Model/Budget.swift"
+            timestampString = "543451234.721447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "asCKRecord"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InBest/Model Controllers/BudgetController.swift"
+            timestampString = "543451234.7215101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "createBudgetOn(date:initialAmount:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

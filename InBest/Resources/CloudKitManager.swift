@@ -27,8 +27,7 @@ class CloudKitManager {
         database.add(operation)
     }
     
-    func fetchRecordOf(type: String, completion: @escaping(([CKRecord]?, Error?) -> Void)) {
-        let predicate = NSPredicate(value: true)
+    func fetchRecordOf(type: String, predicate: NSPredicate, completion: @escaping(([CKRecord]?, Error?) -> Void)) {
         let query = CKQuery(recordType: type, predicate: predicate)
         publicDB.perform(query, inZoneWith: nil, completionHandler: completion)
         print("\(type)s Loaded from the Cloud")

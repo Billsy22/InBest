@@ -35,7 +35,8 @@ class BudgetController {
     // MARK: -  CRUD
     // Save/Update Budget
     func createBudgetOn(date: Date, initialAmount: Double) {
-        let budget = Budget(date: date, initialAmount: initialAmount)
+        guard let currentUser = CustomUserController.shared.currentUser else { return }
+        let budget = Budget(customUser: currentUser, date: date, initialAmount: initialAmount)
         budgets.append(budget)
         save(budget: budget) {
             print("BudgetCreated")
@@ -66,7 +67,8 @@ class BudgetController {
     
     // Load Budgets
     func load() {
-        ckManager.fetchRecordOf(type: "Budget", completion: { (records, error) in
+        let predicate = NSPredicate(value: true)
+        ckManager.fetchRecordOf(type: "Budget", predicate: predicate, completion: { (records, error) in
             if let error = error {
                 print("Error loading form the cloud: \(error.localizedDescription)")
                 return
@@ -91,7 +93,8 @@ class BudgetController {
     
     // Fetch Investments
     func fetchInvestmentsFor(budget: Budget, completion: @escaping() -> Void) {
-        ckManager.fetchRecordOf(type: "Investment") { (records, error) in
+        let predicate = NSPredicate(value: true)
+        ckManager.fetchRecordOf(type: "Investment", predicate: predicate) { (records, error) in
             if let error = error {
                 print("Error Fetching Investments: \(error.localizedDescription)")
                 return
@@ -105,7 +108,8 @@ class BudgetController {
     
     // Fetch Companies
     func fetchCompany(investment: Investment, completion: @escaping() -> Void) {
-        ckManager.fetchRecordOf(type: "Company") { (records, error) in
+        let predicate = NSPredicate(value: true)
+        ckManager.fetchRecordOf(type: "Company", predicate: predicate) { (records, error) in
             if let error = error {
                 print("Error fetching company for investment: \(error.localizedDescription)")
                 return
