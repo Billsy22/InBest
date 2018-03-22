@@ -16,6 +16,7 @@ class Company {
     let name: String
     let symbol: String
     var ckRecordID: CKRecordID?
+    
     var asCKRecord: CKRecord {
         let record: CKRecord
         if let recordID = ckRecordID {
