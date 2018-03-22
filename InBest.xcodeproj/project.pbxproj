@@ -35,6 +35,8 @@
 		16800B2920615C5F00554E9C /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16800B2820615C5F00554E9C /* URLHelper.swift */; };
 		16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */; };
 		168EC8662062AA4500BCC2BE /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC8652062AA4500BCC2BE /* DoubleExtension.swift */; };
+		16E76226206440C000114D3A /* CustomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E76225206440C000114D3A /* CustomUser.swift */; };
+		16E76228206454D200114D3A /* CustomUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E76227206454D200114D3A /* CustomUserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		16800B2820615C5F00554E9C /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewController.swift; sourceTree = "<group>"; };
 		168EC8652062AA4500BCC2BE /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		16E76225206440C000114D3A /* CustomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUser.swift; sourceTree = "<group>"; };
+		16E76227206454D200114D3A /* CustomUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 		1608E1352056DA630077D539 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				16E76227206454D200114D3A /* CustomUserController.swift */,
 				1645F26020582C690087F9B3 /* BudgetController.swift */,
 				1672FBE7205B2F9E00859CAF /* InvestmentController.swift */,
 				1645F26E2059BE9D0087F9B3 /* CompanyController.swift */,
@@ -176,6 +181,7 @@
 		1608E1362056DA6C0077D539 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16E76225206440C000114D3A /* CustomUser.swift */,
 				1645F25C205827BC0087F9B3 /* Budget.swift */,
 				1672FBE5205AF26700859CAF /* Investment.swift */,
 				1608E1372056E1700077D539 /* Company.swift */,
@@ -277,6 +283,7 @@
 				1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */,
 				1645F25D205827BC0087F9B3 /* Budget.swift in Sources */,
 				1608E1382056E1700077D539 /* Company.swift in Sources */,
+				16E76228206454D200114D3A /* CustomUserController.swift in Sources */,
 				16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */,
 				1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */,
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
@@ -287,6 +294,7 @@
 				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
 				1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */,
 				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,
+				16E76226206440C000114D3A /* CustomUser.swift in Sources */,
 				165192902060130A0051D11C /* InvestmentDetailViewController.swift in Sources */,
 				1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */,
 			);

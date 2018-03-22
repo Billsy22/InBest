@@ -12,6 +12,7 @@ import CloudKit
 class Budget {
     
     // MARK: -  Properties
+    weak var customUser: CustomUser?
     var date: Date
     var dateAsString: String {
         return DateFormat.shared.convert(date: date)
@@ -39,12 +40,18 @@ class Budget {
         record.setObject(date as CKRecordValue, forKey: "DateCreated")
         record.setObject(initialAmount as CKRecordValue, forKey: "InitialAmount")
         record.setObject(currentAmount as CKRecordValue, forKey: "CurrentAmount")
+        if let customUser = customUser,
+            let customUserRecordID = customUser.ckRecordID {
+            let customUserReference = CKReference(recordID: customUserRecordID, action: .deleteSelf)
+            record.setObject(customUserReference, forKey: "CustomUserReference")
+        }
         ckRecordID = record.recordID
         return record
     }
     
     // MARK: -  Initializers
-    init(date: Date, initialAmount: Double) {
+    init(customUser: CustomUser, date: Date, initialAmount: Double) {
+        self.customUser = customUser
         self.date = date
         self.initialAmount = initialAmount
         self.currentAmount = initialAmount

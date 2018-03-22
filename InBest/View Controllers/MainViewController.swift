@@ -13,12 +13,17 @@ class MainViewController: UIViewController {
     // MARK: -  Properties
     @IBOutlet weak var moneyImageView: UIImageView!
     
+    private let hasCreatedScreenNameKey = "hasCreatedScreenName"
+    
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        BudgetController.shared.load()
-        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        showCreateScreenNameAlert()
+        CustomUserController.shared.fetchCurrentUser {
+            BudgetController.shared.load()
+        }
         CompanyController.shared.loadAllCompanies()
+        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -46,6 +51,28 @@ class MainViewController: UIViewController {
             }
         }
     }
+    
+    
+    
+    func showCreateScreenNameAlert() {
+        guard UserDefaults.standard.bool(forKey: hasCreatedScreenNameKey) != true else { return }
+        let alert = UIAlertController(title: "Welcome", message: "Please pick a screen name. This can not be changed.", preferredStyle: .alert)
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Enter Screen Name..."
+        }
+        let enter = UIAlertAction(title: "OK", style: .default) { (action) in
+            guard let textFields = alert.textFields else { return }
+            guard let screenName = textFields.first?.text, !screenName.isEmpty else { return }
+            CustomUserController.shared.createUserWith(screenName: screenName, completion: {
+                UserDefaults.standard.set(true, forKey: self.hasCreatedScreenNameKey)
+                print("CustomUser Created")
+            })
+        }
+        alert.addAction(enter)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
     
     /*
      // MARK: - Navigation

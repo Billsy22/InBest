@@ -10,10 +10,13 @@ import UIKit
 
 class ExistingBudgetsTableViewController: UITableViewController {
     
+    var currentUser = CustomUserController.shared.currentUser
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(loadBudgets), name: NotificationName.budgetsSet, object: nil)
+        guard let currentUser = currentUser else { return }
+        navigationItem.title = currentUser.screenName
     }
     
     override func viewWillAppear(_ animated: Bool) {
