@@ -9,7 +9,7 @@
 import UIKit
 
 class BudgetDetailTableViewController: UITableViewController {
-
+    
     // MARK: -  Properties
     var budget: Budget?
     
@@ -26,7 +26,7 @@ class BudgetDetailTableViewController: UITableViewController {
         updateViews()
         tableView.reloadData()
     }
-
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let budget = budget else { return 0 }
@@ -43,7 +43,7 @@ class BudgetDetailTableViewController: UITableViewController {
         return cell
     }
     
-        // MARK: -  Update Views
+    // MARK: -  Update Views
     func updateViews() {
         guard let budget = budget else { return }
         navigationItem.title = "$\(budget.currentAmount.roundedToMoney())"
