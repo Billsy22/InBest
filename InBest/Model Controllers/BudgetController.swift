@@ -66,7 +66,7 @@ class BudgetController {
     }
     
     // Load Budgets
-    func load() {
+    func load(completion: @escaping () -> Void = { }) {
         let predicate = NSPredicate(value: true)
         ckManager.fetchRecordOf(type: "Budget", predicate: predicate, completion: { (records, error) in
             if let error = error {
@@ -80,20 +80,37 @@ class BudgetController {
                 budgetsPulled.append(newBudget)
             }
             self.budgets = budgetsPulled
+            let dispatchGroup = DispatchGroup()
             for budget in self.budgets {
+                dispatchGroup.enter()
                 self.fetchInvestmentsFor(budget: budget, completion: {
+                    let subgroup = DispatchGroup()
+                
                     for investment in budget.investments {
-                        self.fetchCompany(investment: investment, completion: {})
+                        subgroup.enter()
+                        self.fetchCompany(investment: investment, completion: {
+                            subgroup.leave()
+                        })
                     }
+                    
+                    subgroup.notify(queue: DispatchQueue.main, execute: {
+                        dispatchGroup.leave()
+                    })
+                    
                 })
             }
-            print("Budgets Loaded")
+            
+            dispatchGroup.notify(queue: DispatchQueue.main, execute: {
+                completion()
+                print("Budgets Loaded")
+            })
         })
     }
     
     // Fetch Investments
     func fetchInvestmentsFor(budget: Budget, completion: @escaping() -> Void) {
-        let predicate = NSPredicate(value: true)
+        guard let budgetRecordID = budget.ckRecordID else { completion(); return }
+        let predicate = NSPredicate(format: "BudgetReference == %@", budgetRecordID)
         ckManager.fetchRecordOf(type: "Investment", predicate: predicate) { (records, error) in
             if let error = error {
                 print("Error Fetching Investments: \(error.localizedDescription)")
@@ -108,15 +125,16 @@ class BudgetController {
     
     // Fetch Companies
     func fetchCompany(investment: Investment, completion: @escaping() -> Void) {
-        let predicate = NSPredicate(value: true)
+        guard let investmentRecordID = investment.ckRecordID else { completion(); return }
+        let predicate = NSPredicate(format: "InvestmentReference == %@", investmentRecordID)
         ckManager.fetchRecordOf(type: "Company", predicate: predicate) { (records, error) in
             if let error = error {
                 print("Error fetching company for investment: \(error.localizedDescription)")
                 return
             }
             guard let records = records else { completion(); return }
-            guard let company = Company(cloudKitRecord: records[0]) else { completion(); return }
-            investment.company = company
+            let companies = records.flatMap( {Company(cloudKitRecord: $0)} )
+            investment.company = companies.first
             completion()
         }
     }
