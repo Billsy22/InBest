@@ -15,6 +15,7 @@
 		1608E1382056E1700077D539 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1372056E1700077D539 /* Company.swift */; };
 		1608E13A2056FE440077D539 /* StockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1392056FE440077D539 /* StockInfo.swift */; };
 		1608E13C2057207B0077D539 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E13B2057207B0077D539 /* MainViewController.swift */; };
+		160D1EE020693B9100D6414B /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D1EDF20693B9100D6414B /* LineChart.swift */; };
 		1645F25D205827BC0087F9B3 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25C205827BC0087F9B3 /* Budget.swift */; };
 		1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25E205828630087F9B3 /* NewBudgetViewController.swift */; };
 		1645F26120582C690087F9B3 /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26020582C690087F9B3 /* BudgetController.swift */; };
@@ -34,7 +35,7 @@
 		1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE7205B2F9E00859CAF /* InvestmentController.swift */; };
 		16800B2920615C5F00554E9C /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16800B2820615C5F00554E9C /* URLHelper.swift */; };
 		16890E37205C24A700A9B2A1 /* BuyStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */; };
-		168EC8662062AA4500BCC2BE /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC8652062AA4500BCC2BE /* DoubleExtension.swift */; };
+		168EC8662062AA4500BCC2BE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC8652062AA4500BCC2BE /* Extensions.swift */; };
 		16E76226206440C000114D3A /* CustomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E76225206440C000114D3A /* CustomUser.swift */; };
 		16E76228206454D200114D3A /* CustomUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E76227206454D200114D3A /* CustomUserController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		1608E1372056E1700077D539 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		1608E1392056FE440077D539 /* StockInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfo.swift; sourceTree = "<group>"; };
 		1608E13B2057207B0077D539 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		160D1EDF20693B9100D6414B /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		1645F25C205827BC0087F9B3 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		1645F25E205828630087F9B3 /* NewBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBudgetViewController.swift; sourceTree = "<group>"; };
 		1645F26020582C690087F9B3 /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
@@ -70,7 +72,7 @@
 		1672FBE7205B2F9E00859CAF /* InvestmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentController.swift; sourceTree = "<group>"; };
 		16800B2820615C5F00554E9C /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		16890E36205C24A700A9B2A1 /* BuyStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewController.swift; sourceTree = "<group>"; };
-		168EC8652062AA4500BCC2BE /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		168EC8652062AA4500BCC2BE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		16E76225206440C000114D3A /* CustomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUser.swift; sourceTree = "<group>"; };
 		16E76227206454D200114D3A /* CustomUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +131,8 @@
 		1608E1322056DA470077D539 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				168EC8652062AA4500BCC2BE /* DoubleExtension.swift */,
+				160D1EDF20693B9100D6414B /* LineChart.swift */,
+				168EC8652062AA4500BCC2BE /* Extensions.swift */,
 				1651929120605BC20051D11C /* DateFormat.swift */,
 				16800B2820615C5F00554E9C /* URLHelper.swift */,
 				1645F26220582D7C0087F9B3 /* CloudKitManager.swift */,
@@ -289,7 +292,8 @@
 				1608E13C2057207B0077D539 /* MainViewController.swift in Sources */,
 				1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */,
 				1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */,
-				168EC8662062AA4500BCC2BE /* DoubleExtension.swift in Sources */,
+				168EC8662062AA4500BCC2BE /* Extensions.swift in Sources */,
+				160D1EE020693B9100D6414B /* LineChart.swift in Sources */,
 				1672FBE6205AF26700859CAF /* Investment.swift in Sources */,
 				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
 				1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */,
