@@ -20,7 +20,10 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         showCreateScreenNameAlert()
         CustomUserController.shared.fetchCurrentUser {
-            BudgetController.shared.load()
+            guard let currentUser = CustomUserController.shared.currentUser else { return }
+            BudgetController.shared.load(currentUser: currentUser, completion: {
+                print("CurrentUser set. Screen name is: \(currentUser)")
+            })
         }
         CompanyController.shared.loadAllCompanies()
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")

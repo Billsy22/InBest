@@ -66,8 +66,10 @@ class BudgetController {
     }
     
     // Load Budgets
-    func load(completion: @escaping () -> Void = { }) {
-        let predicate = NSPredicate(value: true)
+    // TODO: - Modify Predicate
+    func load(currentUser: CustomUser, completion: @escaping () -> Void = { }) {
+        guard let currentUserRecordID = currentUser.ckRecordID else {completion(); return }
+        let predicate = NSPredicate(format: "CustomUserReference == %@", currentUserRecordID)
         ckManager.fetchRecordOf(type: "Budget", predicate: predicate, completion: { (records, error) in
             if let error = error {
                 print("Error loading form the cloud: \(error.localizedDescription)")
