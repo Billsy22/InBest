@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -21,6 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lC0-Eh-43I">
+                                <rect key="frame" x="157.66666666666666" y="615" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lwr-wK-rne"/>
+                                    <constraint firstAttribute="width" constant="60" id="mYH-Zt-Gbl"/>
+                                    <constraint firstAttribute="width" secondItem="lC0-Eh-43I" secondAttribute="height" multiplier="1:1" id="vu2-7Z-ZjT"/>
+                                </constraints>
+                            </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XzA-2V-Rl8">
                                 <rect key="frame" x="0.0" y="15" width="375" height="660"/>
                                 <subviews>
@@ -65,6 +74,8 @@
                         <constraints>
                             <constraint firstItem="XzA-2V-Rl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nhq-nn-eeg"/>
                             <constraint firstItem="XzA-2V-Rl8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ox3-ls-Bno"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lC0-Eh-43I" secondAttribute="bottom" constant="15" id="XFC-es-m2I"/>
+                            <constraint firstItem="lC0-Eh-43I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bI0-ei-Xqu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XzA-2V-Rl8" secondAttribute="bottom" constant="15" id="mSd-8g-PYk"/>
                             <constraint firstItem="XzA-2V-Rl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="tmn-LS-j9A"/>
                         </constraints>
@@ -72,7 +83,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="CrL-BE-bzq"/>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="lC0-Eh-43I" id="Hks-Ef-SgL"/>
                         <outlet property="moneyImageView" destination="gLD-RI-iPg" id="kRd-hX-54l"/>
+                        <outlet property="myBudgetsButton" destination="fAc-58-o4q" id="J0y-UT-qlR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

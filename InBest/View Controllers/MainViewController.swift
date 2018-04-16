@@ -12,13 +12,18 @@ class MainViewController: UIViewController {
     
     // MARK: -  Properties
     @IBOutlet weak var moneyImageView: UIImageView!
-    
+    @IBOutlet weak var myBudgetsButton: UIButton!
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     private let hasCreatedScreenNameKey = "hasCreatedScreenName"
     
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         showCreateScreenNameAlert()
+        myBudgetsButton.isEnabled = false
+        myBudgetsButton.setTitle("", for: .disabled)
+        loadingActivityIndicator.color = myBudgetsButton.titleColor(for: .normal)
+        loadingActivityIndicator.startAnimating()
         CustomUserController.shared.fetchCurrentUser {
             guard let currentUser = CustomUserController.shared.currentUser else { return }
             BudgetController.shared.load(currentUser: currentUser, completion: {
@@ -27,6 +32,7 @@ class MainViewController: UIViewController {
         }
         CompanyController.shared.loadAllCompanies()
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        NotificationCenter.default.addObserver(self, selector: #selector(activateButton), name: NSNotification.Name("Budgets Loaded"), object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,7 +61,12 @@ class MainViewController: UIViewController {
         }
     }
     
-    
+    @objc func activateButton() {
+        loadingActivityIndicator.stopAnimating()
+        loadingActivityIndicator.isHidden = true
+        myBudgetsButton.isEnabled = true
+        myBudgetsButton.setTitle("My Budgets", for: .normal)
+    }
     
     func showCreateScreenNameAlert() {
         guard UserDefaults.standard.bool(forKey: hasCreatedScreenNameKey) != true else { return }

@@ -104,6 +104,7 @@ class BudgetController {
             
             dispatchGroup.notify(queue: DispatchQueue.main, execute: {
                 completion()
+                NotificationCenter.default.post(name: NSNotification.Name("Budgets Loaded"), object: nil)
                 print("Budgets Loaded")
             })
         })
