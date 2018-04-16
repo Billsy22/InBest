@@ -23,7 +23,6 @@
 		1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */; };
 		1645F2672058627B0087F9B3 /* BudgetDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */; };
 		1645F26B2059820F0087F9B3 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */; };
-		1645F26D20599AE30087F9B3 /* AllExchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = 1645F26C20599AE30087F9B3 /* AllExchanges.json */; };
 		1645F26F2059BE9D0087F9B3 /* CompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26E2059BE9D0087F9B3 /* CompanyController.swift */; };
 		1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F2702059D6370087F9B3 /* SearchResultsController.swift */; };
 		1651928E206009D00051D11C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651928D206009D00051D11C /* Constants.swift */; };
@@ -31,6 +30,7 @@
 		1651929220605BC20051D11C /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651929120605BC20051D11C /* DateFormat.swift */; };
 		165939C220850A5400B64B6C /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165939C120850A5400B64B6C /* InvestmentTableViewCell.swift */; };
 		165939C42085157D00B64B6C /* SearchCompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165939C32085157D00B64B6C /* SearchCompanyTableViewCell.swift */; };
+		165939C620853F5A00B64B6C /* All Exchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = 165939C520853F5A00B64B6C /* All Exchanges.json */; };
 		1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBDF205ABEF300859CAF /* StockInfoController.swift */; };
 		1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE1205AD12800859CAF /* StockInfoViewController.swift */; };
 		1672FBE6205AF26700859CAF /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE5205AF26700859CAF /* Investment.swift */; };
@@ -62,7 +62,6 @@
 		1645F26420583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingBudgetsTableViewController.swift; sourceTree = "<group>"; };
 		1645F2662058627B0087F9B3 /* BudgetDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailTableViewController.swift; sourceTree = "<group>"; };
 		1645F26A2059820F0087F9B3 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		1645F26C20599AE30087F9B3 /* AllExchanges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllExchanges.json; sourceTree = "<group>"; };
 		1645F26E2059BE9D0087F9B3 /* CompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyController.swift; sourceTree = "<group>"; };
 		1645F2702059D6370087F9B3 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		1651928D206009D00051D11C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		1651929120605BC20051D11C /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		165939C120850A5400B64B6C /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		165939C32085157D00B64B6C /* SearchCompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompanyTableViewCell.swift; sourceTree = "<group>"; };
+		165939C520853F5A00B64B6C /* All Exchanges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "All Exchanges.json"; path = "../../../../../../../Downloads/Exchanges/All Exchanges.json"; sourceTree = "<group>"; };
 		1672FBDF205ABEF300859CAF /* StockInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoController.swift; sourceTree = "<group>"; };
 		1672FBE1205AD12800859CAF /* StockInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
 		1672FBE5205AF26700859CAF /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				1672FBE5205AF26700859CAF /* Investment.swift */,
 				1608E1372056E1700077D539 /* Company.swift */,
 				1608E1392056FE440077D539 /* StockInfo.swift */,
-				1645F26C20599AE30087F9B3 /* AllExchanges.json */,
+				165939C520853F5A00B64B6C /* All Exchanges.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1608E1272056D9100077D539 /* LaunchScreen.storyboard in Resources */,
-				1645F26D20599AE30087F9B3 /* AllExchanges.json in Resources */,
+				165939C620853F5A00B64B6C /* All Exchanges.json in Resources */,
 				1608E1242056D9100077D539 /* Assets.xcassets in Resources */,
 				1608E1222056D9100077D539 /* Main.storyboard in Resources */,
 			);

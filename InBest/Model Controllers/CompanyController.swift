@@ -14,12 +14,12 @@ class CompanyController {
     static let shared = CompanyController()
     let ckManager = CloudKitManager()
     var companyJsonLoaded: [Company] = []
-
+    
     // MARK: -  CRUD
     
     // Load all companies json at the start
     func loadAllCompanies() {
-        guard let path = Bundle.main.path(forResource: "AllExchanges", ofType: "json") else { return }
+        guard let path = Bundle.main.path(forResource: "All Exchanges", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
         do {
             let data = try Data(contentsOf: url)
@@ -29,6 +29,12 @@ class CompanyController {
             for (symbol, dictionary) in companiesDictionary {
                 guard let company = Company(symbol: symbol, dictionary: dictionary) else { return }
                 companies.append(company)
+            }
+            for company in companies {
+                if company.symbol.contains("^") || company.symbol.contains(".") || company.symbol.contains("$") {
+                    guard let index = companies.index(of: company) else { return }
+                    companies.remove(at: index)
+                }
             }
             self.companyJsonLoaded = companies
         } catch let error {
