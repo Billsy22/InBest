@@ -39,10 +39,11 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "companyCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "companyCell", for: indexPath) as? SearchCompanyTableViewCell else { return UITableViewCell() }
         let company = SearchResultsController.shared.searchedCompanies[indexPath.row]
-        cell.textLabel?.text = company.name
-        cell.detailTextLabel?.text = company.symbol
+        DispatchQueue.main.async {
+            cell.company = company
+        }
         return cell
     }
     

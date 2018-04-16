@@ -239,7 +239,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/aphb",
     "": ""
   },
-  "ARNC^": {
+  "ARNC": {
     "Name": "Arconic Inc.",
     "LastSale": 87.5,
     "MarketCap": "n/a",
@@ -267,16 +267,6 @@
     "Sector": "Consumer Services",
     "industry": "Professional Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/ainc",
-    "": ""
-  },
-  "ASB.WS": {
-    "Name": "Associated Banc-Corp",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/asb.ws",
     "": ""
   },
   "AST": {
@@ -359,14 +349,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bcv",
     "": ""
   },
-  "BCV^A": {
+  "BCV": {
     "Name": "Bancroft Fund Limited",
     "LastSale": 26,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bcv^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/bcv",
     "": ""
   },
   "BHB": {
@@ -417,16 +407,6 @@
     "Sector": "Health Care",
     "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
     "Summary Quote": "https://www.nasdaq.com/symbol/btx",
-    "": ""
-  },
-  "BTX.WS": {
-    "Name": "BioTime, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/btx.ws",
     "": ""
   },
   "BGI": {
@@ -519,34 +499,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/brg",
     "": ""
   },
-  "BRG^A": {
+  "BRG": {
     "Name": "Bluerock Residential Growth REIT, Inc.",
     "LastSale": 25.02,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/brg^a",
-    "": ""
-  },
-  "BRG^C": {
-    "Name": "Bluerock Residential Growth REIT, Inc.",
-    "LastSale": 23.29,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/brg^c",
-    "": ""
-  },
-  "BRG^D": {
-    "Name": "Bluerock Residential Growth REIT, Inc.",
-    "LastSale": 21.59,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/brg^d",
+    "Summary Quote": "https://www.nasdaq.com/symbol/brg",
     "": ""
   },
   "BVX": {
@@ -559,7 +519,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bvx",
     "": ""
   },
-  "BWL.A": {
+  "BWL": {
     "Name": "Bowl America, Inc.",
     "LastSale": "n/a",
     "MarketCap": "n/a",
@@ -627,16 +587,6 @@
     "Sector": "Health Care",
     "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
     "Summary Quote": "https://www.nasdaq.com/symbol/cvm",
-    "": ""
-  },
-  "CVM.WS": {
-    "Name": "Cel-Sci Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cvm.ws",
     "": ""
   },
   "CET": {
@@ -719,7 +669,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cphi",
     "": ""
   },
-  "CISN.WS": {
+  "CISN": {
     "Name": "Cision Ltd.",
     "LastSale": "n/a",
     "MarketCap": "n/a",
@@ -1299,14 +1249,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ecf",
     "": ""
   },
-  "ECF^A": {
+  "ECF": {
     "Name": "Ellsworth Growth and Income Fund Ltd.",
     "LastSale": 24.62,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ecf^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ecf",
     "": ""
   },
   "EMAN": {
@@ -1347,16 +1297,6 @@
     "Sector": "Basic Industries",
     "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
     "Summary Quote": "https://www.nasdaq.com/symbol/uuuu",
-    "": ""
-  },
-  "UUUU.WS": {
-    "Name": "Energy Fuels Inc",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/uuuu.ws",
     "": ""
   },
   "ENRJ": {
@@ -1529,16 +1469,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ggn",
     "": ""
   },
-  "GGN^B": {
-    "Name": "GAMCO Global Gold, Natural Reources & Income Trust",
-    "LastSale": 23.77,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ggn^b",
-    "": ""
-  },
   "GST": {
     "Name": "Gastar Exploration Inc.",
     "LastSale": 0.742,
@@ -1549,24 +1479,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gst",
     "": ""
   },
-  "GST^A": {
+  "GST": {
     "Name": "Gastar Exploration Inc.",
     "LastSale": 15.77,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gst^a",
-    "": ""
-  },
-  "GST^B": {
-    "Name": "Gastar Exploration Inc.",
-    "LastSale": 16.44,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gst^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gst",
     "": ""
   },
   "JOB": {
@@ -1729,16 +1649,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/glf",
     "": ""
   },
-  "GLF.WS": {
-    "Name": "GulfMark Offshore, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/glf.ws",
-    "": ""
-  },
   "HEB": {
     "Name": "Hemispherx BioPharma, Inc.",
     "LastSale": 0.463,
@@ -1759,27 +1669,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/hcac",
     "": ""
   },
-  "HCAC.U": {
-    "Name": "Hennessy Capital Acquisition Corp. III",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hcac.u",
-    "": ""
-  },
-  "HCAC.WS": {
-    "Name": "Hennessy Capital Acquisition Corp. III",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hcac.ws",
-    "": ""
-  },
-  "HLM^": {
+  "HLM": {
     "Name": "Hillman Group Capital Trust",
     "LastSale": 34.7129,
     "MarketCap": "n/a",
@@ -1847,16 +1737,6 @@
     "Sector": "Health Care",
     "industry": "Major Pharmaceuticals",
     "Summary Quote": "https://www.nasdaq.com/symbol/imuc",
-    "": ""
-  },
-  "IMUC.WS": {
-    "Name": "ImmunoCellular Therapeutics, Ltd.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/imuc.ws",
     "": ""
   },
   "IMH": {
@@ -1927,26 +1807,6 @@
     "Sector": "Health Care",
     "industry": "Medical/Dental Instruments",
     "Summary Quote": "https://www.nasdaq.com/symbol/nspr",
-    "": ""
-  },
-  "NSPR.WS": {
-    "Name": "InspireMD Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nspr.ws",
-    "": ""
-  },
-  "NSPR.WS.B": {
-    "Name": "InspireMD Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nspr.ws.b",
     "": ""
   },
   "IDN": {
@@ -2069,14 +1929,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/lts",
     "": ""
   },
-  "LTS^A": {
+  "LTS": {
     "Name": "Ladenburg Thalmann Financial Services Inc",
     "LastSale": 25.5,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lts^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/lts",
     "": ""
   },
   "LTSL": {
@@ -2599,84 +2459,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/orm",
     "": ""
   },
-  "PCG^A": {
+  "PCG": {
     "Name": "Pacific Gas & Electric Co.",
     "LastSale": 25.6,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^a",
-    "": ""
-  },
-  "PCG^B": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 23.71,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^b",
-    "": ""
-  },
-  "PCG^C": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 23.3752,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^c",
-    "": ""
-  },
-  "PCG^D": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 21.8495,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^d",
-    "": ""
-  },
-  "PCG^E": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 21.4991,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^e",
-    "": ""
-  },
-  "PCG^G": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 20.71,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^g",
-    "": ""
-  },
-  "PCG^H": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 19.2544,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^h",
-    "": ""
-  },
-  "PCG^I": {
-    "Name": "Pacific Gas & Electric Co.",
-    "LastSale": 19.25,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pcg^i",
+    "Summary Quote": "https://www.nasdaq.com/symbol/pcg",
     "": ""
   },
   "PTN": {
@@ -2769,14 +2559,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/plym",
     "": ""
   },
-  "PLYM^A": {
+  "PLYM": {
     "Name": "Plymouth Industrial REIT, Inc.",
     "LastSale": 24.95,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/plym^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/plym",
     "": ""
   },
   "PLM": {
@@ -2799,14 +2589,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/pw",
     "": ""
   },
-  "PW^A": {
+  "PW": {
     "Name": "Power REIT",
     "LastSale": 25.8097,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pw^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/pw",
     "": ""
   },
   "PLX": {
@@ -2829,14 +2619,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rlgt",
     "": ""
   },
-  "RLGT^A": {
+  "RLGT": {
     "Name": "Radiant Logistics, Inc.",
     "LastSale": 25.75,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rlgt^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/rlgt",
     "": ""
   },
   "RFL$": {
@@ -2879,14 +2669,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rhe",
     "": ""
   },
-  "RHE^A": {
+  "RHE": {
     "Name": "Regional Health Properties, Inc.",
     "LastSale": 7.1868,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rhe^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/rhe",
     "": ""
   },
   "RWC": {
@@ -3069,46 +2859,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/xpl",
     "": ""
   },
-  "SCE^B": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 21.25,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^b",
-    "": ""
-  },
-  "SCE^C": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 20.94,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^c",
-    "": ""
-  },
-  "SCE^D": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 22.65,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^d",
-    "": ""
-  },
-  "SCE^E": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 23.63,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^e",
-    "": ""
-  },
   "SGB": {
     "Name": "Southwest Georgia Financial Corporation",
     "LastSale": 21,
@@ -3139,7 +2889,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/srci",
     "": ""
   },
-  "SGY.WS": {
+  "SGY": {
     "Name": "Stone Energy Corporation",
     "LastSale": "n/a",
     "MarketCap": "n/a",
@@ -3239,14 +2989,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/glu",
     "": ""
   },
-  "GLU^A": {
+  "GLU": {
     "Name": "The Gabelli Global Utility and Income Trust",
     "LastSale": 50.6304,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/glu^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/glu",
     "": ""
   },
   "GGO": {
@@ -3259,14 +3009,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ggo",
     "": ""
   },
-  "GGO^A": {
+  "GGO": {
     "Name": "The Gabelli Go Anywhere Trust",
     "LastSale": 42.56,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ggo^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ggo",
     "": ""
   },
   "TMP": {
@@ -37049,24 +36799,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mitt",
     "": ""
   },
-  "MITT^A": {
+  "MITT": {
     "Name": "AG Mortgage Investment Trust, Inc.",
     "LastSale": 25.3855,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mitt^a",
-    "": ""
-  },
-  "MITT^B": {
-    "Name": "AG Mortgage Investment Trust, Inc.",
-    "LastSale": 24.89,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mitt^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/mitt",
     "": ""
   },
   "AGCO": {
@@ -37149,7 +36889,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/aks",
     "": ""
   },
-  "ALP^Q": {
+  "ALP": {
     "Name": "Alabama Power Company",
     "LastSale": 25.56,
     "MarketCap": "n/a",
@@ -37247,16 +36987,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/are",
-    "": ""
-  },
-  "ARE^D": {
-    "Name": "Alexandria Real Estate Equities, Inc.",
-    "LastSale": 35.8,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/are^d",
     "": ""
   },
   "AQN": {
@@ -37479,64 +37209,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/all",
     "": ""
   },
-  "ALL^A": {
+  "ALL": {
     "Name": "Allstate Corporation (The)",
     "LastSale": 25.55,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/all^a",
-    "": ""
-  },
-  "ALL^B": {
-    "Name": "Allstate Corporation (The)",
-    "LastSale": 26.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/all^b",
-    "": ""
-  },
-  "ALL^C": {
-    "Name": "Allstate Corporation (The)",
-    "LastSale": 26.08,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/all^c",
-    "": ""
-  },
-  "ALL^D": {
-    "Name": "Allstate Corporation (The)",
-    "LastSale": 26.17,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/all^d",
-    "": ""
-  },
-  "ALL^E": {
-    "Name": "Allstate Corporation (The)",
-    "LastSale": 26.36,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/all^e",
-    "": ""
-  },
-  "ALL^F": {
-    "Name": "Allstate Corporation (The)",
-    "LastSale": 26.65,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/all^f",
+    "Summary Quote": "https://www.nasdaq.com/symbol/all",
     "": ""
   },
   "ALLY": {
@@ -37547,16 +37227,6 @@
     "Sector": "Finance",
     "industry": "Finance: Consumer Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/ally",
-    "": ""
-  },
-  "ALLY^A": {
-    "Name": "Ally Financial Inc.",
-    "LastSale": 25.98,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ally^a",
     "": ""
   },
   "AGD": {
@@ -37809,56 +37479,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/amh",
     "": ""
   },
-  "AMH^C": {
-    "Name": "American Homes 4 Rent",
-    "LastSale": 28.44,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/amh^c",
-    "": ""
-  },
-  "AMH^D": {
-    "Name": "American Homes 4 Rent",
-    "LastSale": 25.71,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/amh^d",
-    "": ""
-  },
-  "AMH^E": {
-    "Name": "American Homes 4 Rent",
-    "LastSale": 25.79,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/amh^e",
-    "": ""
-  },
-  "AMH^F": {
-    "Name": "American Homes 4 Rent",
-    "LastSale": 24.1524,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/amh^f",
-    "": ""
-  },
-  "AMH^G": {
-    "Name": "American Homes 4 Rent",
-    "LastSale": 24,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/amh^g",
-    "": ""
-  },
   "AIG": {
     "Name": "American International Group, Inc.",
     "LastSale": 56.61,
@@ -37867,16 +37487,6 @@
     "Sector": "Finance",
     "industry": "Property-Casualty Insurers",
     "Summary Quote": "https://www.nasdaq.com/symbol/aig",
-    "": ""
-  },
-  "AIG.WS": {
-    "Name": "American International Group, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aig.ws",
     "": ""
   },
   "AMID": {
@@ -38049,64 +37659,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ame",
     "": ""
   },
-  "AFSI^A": {
+  "AFSI": {
     "Name": "AmTrust Financial Services, Inc.",
     "LastSale": 19.29,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/afsi^a",
-    "": ""
-  },
-  "AFSI^B": {
-    "Name": "AmTrust Financial Services, Inc.",
-    "LastSale": 19.19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/afsi^b",
-    "": ""
-  },
-  "AFSI^C": {
-    "Name": "AmTrust Financial Services, Inc.",
-    "LastSale": 20.09,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/afsi^c",
-    "": ""
-  },
-  "AFSI^D": {
-    "Name": "AmTrust Financial Services, Inc.",
-    "LastSale": 20.07,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/afsi^d",
-    "": ""
-  },
-  "AFSI^E": {
-    "Name": "AmTrust Financial Services, Inc.",
-    "LastSale": 21.32,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/afsi^e",
-    "": ""
-  },
-  "AFSI^F": {
-    "Name": "AmTrust Financial Services, Inc.",
-    "LastSale": 19.17,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/afsi^f",
+    "Summary Quote": "https://www.nasdaq.com/symbol/afsi",
     "": ""
   },
   "AFSS": {
@@ -38209,46 +37769,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/nly",
     "": ""
   },
-  "NLY^C": {
-    "Name": "Annaly Capital Management Inc",
-    "LastSale": 25.34,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nly^c",
-    "": ""
-  },
-  "NLY^D": {
-    "Name": "Annaly Capital Management Inc",
-    "LastSale": 25.13,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nly^d",
-    "": ""
-  },
-  "NLY^F": {
-    "Name": "Annaly Capital Management Inc",
-    "LastSale": 24.98,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nly^f",
-    "": ""
-  },
-  "NLY^G": {
-    "Name": "Annaly Capital Management Inc",
-    "LastSale": 23.85,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nly^g",
-    "": ""
-  },
   "AMGP": {
     "Name": "Antero Midstream GP LP",
     "LastSale": 18.35,
@@ -38309,34 +37829,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/anh",
     "": ""
   },
-  "ANH^A": {
+  "ANH": {
     "Name": "Anworth Mortgage Asset  Corporation",
     "LastSale": 26.26,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/anh^a",
-    "": ""
-  },
-  "ANH^B": {
-    "Name": "Anworth Mortgage Asset  Corporation",
-    "LastSale": 25.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/anh^b",
-    "": ""
-  },
-  "ANH^C": {
-    "Name": "Anworth Mortgage Asset  Corporation",
-    "LastSale": 25.028,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/anh^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/anh",
     "": ""
   },
   "AON": {
@@ -38369,14 +37869,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/aiv",
     "": ""
   },
-  "AIV^A": {
+  "AIV": {
     "Name": "Apartment Investment and Management Company",
     "LastSale": 26.1882,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aiv^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/aiv",
     "": ""
   },
   "ARI": {
@@ -38389,16 +37889,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ari",
     "": ""
   },
-  "ARI^C": {
-    "Name": "Apollo Commercial Real Estate Finance",
-    "LastSale": 25.5299,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ari^c",
-    "": ""
-  },
   "APO": {
     "Name": "Apollo Global Management, LLC",
     "LastSale": 33.54,
@@ -38409,14 +37899,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/apo",
     "": ""
   },
-  "APO^A": {
+  "APO": {
     "Name": "Apollo Global Management, LLC",
     "LastSale": 25.1383,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/apo^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/apo",
     "": ""
   },
   "AIY": {
@@ -38539,34 +38029,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/abr",
     "": ""
   },
-  "ABR^A": {
+  "ABR": {
     "Name": "Arbor Realty Trust",
     "LastSale": 25.3799,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/abr^a",
-    "": ""
-  },
-  "ABR^B": {
-    "Name": "Arbor Realty Trust",
-    "LastSale": 25.14,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/abr^b",
-    "": ""
-  },
-  "ABR^C": {
-    "Name": "Arbor Realty Trust",
-    "LastSale": 25.66,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/abr^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/abr",
     "": ""
   },
   "ABRN": {
@@ -38709,14 +38179,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ares",
     "": ""
   },
-  "ARES^A": {
+  "ARES": {
     "Name": "Ares Management L.P.",
     "LastSale": 26.45,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ares^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ares",
     "": ""
   },
   "AGX": {
@@ -38747,16 +38217,6 @@
     "Sector": "Finance",
     "industry": "Finance/Investors Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/ai",
-    "": ""
-  },
-  "AI^B": {
-    "Name": "Arlington Asset Investment Corp",
-    "LastSale": 24.8299,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ai^b",
     "": ""
   },
   "AIC": {
@@ -38799,24 +38259,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/arr",
     "": ""
   },
-  "ARR^A": {
+  "ARR": {
     "Name": "ARMOUR Residential REIT, Inc.",
     "LastSale": 25.2409,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/arr^a",
-    "": ""
-  },
-  "ARR^B": {
-    "Name": "ARMOUR Residential REIT, Inc.",
-    "LastSale": 24.99,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/arr^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/arr",
     "": ""
   },
   "AFI": {
@@ -38899,16 +38349,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ahp",
     "": ""
   },
-  "AHP^B": {
-    "Name": "Ashford Hospitality Prime, Inc.",
-    "LastSale": 19.45,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ahp^b",
-    "": ""
-  },
   "AHT": {
     "Name": "Ashford Hospitality Trust Inc",
     "LastSale": 6.56,
@@ -38917,56 +38357,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/aht",
-    "": ""
-  },
-  "AHT^D": {
-    "Name": "Ashford Hospitality Trust Inc",
-    "LastSale": 25.4,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aht^d",
-    "": ""
-  },
-  "AHT^F": {
-    "Name": "Ashford Hospitality Trust Inc",
-    "LastSale": 23.3502,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aht^f",
-    "": ""
-  },
-  "AHT^G": {
-    "Name": "Ashford Hospitality Trust Inc",
-    "LastSale": 23.2699,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aht^g",
-    "": ""
-  },
-  "AHT^H": {
-    "Name": "Ashford Hospitality Trust Inc",
-    "LastSale": 23.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aht^h",
-    "": ""
-  },
-  "AHT^I": {
-    "Name": "Ashford Hospitality Trust Inc",
-    "LastSale": 23.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/aht^i",
     "": ""
   },
   "ASH": {
@@ -39019,26 +38409,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ahl",
     "": ""
   },
-  "AHL^C": {
-    "Name": "Aspen Insurance Holdings Limited",
-    "LastSale": 26.27,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ahl^c",
-    "": ""
-  },
-  "AHL^D": {
-    "Name": "Aspen Insurance Holdings Limited",
-    "LastSale": 24.9,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ahl^d",
-    "": ""
-  },
   "ASB": {
     "Name": "Associated Banc-Corp",
     "LastSale": 26.9,
@@ -39047,26 +38417,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/asb",
-    "": ""
-  },
-  "ASB^C": {
-    "Name": "Associated Banc-Corp",
-    "LastSale": 26.22,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/asb^c",
-    "": ""
-  },
-  "ASB^D": {
-    "Name": "Associated Banc-Corp",
-    "LastSale": 24.95,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/asb^d",
     "": ""
   },
   "AC": {
@@ -39097,36 +38447,6 @@
     "Sector": "Finance",
     "industry": "Property-Casualty Insurers",
     "Summary Quote": "https://www.nasdaq.com/symbol/ago",
-    "": ""
-  },
-  "AGO^B": {
-    "Name": "Assured Guaranty Ltd.",
-    "LastSale": 25.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ago^b",
-    "": ""
-  },
-  "AGO^E": {
-    "Name": "Assured Guaranty Ltd.",
-    "LastSale": 25.6818,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ago^e",
-    "": ""
-  },
-  "AGO^F": {
-    "Name": "Assured Guaranty Ltd.",
-    "LastSale": 25.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ago^f",
     "": ""
   },
   "AZN": {
@@ -39379,26 +38699,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/axs",
     "": ""
   },
-  "AXS^D": {
-    "Name": "Axis Capital Holdings Limited",
-    "LastSale": 24.62,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/axs^d",
-    "": ""
-  },
-  "AXS^E": {
-    "Name": "Axis Capital Holdings Limited",
-    "LastSale": 24.9,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/axs^e",
-    "": ""
-  },
   "AZUL": {
     "Name": "Azul S.A.",
     "LastSale": 34,
@@ -39509,36 +38809,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/banc",
     "": ""
   },
-  "BANC^C": {
-    "Name": "Banc of California, Inc.",
-    "LastSale": 25.6515,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/banc^c",
-    "": ""
-  },
-  "BANC^D": {
-    "Name": "Banc of California, Inc.",
-    "LastSale": 25.9507,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/banc^d",
-    "": ""
-  },
-  "BANC^E": {
-    "Name": "Banc of California, Inc.",
-    "LastSale": 26.05,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/banc^e",
-    "": ""
-  },
   "BBVA": {
     "Name": "Banco Bilbao Viscaya Argentaria S.A.",
     "LastSale": 8.23,
@@ -39629,44 +38899,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/san",
     "": ""
   },
-  "SAN^A": {
+  "SAN": {
     "Name": "Banco Santander, S.A.",
     "LastSale": 25.95,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/san^a",
-    "": ""
-  },
-  "SAN^B": {
-    "Name": "Banco Santander, S.A.",
-    "LastSale": 24.68,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/san^b",
-    "": ""
-  },
-  "SAN^C": {
-    "Name": "Banco Santander, S.A.",
-    "LastSale": 25.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/san^c",
-    "": ""
-  },
-  "SAN^I": {
-    "Name": "Banco Santander, S.A.",
-    "LastSale": 25.6883,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/san^i",
+    "Summary Quote": "https://www.nasdaq.com/symbol/san",
     "": ""
   },
   "CIB": {
@@ -39699,107 +38939,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bac",
     "": ""
   },
-  "BAC.WS.A": {
-    "Name": "Bank of America Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac.ws.a",
-    "": ""
-  },
-  "BAC.WS.B": {
-    "Name": "Bank of America Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac.ws.b",
-    "": ""
-  },
-  "BAC^A": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 26.41,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^a",
-    "": ""
-  },
-  "BAC^C": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 26.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^c",
-    "": ""
-  },
-  "BAC^D": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 25.41,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^d",
-    "": ""
-  },
-  "BAC^E": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 23.76,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^e",
-    "": ""
-  },
-  "BAC^I": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 25.94,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^i",
-    "": ""
-  },
-  "BAC^L": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 1283,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^l",
-    "": ""
-  },
-  "BAC^W": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 26.13,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^w",
-    "": ""
-  },
-  "BAC^Y": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 26.61,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bac^y",
-    "": ""
-  },
-  "BML^G": {
+  "BML": {
     "Name": "Bank of America Corporation",
     "LastSale": 21.35,
     "MarketCap": "n/a",
@@ -39807,46 +38947,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/bml^g",
-    "": ""
-  },
-  "BML^H": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 21.33,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bml^h",
-    "": ""
-  },
-  "BML^I": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 25.47,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bml^i",
-    "": ""
-  },
-  "BML^J": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 23.22,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bml^j",
-    "": ""
-  },
-  "BML^L": {
-    "Name": "Bank of America Corporation",
-    "LastSale": 23.34,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bml^l",
     "": ""
   },
   "BOH": {
@@ -39889,16 +38989,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bk",
     "": ""
   },
-  "BK^C": {
-    "Name": "Bank Of New York Mellon Corporation (The)",
-    "LastSale": 24.95,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bk^c",
-    "": ""
-  },
   "BNS": {
     "Name": "Bank of Nova Scotia (The)",
     "LastSale": 62.91,
@@ -39927,16 +39017,6 @@
     "Sector": "Finance",
     "industry": "Commercial Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/bcs",
-    "": ""
-  },
-  "BCS^D": {
-    "Name": "Barclays PLC",
-    "LastSale": 26.57,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bcs^d",
     "": ""
   },
   "MCI": {
@@ -40039,56 +39119,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bbt",
     "": ""
   },
-  "BBT^D": {
-    "Name": "BB&T Corporation",
-    "LastSale": 25.4,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bbt^d",
-    "": ""
-  },
-  "BBT^E": {
-    "Name": "BB&T Corporation",
-    "LastSale": 25.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bbt^e",
-    "": ""
-  },
-  "BBT^F": {
-    "Name": "BB&T Corporation",
-    "LastSale": 24.87,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bbt^f",
-    "": ""
-  },
-  "BBT^G": {
-    "Name": "BB&T Corporation",
-    "LastSale": 25.13,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bbt^g",
-    "": ""
-  },
-  "BBT^H": {
-    "Name": "BB&T Corporation",
-    "LastSale": 26.04,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bbt^h",
-    "": ""
-  },
   "BFR": {
     "Name": "BBVA Banco Frances S.A.",
     "LastSale": 23.05,
@@ -40158,17 +39188,7 @@
     "industry": "Telecommunications Equipment",
     "Summary Quote": "https://www.nasdaq.com/symbol/bdc",
     "": ""
-  },
-  "BDC^B": {
-    "Name": "Belden Inc",
-    "LastSale": 104.885,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bdc^b",
-    "": ""
-  },
+  },,
   "BXE": {
     "Name": "Bellatrix Exploration Ltd",
     "LastSale": 1.18,
@@ -41219,16 +40239,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bxp",
     "": ""
   },
-  "BXP^B": {
-    "Name": "Boston Properties, Inc.",
-    "LastSale": 24.75,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bxp^b",
-    "": ""
-  },
   "BSX": {
     "Name": "Boston Scientific Corporation",
     "LastSale": 28.54,
@@ -41489,7 +40499,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/bbu",
     "": ""
   },
-  "DTLA^": {
+  "DTLA": {
     "Name": "Brookfield DTLA Inc.",
     "LastSale": 24.96,
     "MarketCap": "n/a",
@@ -41849,14 +40859,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cpe",
     "": ""
   },
-  "CPE^A": {
+  "CPE": {
     "Name": "Callon Petroleum Company",
     "LastSale": 51.9548,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Energy",
     "industry": "Oil & Gas Production",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cpe^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/cpe",
     "": ""
   },
   "CBM": {
@@ -41999,76 +41009,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cof",
     "": ""
   },
-  "COF.WS": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof.ws",
-    "": ""
-  },
-  "COF^C": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": 25.94,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof^c",
-    "": ""
-  },
-  "COF^D": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": 26.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof^d",
-    "": ""
-  },
-  "COF^F": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": 26.549,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof^f",
-    "": ""
-  },
-  "COF^G": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": 24.64,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof^g",
-    "": ""
-  },
-  "COF^H": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": 26.17,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof^h",
-    "": ""
-  },
-  "COF^P": {
-    "Name": "Capital One Financial Corporation",
-    "LastSale": 25.2,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cof^p",
-    "": ""
-  },
   "CSU": {
     "Name": "Capital Senior Living Corporation",
     "LastSale": 12.71,
@@ -42099,26 +41039,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cic",
     "": ""
   },
-  "CIC.U": {
-    "Name": "Capitol Investment Corp. IV",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cic.u",
-    "": ""
-  },
-  "CIC.WS": {
-    "Name": "Capitol Investment Corp. IV",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cic.ws",
-    "": ""
-  },
   "CMO": {
     "Name": "Capstead Mortgage Corporation",
     "LastSale": 8.84,
@@ -42127,16 +41047,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/cmo",
-    "": ""
-  },
-  "CMO^E": {
-    "Name": "Capstead Mortgage Corporation",
-    "LastSale": 24.99,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cmo^e",
     "": ""
   },
   "CRR": {
@@ -42329,26 +41239,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cbl",
     "": ""
   },
-  "CBL^D": {
-    "Name": "CBL & Associates Properties, Inc.",
-    "LastSale": 18.46,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cbl^d",
-    "": ""
-  },
-  "CBL^E": {
-    "Name": "CBL & Associates Properties, Inc.",
-    "LastSale": 16.86,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cbl^e",
-    "": ""
-  },
   "CBO": {
     "Name": "CBO (Listing Market - NYSE - Networks A/E)",
     "LastSale": 1.01,
@@ -42427,26 +41317,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/cdr",
-    "": ""
-  },
-  "CDR^B": {
-    "Name": "Cedar Realty Trust, Inc.",
-    "LastSale": 24.0951,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cdr^b",
-    "": ""
-  },
-  "CDR^C": {
-    "Name": "Cedar Realty Trust, Inc.",
-    "LastSale": 21.56,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cdr^c",
     "": ""
   },
   "CGI": {
@@ -42709,14 +41579,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/chmi",
     "": ""
   },
-  "CHMI^A": {
+  "CHMI": {
     "Name": "Cherry Hill Mortgage Investment Corporation",
     "LastSale": 25.3016,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/chmi^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/chmi",
     "": ""
   },
   "CHK": {
@@ -42727,16 +41597,6 @@
     "Sector": "Energy",
     "industry": "Oil & Gas Production",
     "Summary Quote": "https://www.nasdaq.com/symbol/chk",
-    "": ""
-  },
-  "CHK^D": {
-    "Name": "Chesapeake Energy Corporation",
-    "LastSale": 50.07,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/chk^d",
     "": ""
   },
   "CHKR": {
@@ -42809,24 +41669,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cim",
     "": ""
   },
-  "CIM^A": {
+  "CIM": {
     "Name": "Chimera Investment Corporation",
     "LastSale": 25.11,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cim^a",
-    "": ""
-  },
-  "CIM^B": {
-    "Name": "Chimera Investment Corporation",
-    "LastSale": 25.34,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cim^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/cim",
     "": ""
   },
   "CO": {
@@ -43089,16 +41939,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cbb",
     "": ""
   },
-  "CBB^B": {
-    "Name": "Cincinnati Bell Inc",
-    "LastSale": 49.485,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cbb^b",
-    "": ""
-  },
   "CNK": {
     "Name": "Cinemark Holdings Inc",
     "LastSale": 41.39,
@@ -43169,76 +42009,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/c",
     "": ""
   },
-  "C.WS.A": {
-    "Name": "Citigroup Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c.ws.a",
-    "": ""
-  },
-  "C^C": {
-    "Name": "Citigroup Inc.",
-    "LastSale": 25.31,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c^c",
-    "": ""
-  },
-  "C^J": {
-    "Name": "Citigroup Inc.",
-    "LastSale": 28.85,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c^j",
-    "": ""
-  },
-  "C^K": {
-    "Name": "Citigroup Inc.",
-    "LastSale": 28.1,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c^k",
-    "": ""
-  },
-  "C^L": {
-    "Name": "Citigroup Inc.",
-    "LastSale": 26.25,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c^l",
-    "": ""
-  },
-  "C^N": {
-    "Name": "Citigroup Inc.",
-    "LastSale": 27.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c^n",
-    "": ""
-  },
-  "C^S": {
-    "Name": "Citigroup Inc.",
-    "LastSale": 26.43,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/c^s",
-    "": ""
-  },
   "CFG": {
     "Name": "Citizens Financial Group, Inc.",
     "LastSale": 46.15,
@@ -43269,14 +42039,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cio",
     "": ""
   },
-  "CIO^A": {
+  "CIO": {
     "Name": "City Office REIT, Inc.",
     "LastSale": 24,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cio^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/cio",
     "": ""
   },
   "CVEO": {
@@ -43427,16 +42197,6 @@
     "Sector": "Public Utilities",
     "industry": "Power Generation",
     "Summary Quote": "https://www.nasdaq.com/symbol/cms",
-    "": ""
-  },
-  "CMS^B": {
-    "Name": "CMS Energy Corporation",
-    "LastSale": 102.12,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Public Utilities",
-    "industry": "Power Generation",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cms^b",
     "": ""
   },
   "CMSA": {
@@ -43739,76 +42499,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/clns",
     "": ""
   },
-  "CLNS^B": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 24.84,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^b",
-    "": ""
-  },
-  "CLNS^D": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 25.07,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^d",
-    "": ""
-  },
-  "CLNS^E": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 25.25,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^e",
-    "": ""
-  },
-  "CLNS^G": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 23.77,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^g",
-    "": ""
-  },
-  "CLNS^H": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 22.54,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^h",
-    "": ""
-  },
-  "CLNS^I": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 22.58,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^i",
-    "": ""
-  },
-  "CLNS^J": {
-    "Name": "Colony NorthStar, Inc.",
-    "LastSale": 22.57,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/clns^j",
-    "": ""
-  },
   "CXP": {
     "Name": "Columbia Property Trust, Inc.",
     "LastSale": 21.26,
@@ -43847,16 +42537,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/cma",
-    "": ""
-  },
-  "CMA.WS": {
-    "Name": "Comerica Incorporated",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cma.ws",
     "": ""
   },
   "FIX": {
@@ -43979,14 +42659,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/codi",
     "": ""
   },
-  "CODI^A": {
+  "CODI": {
     "Name": "Compass Diversified Holdings",
     "LastSale": 23.34,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/codi^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/codi",
     "": ""
   },
   "CMP": {
@@ -44229,14 +42909,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/corr",
     "": ""
   },
-  "CORR^A": {
+  "CORR": {
     "Name": "CorEnergy Infrastructure Trust, Inc.",
     "LastSale": 25,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/corr^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/corr",
     "": ""
   },
   "COR": {
@@ -44319,46 +42999,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cmre",
     "": ""
   },
-  "CMRE^B": {
-    "Name": "Costamare Inc.",
-    "LastSale": 23.75,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cmre^b",
-    "": ""
-  },
-  "CMRE^C": {
-    "Name": "Costamare Inc.",
-    "LastSale": 24.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cmre^c",
-    "": ""
-  },
-  "CMRE^D": {
-    "Name": "Costamare Inc.",
-    "LastSale": 25.15,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cmre^d",
-    "": ""
-  },
-  "CMRE^E": {
-    "Name": "Costamare Inc.",
-    "LastSale": 24.89,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cmre^e",
-    "": ""
-  },
   "COTV": {
     "Name": "Cotiviti Holdings, Inc.",
     "LastSale": 36.78,
@@ -44389,7 +43029,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/coty",
     "": ""
   },
-  "CFC^B": {
+  "CFC": {
     "Name": "Countrywide Financial Corporation",
     "LastSale": 25.96,
     "MarketCap": "n/a",
@@ -44549,14 +43189,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cci",
     "": ""
   },
-  "CCI^A": {
+  "CCI": {
     "Name": "Crown Castle International Corporation",
     "LastSale": 1120,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cci^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/cci",
     "": ""
   },
   "CCK": {
@@ -44639,14 +43279,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cfr",
     "": ""
   },
-  "CFR^A": {
+  "CFR": {
     "Name": "Cullen/Frost Bankers, Inc.",
     "LastSale": 24.92,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cfr^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/cfr",
     "": ""
   },
   "CULP": {
@@ -44739,46 +43379,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cubi",
     "": ""
   },
-  "CUBI^C": {
-    "Name": "Customers Bancorp, Inc",
-    "LastSale": 26.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cubi^c",
-    "": ""
-  },
-  "CUBI^D": {
-    "Name": "Customers Bancorp, Inc",
-    "LastSale": 26.52,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cubi^d",
-    "": ""
-  },
-  "CUBI^E": {
-    "Name": "Customers Bancorp, Inc",
-    "LastSale": 26.26,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cubi^e",
-    "": ""
-  },
-  "CUBI^F": {
-    "Name": "Customers Bancorp, Inc",
-    "LastSale": 25.7395,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cubi^f",
-    "": ""
-  },
   "CUBS": {
     "Name": "Customers Bancorp, Inc",
     "LastSale": 25.37,
@@ -44849,24 +43449,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/cys",
     "": ""
   },
-  "CYS^A": {
+  "CYS": {
     "Name": "CYS Investments, Inc.",
     "LastSale": 24.6,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cys^a",
-    "": ""
-  },
-  "CYS^B": {
-    "Name": "CYS Investments, Inc.",
-    "LastSale": 24.0057,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/cys^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/cys",
     "": ""
   },
   "DHI": {
@@ -44979,34 +43569,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ddr",
     "": ""
   },
-  "DDR^A": {
+  "DDR": {
     "Name": "DDR Corp.",
     "LastSale": 24.03,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ddr^a",
-    "": ""
-  },
-  "DDR^J": {
-    "Name": "DDR Corp.",
-    "LastSale": 23.13,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ddr^j",
-    "": ""
-  },
-  "DDR^K": {
-    "Name": "DDR Corp.",
-    "LastSale": 22.61,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ddr^k",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ddr",
     "": ""
   },
   "DF": {
@@ -45239,16 +43809,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/dsx",
     "": ""
   },
-  "DSX^B": {
-    "Name": "Diana Shipping inc.",
-    "LastSale": 24.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dsx^b",
-    "": ""
-  },
   "DSXN": {
     "Name": "Diana Shipping inc.",
     "LastSale": 25.3502,
@@ -45287,56 +43847,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/dlr",
-    "": ""
-  },
-  "DLR^C": {
-    "Name": "Digital Realty Trust, Inc.",
-    "LastSale": 26.73,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dlr^c",
-    "": ""
-  },
-  "DLR^G": {
-    "Name": "Digital Realty Trust, Inc.",
-    "LastSale": 25.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dlr^g",
-    "": ""
-  },
-  "DLR^H": {
-    "Name": "Digital Realty Trust, Inc.",
-    "LastSale": 26.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dlr^h",
-    "": ""
-  },
-  "DLR^I": {
-    "Name": "Digital Realty Trust, Inc.",
-    "LastSale": 26.29,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dlr^i",
-    "": ""
-  },
-  "DLR^J": {
-    "Name": "Digital Realty Trust, Inc.",
-    "LastSale": 23.9,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dlr^j",
     "": ""
   },
   "DDS": {
@@ -45699,36 +44209,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ds",
     "": ""
   },
-  "DS^B": {
-    "Name": "Drive Shack Inc.",
-    "LastSale": 25.8397,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ds^b",
-    "": ""
-  },
-  "DS^C": {
-    "Name": "Drive Shack Inc.",
-    "LastSale": 25.1999,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ds^c",
-    "": ""
-  },
-  "DS^D": {
-    "Name": "Drive Shack Inc.",
-    "LastSale": 25.068,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ds^d",
-    "": ""
-  },
   "DST": {
     "Name": "DST Systems, Inc.",
     "LastSale": 83.43,
@@ -45939,14 +44419,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/dlng",
     "": ""
   },
-  "DLNG^A": {
+  "DLNG": {
     "Name": "Dynagas LNG Partners LP",
     "LastSale": 26.12,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dlng^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/dlng",
     "": ""
   },
   "DYN": {
@@ -45957,16 +44437,6 @@
     "Sector": "Public Utilities",
     "industry": "Electric Utilities: Central",
     "Summary Quote": "https://www.nasdaq.com/symbol/dyn",
-    "": ""
-  },
-  "DYN.WS.A": {
-    "Name": "Dynegy Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dyn.ws.a",
     "": ""
   },
   "DYNC": {
@@ -45989,44 +44459,24 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/dx",
     "": ""
   },
-  "DX^A": {
+  "DX": {
     "Name": "Dynex Capital, Inc.",
     "LastSale": 25.44,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dx^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/dx",
     "": ""
   },
-  "DX^B": {
-    "Name": "Dynex Capital, Inc.",
-    "LastSale": 24.31,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dx^b",
-    "": ""
-  },
-  "DD^A": {
+  "DD": {
     "Name": "E.I. du Pont de Nemours and Company",
     "LastSale": 86,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Basic Industries",
     "industry": "Major Chemicals",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dd^a",
-    "": ""
-  },
-  "DD^B": {
-    "Name": "E.I. du Pont de Nemours and Company",
-    "LastSale": 102.4747,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Basic Industries",
-    "industry": "Major Chemicals",
-    "Summary Quote": "https://www.nasdaq.com/symbol/dd^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/dd",
     "": ""
   },
   "ELF": {
@@ -46167,26 +44617,6 @@
     "Sector": "Miscellaneous",
     "industry": "Industrial Machinery/Components",
     "Summary Quote": "https://www.nasdaq.com/symbol/kodk",
-    "": ""
-  },
-  "KODK.WS": {
-    "Name": "Eastman Kodak Company",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kodk.ws",
-    "": ""
-  },
-  "KODK.WS.A": {
-    "Name": "Eastman Kodak Company",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kodk.ws.a",
     "": ""
   },
   "ETN": {
@@ -46507,16 +44937,6 @@
     "Sector": "Consumer Services",
     "industry": "Rental/Leasing Companies",
     "Summary Quote": "https://www.nasdaq.com/symbol/ehic",
-    "": ""
-  },
-  "EP^C": {
-    "Name": "El Paso Corporation",
-    "LastSale": 47.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Public Utilities",
-    "industry": "Natural Gas Distribution",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ep^c",
     "": ""
   },
   "EE": {
@@ -47179,36 +45599,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/epr",
     "": ""
   },
-  "EPR^C": {
-    "Name": "EPR Properties",
-    "LastSale": 24.7514,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/epr^c",
-    "": ""
-  },
-  "EPR^E": {
-    "Name": "EPR Properties",
-    "LastSale": 34.81,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/epr^e",
-    "": ""
-  },
-  "EPR^G": {
-    "Name": "EPR Properties",
-    "LastSale": 22.69,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/epr^g",
-    "": ""
-  },
   "EQT": {
     "Name": "EQT Corporation",
     "LastSale": 52.2,
@@ -47257,16 +45647,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/eqc",
-    "": ""
-  },
-  "EQC^D": {
-    "Name": "Equity Commonwealth",
-    "LastSale": 25.7157,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/eqc^d",
     "": ""
   },
   "ELS": {
@@ -47539,16 +45919,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/fnb",
     "": ""
   },
-  "FNB^E": {
-    "Name": "F.N.B. Corporation",
-    "LastSale": 28.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/fnb^e",
-    "": ""
-  },
   "FN": {
     "Name": "Fabrinet",
     "LastSale": 32.67,
@@ -47609,16 +45979,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/fpi",
     "": ""
   },
-  "FPI^B": {
-    "Name": "Farmland Partners Inc.",
-    "LastSale": 25.51,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/fpi^b",
-    "": ""
-  },
   "FBK": {
     "Name": "FB Financial Corporation",
     "LastSale": 41.93,
@@ -47669,34 +46029,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/agm.a",
     "": ""
   },
-  "AGM^A": {
+  "AGM": {
     "Name": "Federal Agricultural Mortgage Corporation",
     "LastSale": 25.5198,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/agm^a",
-    "": ""
-  },
-  "AGM^B": {
-    "Name": "Federal Agricultural Mortgage Corporation",
-    "LastSale": 26.44,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/agm^b",
-    "": ""
-  },
-  "AGM^C": {
-    "Name": "Federal Agricultural Mortgage Corporation",
-    "LastSale": 27.325,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/agm^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/agm",
     "": ""
   },
   "FRT": {
@@ -47707,16 +46047,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/frt",
-    "": ""
-  },
-  "FRT^C": {
-    "Name": "Federal Realty Investment Trust",
-    "LastSale": 22.74,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/frt^c",
     "": ""
   },
   "FSS": {
@@ -47797,16 +46127,6 @@
     "Sector": "Finance",
     "industry": "Life Insurance",
     "Summary Quote": "https://www.nasdaq.com/symbol/fg",
-    "": ""
-  },
-  "FG.WS": {
-    "Name": "FGL Holdings",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/fg.ws",
     "": ""
   },
   "FCAU": {
@@ -47929,14 +46249,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/fhn",
     "": ""
   },
-  "FHN^A": {
+  "FHN": {
     "Name": "First Horizon National Corporation",
     "LastSale": 25.4,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/fhn^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/fhn",
     "": ""
   },
   "FR": {
@@ -47967,56 +46287,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/frc",
-    "": ""
-  },
-  "FRC^D": {
-    "Name": "FIRST REPUBLIC BANK",
-    "LastSale": 25.42,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/frc^d",
-    "": ""
-  },
-  "FRC^E": {
-    "Name": "FIRST REPUBLIC BANK",
-    "LastSale": 26.34,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/frc^e",
-    "": ""
-  },
-  "FRC^F": {
-    "Name": "FIRST REPUBLIC BANK",
-    "LastSale": 25.64,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/frc^f",
-    "": ""
-  },
-  "FRC^G": {
-    "Name": "FIRST REPUBLIC BANK",
-    "LastSale": 25.4778,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/frc^g",
-    "": ""
-  },
-  "FRC^H": {
-    "Name": "FIRST REPUBLIC BANK",
-    "LastSale": 25.03,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/frc^h",
     "": ""
   },
   "FFA": {
@@ -48189,14 +46459,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/oaks",
     "": ""
   },
-  "OAKS^A": {
+  "OAKS": {
     "Name": "Five Oaks Investment Corp.",
     "LastSale": 25.03,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/oaks^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/oaks",
     "": ""
   },
   "FPH": {
@@ -48659,16 +46929,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gcv",
     "": ""
   },
-  "GCV^B": {
-    "Name": "Gabelli Convertible and Income Securities Fund, Inc. (The)",
-    "LastSale": 26.39,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gcv^b",
-    "": ""
-  },
   "GDV": {
     "Name": "Gabelli Dividend",
     "LastSale": 23.44,
@@ -48677,36 +46937,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/gdv",
-    "": ""
-  },
-  "GDV^A": {
-    "Name": "Gabelli Dividend",
-    "LastSale": 25.92,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gdv^a",
-    "": ""
-  },
-  "GDV^D": {
-    "Name": "Gabelli Dividend",
-    "LastSale": 26.3376,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gdv^d",
-    "": ""
-  },
-  "GDV^G": {
-    "Name": "Gabelli Dividend",
-    "LastSale": 24.9547,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gdv^g",
     "": ""
   },
   "GAB": {
@@ -48719,46 +46949,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gab",
     "": ""
   },
-  "GAB^D": {
-    "Name": "Gabelli Equity Trust, Inc. (The)",
-    "LastSale": 25.92,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gab^d",
-    "": ""
-  },
-  "GAB^G": {
-    "Name": "Gabelli Equity Trust, Inc. (The)",
-    "LastSale": 24.17,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gab^g",
-    "": ""
-  },
-  "GAB^H": {
-    "Name": "Gabelli Equity Trust, Inc. (The)",
-    "LastSale": 24.6,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gab^h",
-    "": ""
-  },
-  "GAB^J": {
-    "Name": "Gabelli Equity Trust, Inc. (The)",
-    "LastSale": 25.38,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gab^j",
-    "": ""
-  },
   "GGZ": {
     "Name": "Gabelli Global Small and Mid Cap Value Trust (The)",
     "LastSale": 12.49,
@@ -48769,14 +46959,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ggz",
     "": ""
   },
-  "GGZ^A": {
+  "GGZ": {
     "Name": "Gabelli Global Small and Mid Cap Value Trust (The)",
     "LastSale": 25.3563,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ggz^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ggz",
     "": ""
   },
   "GGT": {
@@ -48789,26 +46979,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ggt",
     "": ""
   },
-  "GGT^B": {
-    "Name": "Gabelli Multi-Media Trust Inc. (The)",
-    "LastSale": 26.55,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ggt^b",
-    "": ""
-  },
-  "GGT^E": {
-    "Name": "Gabelli Multi-Media Trust Inc. (The)",
-    "LastSale": 24.12,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ggt^e",
-    "": ""
-  },
   "GUT": {
     "Name": "Gabelli Utility Trust (The)",
     "LastSale": 6.82,
@@ -48819,24 +46989,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gut",
     "": ""
   },
-  "GUT^A": {
+  "GUT": {
     "Name": "Gabelli Utility Trust (The)",
     "LastSale": 25.3114,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gut^a",
-    "": ""
-  },
-  "GUT^C": {
-    "Name": "Gabelli Utility Trust (The)",
-    "LastSale": 25.56,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gut^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gut",
     "": ""
   },
   "GFA": {
@@ -48879,14 +47039,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gnt",
     "": ""
   },
-  "GNT^A": {
+  "GNT": {
     "Name": "GAMCO Natural Resources, Gold & Income Tust",
     "LastSale": 24.69,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gnt^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gnt",
     "": ""
   },
   "GME": {
@@ -48939,14 +47099,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/glog",
     "": ""
   },
-  "GLOG^A": {
+  "GLOG": {
     "Name": "GasLog LP.",
     "LastSale": 26.8634,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/glog^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/glog",
     "": ""
   },
   "GLOP": {
@@ -48959,24 +47119,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/glop",
     "": ""
   },
-  "GLOP^A": {
+  "GLOP": {
     "Name": "GasLog Partners LP",
     "LastSale": 26.151,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/glop^a",
-    "": ""
-  },
-  "GLOP^B": {
-    "Name": "GasLog Partners LP",
-    "LastSale": 25.19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/glop^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/glop",
     "": ""
   },
   "GTES": {
@@ -49069,16 +47219,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gam",
     "": ""
   },
-  "GAM^B": {
-    "Name": "General American Investors, Inc.",
-    "LastSale": 25.74,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gam^b",
-    "": ""
-  },
   "BGC": {
     "Name": "General Cable Corporation",
     "LastSale": 29.65,
@@ -49139,16 +47279,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gm",
     "": ""
   },
-  "GM.WS.B": {
-    "Name": "General Motors Company",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gm.ws.b",
-    "": ""
-  },
   "GCO": {
     "Name": "Genesco Inc.",
     "LastSale": 40.35,
@@ -49199,14 +47329,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gne",
     "": ""
   },
-  "GNE^A": {
+  "GNE": {
     "Name": "Genie Energy Ltd.",
     "LastSale": 7.29,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gne^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gne",
     "": ""
   },
   "G": {
@@ -49299,14 +47429,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ggp",
     "": ""
   },
-  "GGP^A": {
+  "GGP": {
     "Name": "GGP Inc.",
     "LastSale": 24.87,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ggp^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ggp",
     "": ""
   },
   "GIG": {
@@ -49318,37 +47448,7 @@
     "industry": "Business Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/gig",
     "": ""
-  },
-  "GIG.U": {
-    "Name": "GigCapital, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gig.u",
-    "": ""
-  },
-  "GIG.WS": {
-    "Name": "GigCapital, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gig.ws",
-    "": ""
-  },
-  "GIG~": {
-    "Name": "GigCapital, Inc.",
-    "LastSale": 0.345,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gig~",
-    "": ""
-  },
+  ,
   "GIL": {
     "Name": "Gildan Activewear, Inc.",
     "LastSale": 29.03,
@@ -49409,14 +47509,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gmre",
     "": ""
   },
-  "GMRE^A": {
+  "GMRE": {
     "Name": "Global Medical REIT Inc.",
     "LastSale": 24.5,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gmre^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gmre",
     "": ""
   },
   "GNL": {
@@ -49429,14 +47529,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gnl",
     "": ""
   },
-  "GNL^A": {
+  "GNL": {
     "Name": "Global Net Lease, Inc.",
     "LastSale": 25.25,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gnl^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gnl",
     "": ""
   },
   "GLP": {
@@ -49467,16 +47567,6 @@
     "Sector": "Transportation",
     "industry": "Marine Transportation",
     "Summary Quote": "https://www.nasdaq.com/symbol/gsl",
-    "": ""
-  },
-  "GSL^B": {
-    "Name": "Global Ship Lease, Inc.",
-    "LastSale": 24.8499,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gsl^b",
     "": ""
   },
   "GLOB": {
@@ -49579,74 +47669,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gs",
     "": ""
   },
-  "GS^A": {
+  "GS": {
     "Name": "Goldman Sachs Group, Inc. (The)",
     "LastSale": 22.9,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^a",
-    "": ""
-  },
-  "GS^B": {
-    "Name": "Goldman Sachs Group, Inc. (The)",
-    "LastSale": 26.0299,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^b",
-    "": ""
-  },
-  "GS^C": {
-    "Name": "Goldman Sachs Group, Inc. (The)",
-    "LastSale": 23.27,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^c",
-    "": ""
-  },
-  "GS^D": {
-    "Name": "Goldman Sachs Group, Inc. (The)",
-    "LastSale": 23.0245,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^d",
-    "": ""
-  },
-  "GS^J": {
-    "Name": "Goldman Sachs Group, Inc. (The)",
-    "LastSale": 26.63,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^j",
-    "": ""
-  },
-  "GS^K": {
-    "Name": "Goldman Sachs Group, Inc. (The)",
-    "LastSale": 28.3314,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^k",
-    "": ""
-  },
-  "GS^N": {
-    "Name": "Goldman Sachs Group, Inc. (The)",
-    "LastSale": 26.68,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gs^n",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gs",
     "": ""
   },
   "GER": {
@@ -49729,14 +47759,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/gpt",
     "": ""
   },
-  "GPT^A": {
+  "GPT": {
     "Name": "Gramercy Property Trust Inc.",
     "LastSale": 25.65,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gpt^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/gpt",
     "": ""
   },
   "GRAM": {
@@ -50099,16 +48129,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/hk",
     "": ""
   },
-  "HK.WS": {
-    "Name": "Halcon Resources Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hk.ws",
-    "": ""
-  },
   "HAL": {
     "Name": "Halliburton Company",
     "LastSale": 46.92,
@@ -50229,16 +48249,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/hig",
     "": ""
   },
-  "HIG.WS": {
-    "Name": "Hartford Financial Services Group, Inc. (The)",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hig.ws",
-    "": ""
-  },
   "HVT": {
     "Name": "Haverty Furniture Companies, Inc.",
     "LastSale": 20.5,
@@ -50249,16 +48259,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/hvt",
     "": ""
   },
-  "HVT.A": {
-    "Name": "Haverty Furniture Companies, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hvt.a",
-    "": ""
-  },
   "HE": {
     "Name": "Hawaiian Electric Industries, Inc.",
     "LastSale": 33.72,
@@ -50267,16 +48267,6 @@
     "Sector": "Public Utilities",
     "industry": "Electric Utilities: Central",
     "Summary Quote": "https://www.nasdaq.com/symbol/he",
-    "": ""
-  },
-  "HE^U": {
-    "Name": "Hawaiian Electric Industries, Inc.",
-    "LastSale": 25.56,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/he^u",
     "": ""
   },
   "HCHC": {
@@ -50357,16 +48347,6 @@
     "Sector": "Basic Industries",
     "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
     "Summary Quote": "https://www.nasdaq.com/symbol/hl",
-    "": ""
-  },
-  "HL^B": {
-    "Name": "Hecla Mining Company",
-    "LastSale": 53.75,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Basic Industries",
-    "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hl^b",
     "": ""
   },
   "HEI": {
@@ -50469,36 +48449,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ht",
     "": ""
   },
-  "HT^C": {
-    "Name": "Hersha Hospitality Trust",
-    "LastSale": 24.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ht^c",
-    "": ""
-  },
-  "HT^D": {
-    "Name": "Hersha Hospitality Trust",
-    "LastSale": 23.76,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ht^d",
-    "": ""
-  },
-  "HT^E": {
-    "Name": "Hersha Hospitality Trust",
-    "LastSale": 23.465,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ht^e",
-    "": ""
-  },
   "HSY": {
     "Name": "Hershey Company (The)",
     "LastSale": 101,
@@ -50527,16 +48477,6 @@
     "Sector": "Energy",
     "industry": "Integrated oil Companies",
     "Summary Quote": "https://www.nasdaq.com/symbol/hes",
-    "": ""
-  },
-  "HES^A": {
-    "Name": "Hess Corporation",
-    "LastSale": 57.959,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hes^a",
     "": ""
   },
   "HESM": {
@@ -50689,14 +48629,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/hmlp",
     "": ""
   },
-  "HMLP^A": {
+  "HMLP": {
     "Name": "Hoegh LNG Partners LP",
     "LastSale": 25.45,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hmlp^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/hmlp",
     "": ""
   },
   "HEP": {
@@ -50869,14 +48809,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/hsbc",
     "": ""
   },
-  "HSBC^A": {
+  "HSBC": {
     "Name": "HSBC Holdings plc",
     "LastSale": 25.69,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hsbc^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/hsbc",
     "": ""
   },
   "HSEA": {
@@ -50947,16 +48887,6 @@
     "Sector": "Basic Industries",
     "industry": "Precious Metals",
     "Summary Quote": "https://www.nasdaq.com/symbol/hbm",
-    "": ""
-  },
-  "HBM.WS": {
-    "Name": "Hudbay Minerals Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/hbm.ws",
     "": ""
   },
   "HUD": {
@@ -51087,16 +49017,6 @@
     "Sector": "Public Utilities",
     "industry": "Telecommunications Equipment",
     "Summary Quote": "https://www.nasdaq.com/symbol/idt",
-    "": ""
-  },
-  "IDT$": {
-    "Name": "IDT Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/idt$",
     "": ""
   },
   "ITW": {
@@ -51259,14 +49179,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/iipr",
     "": ""
   },
-  "IIPR^A": {
+  "IIPR": {
     "Name": "Innovative Industrial Properties, Inc.",
     "LastSale": 27.5822,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/iipr^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/iipr",
     "": ""
   },
   "IPHI": {
@@ -51419,7 +49339,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ipg",
     "": ""
   },
-  "IPL^D": {
+  "IPL": {
     "Name": "Interstate Power and Light Company",
     "LastSale": 25.56,
     "MarketCap": "n/a",
@@ -51537,36 +49457,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/ivr",
-    "": ""
-  },
-  "IVR^B": {
-    "Name": "INVESCO MORTGAGE CAPITAL INC",
-    "LastSale": 24.87,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ivr^b",
-    "": ""
-  },
-  "IVR^C": {
-    "Name": "INVESCO MORTGAGE CAPITAL INC",
-    "LastSale": 23.63,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ivr^c",
-    "": ""
-  },
-  "IVR^A": {
-    "Name": "Invesco Mortgage Capital Inc.",
-    "LastSale": 25,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ivr^a",
     "": ""
   },
   "OIA": {
@@ -51689,16 +49579,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/iret",
     "": ""
   },
-  "IRET^C": {
-    "Name": "Investors Real Estate Trust",
-    "LastSale": 23.49,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/iret^c",
-    "": ""
-  },
   "NVTA": {
     "Name": "Invitae Corporation",
     "LastSale": 7.93,
@@ -51779,36 +49659,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/star",
     "": ""
   },
-  "STAR^D": {
-    "Name": "iStar Financial Inc.",
-    "LastSale": 25.04,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/star^d",
-    "": ""
-  },
-  "STAR^G": {
-    "Name": "iStar Financial Inc.",
-    "LastSale": 24.6,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/star^g",
-    "": ""
-  },
-  "STAR^I": {
-    "Name": "iStar Financial Inc.",
-    "LastSale": 24.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/star^i",
-    "": ""
-  },
   "ITCB": {
     "Name": "Ita? CorpBanca",
     "LastSale": 15,
@@ -51857,76 +49707,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/jpm",
-    "": ""
-  },
-  "JPM.WS": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm.ws",
-    "": ""
-  },
-  "JPM^A": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": 25.2181,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm^a",
-    "": ""
-  },
-  "JPM^B": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": 26.15,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm^b",
-    "": ""
-  },
-  "JPM^E": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": 26.09,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm^e",
-    "": ""
-  },
-  "JPM^F": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": 26.1779,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm^f",
-    "": ""
-  },
-  "JPM^G": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": 26.3314,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm^g",
-    "": ""
-  },
-  "JPM^H": {
-    "Name": "J P Morgan Chase & Co",
-    "LastSale": 26.33,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jpm^h",
     "": ""
   },
   "JAX": {
@@ -52057,16 +49837,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/jcap",
-    "": ""
-  },
-  "JCAP^B": {
-    "Name": "Jernigan Capital, Inc.",
-    "LastSale": 23.5583,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/jcap^b",
     "": ""
   },
   "JT": {
@@ -52329,14 +50099,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/je",
     "": ""
   },
-  "JE^A": {
+  "JE": {
     "Name": "Just Energy Group, Inc.",
     "LastSale": 24.75,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/je^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/je",
     "": ""
   },
   "LRN": {
@@ -52387,16 +50157,6 @@
     "Sector": "Transportation",
     "industry": "Railroads",
     "Summary Quote": "https://www.nasdaq.com/symbol/ksu",
-    "": ""
-  },
-  "KSU^": {
-    "Name": "Kansas City Southern",
-    "LastSale": 25.44,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Transportation",
-    "industry": "Railroads",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ksu^",
     "": ""
   },
   "KS": {
@@ -52457,16 +50217,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/kyn",
-    "": ""
-  },
-  "KYN^F": {
-    "Name": "Kayne Anderson MLP Investment Company",
-    "LastSale": 25.31,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kyn^f",
     "": ""
   },
   "KB": {
@@ -52609,16 +50359,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/key",
     "": ""
   },
-  "KEY^I": {
-    "Name": "KeyCorp",
-    "LastSale": 27.85,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/key^i",
-    "": ""
-  },
   "KEYS": {
     "Name": "Keysight Technologies Inc.",
     "LastSale": 54.62,
@@ -52669,56 +50409,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/kim",
     "": ""
   },
-  "KIM^I": {
-    "Name": "Kimco Realty Corporation",
-    "LastSale": 25.24,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kim^i",
-    "": ""
-  },
-  "KIM^J": {
-    "Name": "Kimco Realty Corporation",
-    "LastSale": 23.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kim^j",
-    "": ""
-  },
-  "KIM^K": {
-    "Name": "Kimco Realty Corporation",
-    "LastSale": 23.83,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kim^k",
-    "": ""
-  },
-  "KIM^L": {
-    "Name": "Kimco Realty Corporation",
-    "LastSale": 22.19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kim^l",
-    "": ""
-  },
-  "KIM^M": {
-    "Name": "Kimco Realty Corporation",
-    "LastSale": 22.54,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kim^m",
-    "": ""
-  },
   "KMI": {
     "Name": "Kinder Morgan, Inc.",
     "LastSale": 16.55,
@@ -52729,14 +50419,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/kmi",
     "": ""
   },
-  "KMI^A": {
+  "KMI": {
     "Name": "Kinder Morgan, Inc.",
     "LastSale": 33.7,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kmi^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/kmi",
     "": ""
   },
   "KND": {
@@ -52809,24 +50499,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/kkr",
     "": ""
   },
-  "KKR^A": {
+  "KKR": {
     "Name": "KKR & Co. L.P.",
     "LastSale": 26.28,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kkr^a",
-    "": ""
-  },
-  "KKR^B": {
-    "Name": "KKR & Co. L.P.",
-    "LastSale": 26.19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/kkr^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/kkr",
     "": ""
   },
   "KIO": {
@@ -53129,26 +50809,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/lho",
     "": ""
   },
-  "LHO^I": {
-    "Name": "LaSalle Hotel Properties",
-    "LastSale": 24.2222,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lho^i",
-    "": ""
-  },
-  "LHO^J": {
-    "Name": "LaSalle Hotel Properties",
-    "LastSale": 24.2499,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lho^j",
-    "": ""
-  },
   "LTM": {
     "Name": "LATAM Airlines Group S.A.",
     "LastSale": 16.17,
@@ -53257,26 +50917,6 @@
     "Sector": "Finance",
     "industry": "Business Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/lgc",
-    "": ""
-  },
-  "LGC.U": {
-    "Name": "Legacy Acquisition Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lgc.u",
-    "": ""
-  },
-  "LGC.WS": {
-    "Name": "Legacy Acquisition Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lgc.ws",
     "": ""
   },
   "LM": {
@@ -53449,16 +51089,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/lxp",
     "": ""
   },
-  "LXP^C": {
-    "Name": "Lexington Realty Trust",
-    "LastSale": 48.85,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lxp^c",
-    "": ""
-  },
   "LPL": {
     "Name": "LG Display Co., Ltd.",
     "LastSale": 13.3,
@@ -53539,16 +51169,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/lnc",
     "": ""
   },
-  "LNC.WS": {
-    "Name": "Lincoln National Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lnc.ws",
-    "": ""
-  },
   "LNN": {
     "Name": "Lindsay Corporation",
     "LastSale": 92.78,
@@ -53569,7 +51189,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ln",
     "": ""
   },
-  "LGF.A": {
+  "LGF": {
     "Name": "Lions Gate Entertainment Corporation",
     "LastSale": "n/a",
     "MarketCap": "n/a",
@@ -53577,16 +51197,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/lgf.a",
-    "": ""
-  },
-  "LGF.B": {
-    "Name": "Lions Gate Entertainment Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2016,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/lgf.b",
     "": ""
   },
   "LAD": {
@@ -53799,36 +51409,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mtb",
     "": ""
   },
-  "MTB.WS": {
-    "Name": "M&T Bank Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mtb.ws",
-    "": ""
-  },
-  "MTB^": {
-    "Name": "M&T Bank Corporation",
-    "LastSale": 1017.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mtb^",
-    "": ""
-  },
-  "MTB^C": {
-    "Name": "M&T Bank Corporation",
-    "LastSale": 1020,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mtb^c",
-    "": ""
-  },
   "MDC": {
     "Name": "M.D.C. Holdings, Inc.",
     "LastSale": 28.29,
@@ -53969,34 +51549,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mx",
     "": ""
   },
-  "MH^A": {
+  "MH": {
     "Name": "Maiden Holdings, Ltd.",
     "LastSale": 20.1,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mh^a",
-    "": ""
-  },
-  "MH^C": {
-    "Name": "Maiden Holdings, Ltd.",
-    "LastSale": 18.75,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mh^c",
-    "": ""
-  },
-  "MH^D": {
-    "Name": "Maiden Holdings, Ltd.",
-    "LastSale": 16.95,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mh^d",
+    "Summary Quote": "https://www.nasdaq.com/symbol/mh",
     "": ""
   },
   "MHLA": {
@@ -54027,16 +51587,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/main",
-    "": ""
-  },
-  "MSCA.CL": {
-    "Name": "Main Street Capital Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/msca.cl",
     "": ""
   },
   "MMD": {
@@ -54429,16 +51979,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mtl",
     "": ""
   },
-  "MTL^": {
-    "Name": "Mechel PAO",
-    "LastSale": 1.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mtl^",
-    "": ""
-  },
   "MRT": {
     "Name": "MedEquities Realty Trust, Inc.",
     "LastSale": 10.41,
@@ -54599,7 +52139,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mtor",
     "": ""
   },
-  "MER^K": {
+  "MER": {
     "Name": "Merrill Lynch & Co., Inc.",
     "LastSale": 25.97,
     "MarketCap": "n/a",
@@ -54607,16 +52147,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/mer^k",
-    "": ""
-  },
-  "MER^P": {
-    "Name": "Merrill Lynch & Co., Inc.",
-    "LastSale": 26.43,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mer^p",
     "": ""
   },
   "PIY": {
@@ -54669,14 +52199,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/met",
     "": ""
   },
-  "MET^A": {
+  "MET": {
     "Name": "MetLife, Inc.",
     "LastSale": 24.85,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/met^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/met",
     "": ""
   },
   "MCB": {
@@ -54727,16 +52257,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/mfa",
-    "": ""
-  },
-  "MFA^B": {
-    "Name": "MFA Financial, Inc.",
-    "LastSale": 25.057,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mfa^b",
     "": ""
   },
   "MFO": {
@@ -54879,16 +52399,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/maa",
     "": ""
   },
-  "MAA^I": {
-    "Name": "Mid-America Apartment Communities, Inc.",
-    "LastSale": 65.9,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/maa^i",
-    "": ""
-  },
   "MSL": {
     "Name": "MidSouth Bancorp",
     "LastSale": 13.55,
@@ -54949,7 +52459,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mtx",
     "": ""
   },
-  "MP^D": {
+  "MP": {
     "Name": "Mississippi Power Company",
     "LastSale": 25.3,
     "MarketCap": "n/a",
@@ -55089,16 +52599,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mnr",
     "": ""
   },
-  "MNR^C": {
-    "Name": "Monmouth Real Estate Investment Corporation",
-    "LastSale": 24.1477,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mnr^c",
-    "": ""
-  },
   "MON": {
     "Name": "Monsanto Company",
     "LastSale": 123.15,
@@ -55119,7 +52619,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/mco",
     "": ""
   },
-  "MOG.A": {
+  "MOG": {
     "Name": "Moog Inc.",
     "LastSale": "n/a",
     "MarketCap": "n/a",
@@ -55127,16 +52627,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/mog.a",
-    "": ""
-  },
-  "MOG.B": {
-    "Name": "Moog Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mog.b",
     "": ""
   },
   "MS": {
@@ -55147,66 +52637,6 @@
     "Sector": "Finance",
     "industry": "Investment Bankers/Brokers/Service",
     "Summary Quote": "https://www.nasdaq.com/symbol/ms",
-    "": ""
-  },
-  "MS^A": {
-    "Name": "Morgan Stanley",
-    "LastSale": 22.66,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ms^a",
-    "": ""
-  },
-  "MS^E": {
-    "Name": "Morgan Stanley",
-    "LastSale": 28.96,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ms^e",
-    "": ""
-  },
-  "MS^F": {
-    "Name": "Morgan Stanley",
-    "LastSale": 28.37,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ms^f",
-    "": ""
-  },
-  "MS^G": {
-    "Name": "Morgan Stanley",
-    "LastSale": 26.57,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ms^g",
-    "": ""
-  },
-  "MS^I": {
-    "Name": "Morgan Stanley",
-    "LastSale": 27.4,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ms^i",
-    "": ""
-  },
-  "MS^K": {
-    "Name": "Morgan Stanley",
-    "LastSale": 26.67,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ms^k",
     "": ""
   },
   "APF": {
@@ -55277,26 +52707,6 @@
     "Sector": "Finance",
     "industry": "Business Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/mosc",
-    "": ""
-  },
-  "MOSC.U": {
-    "Name": "Mosaic Acquisition Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mosc.u",
-    "": ""
-  },
-  "MOSC.WS": {
-    "Name": "Mosaic Acquisition Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/mosc.ws",
     "": ""
   },
   "MOS": {
@@ -55649,26 +53059,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/nnn",
     "": ""
   },
-  "NNN^E": {
-    "Name": "National Retail Properties",
-    "LastSale": 24.41,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nnn^e",
-    "": ""
-  },
-  "NNN^F": {
-    "Name": "National Retail Properties",
-    "LastSale": 23.22,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nnn^f",
-    "": ""
-  },
   "SID": {
     "Name": "National Steel Company",
     "LastSale": 2.71,
@@ -55689,14 +53079,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/nsa",
     "": ""
   },
-  "NSA^A": {
+  "NSA": {
     "Name": "National Storage Affiliates Trust",
     "LastSale": 25,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nsa^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/nsa",
     "": ""
   },
   "NSM": {
@@ -55799,26 +53189,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/nm",
     "": ""
   },
-  "NM^G": {
-    "Name": "Navios Maritime Holdings Inc.",
-    "LastSale": 13.73,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nm^g",
-    "": ""
-  },
-  "NM^H": {
-    "Name": "Navios Maritime Holdings Inc.",
-    "LastSale": 13.78,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nm^h",
-    "": ""
-  },
   "NAP": {
     "Name": "Navios Maritime Midstream Partners LP",
     "LastSale": 9.37,
@@ -55847,16 +53217,6 @@
     "Sector": "Capital Goods",
     "industry": "Auto Manufacturing",
     "Summary Quote": "https://www.nasdaq.com/symbol/nav",
-    "": ""
-  },
-  "NAV^D": {
-    "Name": "Navistar International Corporation",
-    "LastSale": 19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Capital Goods",
-    "industry": "Auto Manufacturing",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nav^d",
     "": ""
   },
   "NCS": {
@@ -56049,24 +53409,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/nycb",
     "": ""
   },
-  "NYCB^A": {
+  "NYCB": {
     "Name": "New York Community Bancorp, Inc.",
     "LastSale": 27.465,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nycb^a",
-    "": ""
-  },
-  "NYCB^U": {
-    "Name": "New York Community Bancorp, Inc.",
-    "LastSale": 50.24,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nycb^u",
+    "Summary Quote": "https://www.nasdaq.com/symbol/nycb",
     "": ""
   },
   "NYRT": {
@@ -56199,56 +53549,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/nee",
     "": ""
   },
-  "NEE^I": {
-    "Name": "NextEra Energy, Inc.",
-    "LastSale": 24.55,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nee^i",
-    "": ""
-  },
-  "NEE^J": {
-    "Name": "NextEra Energy, Inc.",
-    "LastSale": 24.48,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nee^j",
-    "": ""
-  },
-  "NEE^K": {
-    "Name": "NextEra Energy, Inc.",
-    "LastSale": 24.9167,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nee^k",
-    "": ""
-  },
-  "NEE^Q": {
-    "Name": "NextEra Energy, Inc.",
-    "LastSale": 68.8667,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nee^q",
-    "": ""
-  },
-  "NEE^R": {
-    "Name": "NextEra Energy, Inc.",
-    "LastSale": 55.74,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nee^r",
-    "": ""
-  },
   "NGL": {
     "Name": "NGL ENERGY PARTNERS LP",
     "LastSale": 12.15,
@@ -56259,17 +53559,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ngl",
     "": ""
   },
-  "NGL^B": {
-    "Name": "NGL ENERGY PARTNERS LP",
-    "LastSale": 23.9,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ngl^b",
-    "": ""
-  },
-  "NMK^B": {
+  "NMK": {
     "Name": "Niagara Mohawk Holdings, Inc.",
     "LastSale": 95.06,
     "MarketCap": "n/a",
@@ -56277,16 +53567,6 @@
     "Sector": "Public Utilities",
     "industry": "Power Generation",
     "Summary Quote": "https://www.nasdaq.com/symbol/nmk^b",
-    "": ""
-  },
-  "NMK^C": {
-    "Name": "Niagara Mohawk Holdings, Inc.",
-    "LastSale": 96.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Public Utilities",
-    "industry": "Power Generation",
-    "Summary Quote": "https://www.nasdaq.com/symbol/nmk^c",
     "": ""
   },
   "NLSN": {
@@ -56639,34 +53919,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ns",
     "": ""
   },
-  "NS^A": {
+  "NS": {
     "Name": "Nustar Energy L.P.",
     "LastSale": 22.665,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ns^a",
-    "": ""
-  },
-  "NS^B": {
-    "Name": "Nustar Energy L.P.",
-    "LastSale": 20.96,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ns^b",
-    "": ""
-  },
-  "NS^C": {
-    "Name": "Nustar Energy L.P.",
-    "LastSale": 23.13,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ns^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ns",
     "": ""
   },
   "NSH": {
@@ -57559,34 +54819,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ofg",
     "": ""
   },
-  "OFG^A": {
+  "OFG": {
     "Name": "OFG Bancorp",
     "LastSale": 23.7153,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Finance",
     "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ofg^a",
-    "": ""
-  },
-  "OFG^B": {
-    "Name": "OFG Bancorp",
-    "LastSale": 22.9042,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ofg^b",
-    "": ""
-  },
-  "OFG^D": {
-    "Name": "OFG Bancorp",
-    "LastSale": 23.3394,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ofg^d",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ofg",
     "": ""
   },
   "OGE": {
@@ -57747,26 +54987,6 @@
     "Sector": "Finance",
     "industry": "Business Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/omad",
-    "": ""
-  },
-  "OMAD.U": {
-    "Name": "One Madison Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2018,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/omad.u",
-    "": ""
-  },
-  "OMAD.WS": {
-    "Name": "One Madison Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/omad.ws",
     "": ""
   },
   "OMF": {
@@ -58139,7 +55359,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/pe",
     "": ""
   },
-  "PRE^F": {
+  "PRE": {
     "Name": "PartnerRe Ltd.",
     "LastSale": 25.0901,
     "MarketCap": "n/a",
@@ -58147,36 +55367,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/pre^f",
-    "": ""
-  },
-  "PRE^G": {
-    "Name": "PartnerRe Ltd.",
-    "LastSale": 26.4123,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pre^g",
-    "": ""
-  },
-  "PRE^H": {
-    "Name": "PartnerRe Ltd.",
-    "LastSale": 27.52,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pre^h",
-    "": ""
-  },
-  "PRE^I": {
-    "Name": "PartnerRe Ltd.",
-    "LastSale": 25.61,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pre^i",
     "": ""
   },
   "PRTY": {
@@ -58249,26 +55439,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/peb",
     "": ""
   },
-  "PEB^C": {
-    "Name": "Pebblebrook Hotel Trust",
-    "LastSale": 24.69,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/peb^c",
-    "": ""
-  },
-  "PEB^D": {
-    "Name": "Pebblebrook Hotel Trust",
-    "LastSale": 24.72,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/peb^d",
-    "": ""
-  },
   "PBA": {
     "Name": "Pembina Pipeline Corp.",
     "LastSale": 32.24,
@@ -58299,36 +55469,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/pei",
     "": ""
   },
-  "PEI^B": {
-    "Name": "Pennsylvania Real Estate Investment Trust",
-    "LastSale": 22.0978,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pei^b",
-    "": ""
-  },
-  "PEI^C": {
-    "Name": "Pennsylvania Real Estate Investment Trust",
-    "LastSale": 21.605,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pei^c",
-    "": ""
-  },
-  "PEI^D": {
-    "Name": "Pennsylvania Real Estate Investment Trust",
-    "LastSale": 20.84,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pei^d",
-    "": ""
-  },
   "PFSI": {
     "Name": "PennyMac Financial Services, Inc.",
     "LastSale": 24.4,
@@ -58349,24 +55489,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/pmt",
     "": ""
   },
-  "PMT^A": {
+  "PMT": {
     "Name": "PennyMac Mortgage Investment Trust",
     "LastSale": 25.24,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pmt^a",
-    "": ""
-  },
-  "PMT^B": {
-    "Name": "PennyMac Mortgage Investment Trust",
-    "LastSale": 24.9994,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pmt^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/pmt",
     "": ""
   },
   "PAG": {
@@ -58889,16 +56019,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/pbi",
     "": ""
   },
-  "PBI^B": {
-    "Name": "Pitney Bowes Inc.",
-    "LastSale": 24.88,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pbi^b",
-    "": ""
-  },
   "PJT": {
     "Name": "PJT Partners Inc.",
     "LastSale": 49.65,
@@ -58997,36 +56117,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/pnc",
-    "": ""
-  },
-  "PNC.WS": {
-    "Name": "PNC Financial Services Group, Inc. (The)",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pnc.ws",
-    "": ""
-  },
-  "PNC^P": {
-    "Name": "PNC Financial Services Group, Inc. (The)",
-    "LastSale": 27.93,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pnc^p",
-    "": ""
-  },
-  "PNC^Q": {
-    "Name": "PNC Financial Services Group, Inc. (The)",
-    "LastSale": 25.07,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/pnc^q",
     "": ""
   },
   "PNM": {
@@ -59389,24 +56479,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/puk",
     "": ""
   },
-  "PUK^": {
-    "Name": "Prudential Public Limited Company",
-    "LastSale": 26.17,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/puk^",
-    "": ""
-  },
-  "PUK^A": {
+  "PUK": {
     "Name": "Prudential Public Limited Company",
     "LastSale": 25.89,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/puk^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/puk",
     "": ""
   },
   "ISD": {
@@ -59427,56 +56507,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/psb",
-    "": ""
-  },
-  "PSB^U": {
-    "Name": "PS Business Parks, Inc.",
-    "LastSale": 24.96,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psb^u",
-    "": ""
-  },
-  "PSB^V": {
-    "Name": "PS Business Parks, Inc.",
-    "LastSale": 24.91,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psb^v",
-    "": ""
-  },
-  "PSB^W": {
-    "Name": "PS Business Parks, Inc.",
-    "LastSale": 24.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psb^w",
-    "": ""
-  },
-  "PSB^X": {
-    "Name": "PS Business Parks, Inc.",
-    "LastSale": 24.49,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psb^x",
-    "": ""
-  },
-  "PSB^Y": {
-    "Name": "PS Business Parks, Inc.",
-    "LastSale": 23.8,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psb^y",
     "": ""
   },
   "TLK": {
@@ -59509,134 +56539,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/psa",
     "": ""
   },
-  "PSA^A": {
+  "PSA": {
     "Name": "Public Storage",
     "LastSale": 26.82,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^a",
-    "": ""
-  },
-  "PSA^B": {
-    "Name": "Public Storage",
-    "LastSale": 25.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^b",
-    "": ""
-  },
-  "PSA^C": {
-    "Name": "Public Storage",
-    "LastSale": 24.82,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^c",
-    "": ""
-  },
-  "PSA^D": {
-    "Name": "Public Storage",
-    "LastSale": 24.22,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^d",
-    "": ""
-  },
-  "PSA^E": {
-    "Name": "Public Storage",
-    "LastSale": 24.03,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^e",
-    "": ""
-  },
-  "PSA^F": {
-    "Name": "Public Storage",
-    "LastSale": 24.33,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^f",
-    "": ""
-  },
-  "PSA^G": {
-    "Name": "Public Storage",
-    "LastSale": 24.15,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^g",
-    "": ""
-  },
-  "PSA^U": {
-    "Name": "Public Storage",
-    "LastSale": 25.4204,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^u",
-    "": ""
-  },
-  "PSA^V": {
-    "Name": "Public Storage",
-    "LastSale": 25.1566,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Real Estate Investment Trusts",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^v",
-    "": ""
-  },
-  "PSA^W": {
-    "Name": "Public Storage",
-    "LastSale": 24.19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^w",
-    "": ""
-  },
-  "PSA^X": {
-    "Name": "Public Storage",
-    "LastSale": 24.499,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^x",
-    "": ""
-  },
-  "PSA^Y": {
-    "Name": "Public Storage",
-    "LastSale": 26.91,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^y",
-    "": ""
-  },
-  "PSA^Z": {
-    "Name": "Public Storage",
-    "LastSale": 26.32,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/psa^z",
+    "Summary Quote": "https://www.nasdaq.com/symbol/psa",
     "": ""
   },
   "PHM": {
@@ -59999,34 +56909,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ras",
     "": ""
   },
-  "RAS^A": {
+  "RAS": {
     "Name": "RAIT Financial Trust",
     "LastSale": 7.41,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ras^a",
-    "": ""
-  },
-  "RAS^B": {
-    "Name": "RAIT Financial Trust",
-    "LastSale": 7.52,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ras^b",
-    "": ""
-  },
-  "RAS^C": {
-    "Name": "RAIT Financial Trust",
-    "LastSale": 7.52,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ras^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ras",
     "": ""
   },
   "RFT": {
@@ -60069,16 +56959,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rpt",
     "": ""
   },
-  "RPT^D": {
-    "Name": "Ramco-Gershenson Properties Trust",
-    "LastSale": 51.94,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rpt^d",
-    "": ""
-  },
   "RRC": {
     "Name": "Range Resources Corporation",
     "LastSale": 15.6,
@@ -60119,14 +56999,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ryam",
     "": ""
   },
-  "RYAM^A": {
+  "RYAM": {
     "Name": "Rayonier Advanced Materials Inc.",
     "LastSale": 138.65,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ryam^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ryam",
     "": ""
   },
   "RYN": {
@@ -60229,26 +57109,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rwge",
     "": ""
   },
-  "RWGE.U": {
-    "Name": "Regalwood Global Energy Ltd.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rwge.u",
-    "": ""
-  },
-  "RWGE.WS": {
-    "Name": "Regalwood Global Energy Ltd.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rwge.ws",
-    "": ""
-  },
   "REG": {
     "Name": "Regency Centers Corporation",
     "LastSale": 59.12,
@@ -60279,24 +57139,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rf",
     "": ""
   },
-  "RF^A": {
+  "RF": {
     "Name": "Regions Financial Corporation",
     "LastSale": 25.48,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rf^a",
-    "": ""
-  },
-  "RF^B": {
-    "Name": "Regions Financial Corporation",
-    "LastSale": 27.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rf^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/rf",
     "": ""
   },
   "RGS": {
@@ -60379,26 +57229,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rnr",
     "": ""
   },
-  "RNR^C": {
-    "Name": "RenaissanceRe Holdings Ltd.",
-    "LastSale": 25.3281,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rnr^c",
-    "": ""
-  },
-  "RNR^E": {
-    "Name": "RenaissanceRe Holdings Ltd.",
-    "LastSale": 24.4222,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rnr^e",
-    "": ""
-  },
   "SOL": {
     "Name": "Renesola Ltd.",
     "LastSale": 2.54,
@@ -60469,26 +57299,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rso",
     "": ""
   },
-  "RSO^B.CL": {
-    "Name": "Resource Capital Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rso^b.cl",
-    "": ""
-  },
-  "RSO^C": {
-    "Name": "Resource Capital Corp.",
-    "LastSale": 25.612,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rso^c",
-    "": ""
-  },
   "QSR": {
     "Name": "Restaurant Brands International Inc.",
     "LastSale": 59.13,
@@ -60549,24 +57359,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rexr",
     "": ""
   },
-  "REXR^A": {
+  "REXR": {
     "Name": "Rexford Industrial Realty, Inc.",
     "LastSale": 24.75,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rexr^a",
-    "": ""
-  },
-  "REXR^B": {
-    "Name": "Rexford Industrial Realty, Inc.",
-    "LastSale": 24.85,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rexr^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/rexr",
     "": ""
   },
   "RXN": {
@@ -60579,14 +57379,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rxn",
     "": ""
   },
-  "RXN^A": {
+  "RXN": {
     "Name": "Rexnord Corporation",
     "LastSale": 65.27,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rxn^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/rxn",
     "": ""
   },
   "RH": {
@@ -60649,7 +57449,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rad",
     "": ""
   },
-  "RMPL^": {
+  "RMPL": {
     "Name": "RiverNorth Marketplace Lending Corporation",
     "LastSale": 25.22,
     "MarketCap": "n/a",
@@ -60699,14 +57499,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/rlj",
     "": ""
   },
-  "RLJ^A": {
+  "RLJ": {
     "Name": "RLJ Lodging Trust",
     "LastSale": 25.85,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rlj^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/rlj",
     "": ""
   },
   "RRTS": {
@@ -60819,16 +57619,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ry",
     "": ""
   },
-  "RY^T": {
-    "Name": "Royal Bank Of Canada",
-    "LastSale": 30.0693,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ry^t",
-    "": ""
-  },
   "RBS": {
     "Name": "Royal Bank Scotland plc (The)",
     "LastSale": 7.41,
@@ -60837,16 +57627,6 @@
     "Sector": "Finance",
     "industry": "Commercial Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/rbs",
-    "": ""
-  },
-  "RBS^S": {
-    "Name": "Royal Bank Scotland plc (The)",
-    "LastSale": 25.94,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/rbs^s",
     "": ""
   },
   "RCL": {
@@ -61019,26 +57799,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/sb",
     "": ""
   },
-  "SB^C": {
-    "Name": "Safe Bulkers, Inc",
-    "LastSale": 23.25,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sb^c",
-    "": ""
-  },
-  "SB^D": {
-    "Name": "Safe Bulkers, Inc",
-    "LastSale": 23.1,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sb^d",
-    "": ""
-  },
   "SFE": {
     "Name": "Safeguard Scientifics, Inc.",
     "LastSale": 12.9,
@@ -61179,7 +57939,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/sc",
     "": ""
   },
-  "SOV^C": {
+  "SOV": {
     "Name": "Santander Holdings USA, Inc.",
     "LastSale": 26.0824,
     "MarketCap": "n/a",
@@ -61237,26 +57997,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/bfs",
-    "": ""
-  },
-  "BFS^C": {
-    "Name": "Saul Centers, Inc.",
-    "LastSale": 25.275,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bfs^c",
-    "": ""
-  },
-  "BFS^D": {
-    "Name": "Saul Centers, Inc.",
-    "LastSale": 24.5576,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/bfs^d",
     "": ""
   },
   "SCG": {
@@ -61489,46 +58229,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ssw",
     "": ""
   },
-  "SSW^D": {
-    "Name": "Seaspan Corporation",
-    "LastSale": 23.7299,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ssw^d",
-    "": ""
-  },
-  "SSW^E": {
-    "Name": "Seaspan Corporation",
-    "LastSale": 24,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ssw^e",
-    "": ""
-  },
-  "SSW^G": {
-    "Name": "Seaspan Corporation",
-    "LastSale": 23.89,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ssw^g",
-    "": ""
-  },
-  "SSW^H": {
-    "Name": "Seaspan Corporation",
-    "LastSale": 23.15,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ssw^h",
-    "": ""
-  },
   "SSWA": {
     "Name": "Seaspan Corporation",
     "LastSale": 23.55,
@@ -61639,14 +58339,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/sre",
     "": ""
   },
-  "SRE^A": {
+  "SRE": {
     "Name": "Sempra Energy",
     "LastSale": 101.42,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Public Utilities",
     "industry": "Natural Gas Distribution",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sre^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/sre",
     "": ""
   },
   "SEND": {
@@ -61699,14 +58399,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/srg",
     "": ""
   },
-  "SRG^A": {
+  "SRG": {
     "Name": "Seritage Growth Properties",
     "LastSale": 22.3,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/srg^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/srg",
     "": ""
   },
   "SCI": {
@@ -61859,16 +58559,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/spg",
     "": ""
   },
-  "SPG^J": {
-    "Name": "Simon Property Group, Inc.",
-    "LastSale": 70.2501,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/spg^j",
-    "": ""
-  },
   "SSD": {
     "Name": "Simpson Manufacturing Company, Inc.",
     "LastSale": 59.14,
@@ -61949,16 +58639,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/slg",
     "": ""
   },
-  "SLG^I": {
-    "Name": "SL Green Realty Corporation",
-    "LastSale": 25.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/slg^i",
-    "": ""
-  },
   "SM": {
     "Name": "SM Energy Company",
     "LastSale": 18.32,
@@ -62027,26 +58707,6 @@
     "Sector": "Finance",
     "industry": "Business Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/ipoa",
-    "": ""
-  },
-  "IPOA.U": {
-    "Name": "Social Capital Hedosophia Holdings Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ipoa.u",
-    "": ""
-  },
-  "IPOA.WS": {
-    "Name": "Social Capital Hedosophia Holdings Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ipoa.ws",
     "": ""
   },
   "SQM": {
@@ -62149,47 +58809,7 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/sxe",
     "": ""
   },
-  "SCE^G": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 23.0992,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^g",
-    "": ""
-  },
-  "SCE^H": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 26.43,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^h",
-    "": ""
-  },
-  "SCE^J": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 25.48,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^j",
-    "": ""
-  },
-  "SCE^K": {
-    "Name": "Southern California Edison Company",
-    "LastSale": 25.83,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sce^k",
-    "": ""
-  },
-  "SCE^L": {
+  "SCE": {
     "Name": "Southern California Edison Company",
     "LastSale": 23.25,
     "MarketCap": "n/a",
@@ -62299,16 +58919,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/spe",
     "": ""
   },
-  "SPE^B": {
-    "Name": "Special Opportunities Fund Inc.",
-    "LastSale": 26.04,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/spe^b",
-    "": ""
-  },
   "SEP": {
     "Name": "Spectra Energy Partners, LP",
     "LastSale": 39.85,
@@ -62379,14 +58989,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/src",
     "": ""
   },
-  "SRC^A": {
+  "SRC": {
     "Name": "Spirit Realty Capital, Inc.",
     "LastSale": 22.85,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/src^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/src",
     "": ""
   },
   "SRLP": {
@@ -62457,26 +59067,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/stag",
-    "": ""
-  },
-  "STAG^B": {
-    "Name": "Stag Industrial, Inc.",
-    "LastSale": 25.4,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stag^b",
-    "": ""
-  },
-  "STAG^C": {
-    "Name": "Stag Industrial, Inc.",
-    "LastSale": 25.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stag^c",
     "": ""
   },
   "SSI": {
@@ -62589,46 +59179,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/stt",
     "": ""
   },
-  "STT^C": {
-    "Name": "State Street Corporation",
-    "LastSale": 24.91,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stt^c",
-    "": ""
-  },
-  "STT^D": {
-    "Name": "State Street Corporation",
-    "LastSale": 27.2,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stt^d",
-    "": ""
-  },
-  "STT^E": {
-    "Name": "State Street Corporation",
-    "LastSale": 26.15,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stt^e",
-    "": ""
-  },
-  "STT^G": {
-    "Name": "State Street Corporation",
-    "LastSale": 26.61,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stt^g",
-    "": ""
-  },
   "STO": {
     "Name": "Statoil ASA",
     "LastSale": 22.91,
@@ -62649,14 +59199,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/splp",
     "": ""
   },
-  "SPLP^A": {
+  "SPLP": {
     "Name": "Steel Partners Holdings LP",
     "LastSale": 20.6899,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/splp^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/splp",
     "": ""
   },
   "SCS": {
@@ -62719,14 +59269,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/stl",
     "": ""
   },
-  "STL^A": {
+  "STL": {
     "Name": "Sterling Bancorp",
     "LastSale": 26.3218,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Finance",
     "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/stl^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/stl",
     "": ""
   },
   "STC": {
@@ -62749,14 +59299,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/sf",
     "": ""
   },
-  "SF^A": {
+  "SF": {
     "Name": "Stifel Financial Corporation",
     "LastSale": 26.41,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Finance",
     "industry": "Investment Bankers/Brokers/Service",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sf^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/sf",
     "": ""
   },
   "SFB": {
@@ -62919,36 +59469,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/inn",
     "": ""
   },
-  "INN^C.CL": {
-    "Name": "Summit Hotel Properties, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/inn^c.cl",
-    "": ""
-  },
-  "INN^D": {
-    "Name": "Summit Hotel Properties, Inc.",
-    "LastSale": 24.3828,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/inn^d",
-    "": ""
-  },
-  "INN^E": {
-    "Name": "Summit Hotel Properties, Inc.",
-    "LastSale": 23.77,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/inn^e",
-    "": ""
-  },
   "SUM": {
     "Name": "Summit Materials, Inc.",
     "LastSale": 31.91,
@@ -63039,26 +59559,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/sho",
     "": ""
   },
-  "SHO^E": {
-    "Name": "Sunstone Hotel Investors, Inc.",
-    "LastSale": 25.19,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sho^e",
-    "": ""
-  },
-  "SHO^F": {
-    "Name": "Sunstone Hotel Investors, Inc.",
-    "LastSale": 24.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sho^f",
-    "": ""
-  },
   "STI": {
     "Name": "SunTrust Banks, Inc.",
     "LastSale": 72.58,
@@ -63067,46 +59567,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/sti",
-    "": ""
-  },
-  "STI.WS.A": {
-    "Name": "SunTrust Banks, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sti.ws.a",
-    "": ""
-  },
-  "STI.WS.B": {
-    "Name": "SunTrust Banks, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sti.ws.b",
-    "": ""
-  },
-  "STI^A": {
-    "Name": "SunTrust Banks, Inc.",
-    "LastSale": 24.15,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sti^a",
-    "": ""
-  },
-  "STI^E.CL": {
-    "Name": "SunTrust Banks, Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/sti^e.cl",
     "": ""
   },
   "SPN": {
@@ -63207,16 +59667,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/snv",
-    "": ""
-  },
-  "SNV^C": {
-    "Name": "Synovus Financial Corp.",
-    "LastSale": 26.3,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/snv^c",
     "": ""
   },
   "GJP": {
@@ -63379,14 +59829,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/tpr",
     "": ""
   },
-  "NGLS^A": {
+  "NGLS": {
     "Name": "Targa Resources Partners LP",
     "LastSale": 26.755,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ngls^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/ngls",
     "": ""
   },
   "TRGP": {
@@ -63439,26 +59889,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/tco",
     "": ""
   },
-  "TCO^J": {
-    "Name": "Taubman Centers, Inc.",
-    "LastSale": 24.8855,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tco^j",
-    "": ""
-  },
-  "TCO^K": {
-    "Name": "Taubman Centers, Inc.",
-    "LastSale": 24.05,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tco^k",
-    "": ""
-  },
   "TMHC": {
     "Name": "Taylor Morrison Home Corporation",
     "LastSale": 24.04,
@@ -63487,26 +59917,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/tcf",
-    "": ""
-  },
-  "TCF.WS": {
-    "Name": "TCF Financial Corporation",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tcf.ws",
-    "": ""
-  },
-  "TCF^D": {
-    "Name": "TCF Financial Corporation",
-    "LastSale": 25.14,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tcf^d",
     "": ""
   },
   "TSI": {
@@ -63579,24 +59989,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/tgp",
     "": ""
   },
-  "TGP^A": {
+  "TGP": {
     "Name": "Teekay LNG Partners L.P.",
     "LastSale": 25.09,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tgp^a",
-    "": ""
-  },
-  "TGP^B": {
-    "Name": "Teekay LNG Partners L.P.",
-    "LastSale": 23.86,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tgp^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/tgp",
     "": ""
   },
   "TOO": {
@@ -63609,34 +60009,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/too",
     "": ""
   },
-  "TOO^A": {
+  "TOO": {
     "Name": "Teekay Offshore Partners L.P.",
     "LastSale": 21.4,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/too^a",
-    "": ""
-  },
-  "TOO^B": {
-    "Name": "Teekay Offshore Partners L.P.",
-    "LastSale": 23.65,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/too^b",
-    "": ""
-  },
-  "TOO^E": {
-    "Name": "Teekay Offshore Partners L.P.",
-    "LastSale": 24,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/too^e",
+    "Summary Quote": "https://www.nasdaq.com/symbol/too",
     "": ""
   },
   "TNK": {
@@ -64129,26 +60509,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/schw",
     "": ""
   },
-  "SCHW^C": {
-    "Name": "The Charles Schwab Corporation",
-    "LastSale": 25.93,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/schw^c",
-    "": ""
-  },
-  "SCHW^D": {
-    "Name": "The Charles Schwab Corporation",
-    "LastSale": 26.04,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/schw^d",
-    "": ""
-  },
   "COO": {
     "Name": "The Cooper Companies, Inc.",
     "LastSale": 240.95,
@@ -64169,24 +60529,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/grx",
     "": ""
   },
-  "GRX^A": {
+  "GRX": {
     "Name": "The Gabelli Healthcare & Wellness Trust",
     "LastSale": 25.4709,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/grx^a",
-    "": ""
-  },
-  "GRX^B": {
-    "Name": "The Gabelli Healthcare & Wellness Trust",
-    "LastSale": 26.04,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/grx^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/grx",
     "": ""
   },
   "GDL": {
@@ -64197,16 +60547,6 @@
     "Sector": "n/a",
     "industry": "n/a",
     "Summary Quote": "https://www.nasdaq.com/symbol/gdl",
-    "": ""
-  },
-  "GDL^B": {
-    "Name": "The GDL Fund",
-    "LastSale": 50.36,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/gdl^b",
     "": ""
   },
   "THG": {
@@ -64349,26 +60689,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/tdw",
     "": ""
   },
-  "TDW.WS.A": {
-    "Name": "Tidewater Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tdw.ws.a",
-    "": ""
-  },
-  "TDW.WS.B": {
-    "Name": "Tidewater Inc.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tdw.ws.b",
-    "": ""
-  },
   "TIER": {
     "Name": "TIER REIT, Inc.",
     "LastSale": 19.09,
@@ -64497,16 +60817,6 @@
     "Sector": "Finance",
     "industry": "Life Insurance",
     "Summary Quote": "https://www.nasdaq.com/symbol/tmk",
-    "": ""
-  },
-  "TMK^C": {
-    "Name": "Torchmark Corporation",
-    "LastSale": 26.1346,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tmk^c",
     "": ""
   },
   "TTC": {
@@ -64639,26 +60949,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/tpge",
     "": ""
   },
-  "TPGE.U": {
-    "Name": "TPG Pace Energy Holdings Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tpge.u",
-    "": ""
-  },
-  "TPGE.WS": {
-    "Name": "TPG Pace Energy Holdings Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tpge.ws",
-    "": ""
-  },
   "TPGH": {
     "Name": "TPG Pace Holdings Corp.",
     "LastSale": 9.7703,
@@ -64667,26 +60957,6 @@
     "Sector": "Finance",
     "industry": "Business Services",
     "Summary Quote": "https://www.nasdaq.com/symbol/tpgh",
-    "": ""
-  },
-  "TPGH.U": {
-    "Name": "TPG Pace Holdings Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": 2017,
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tpgh.u",
-    "": ""
-  },
-  "TPGH.WS": {
-    "Name": "TPG Pace Holdings Corp.",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tpgh.ws",
     "": ""
   },
   "TRTX": {
@@ -64849,16 +61119,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ty",
     "": ""
   },
-  "TY^": {
-    "Name": "Tri Continental Corporation",
-    "LastSale": 50.4,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Consumer Services",
-    "industry": "Miscellaneous",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ty^",
-    "": ""
-  },
   "TPH": {
     "Name": "TRI Pointe Group, Inc.",
     "LastSale": 16.6,
@@ -65019,46 +61279,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/tnp",
     "": ""
   },
-  "TNP^B": {
-    "Name": "Tsakos Energy Navigation Ltd",
-    "LastSale": 25.22,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tnp^b",
-    "": ""
-  },
-  "TNP^C": {
-    "Name": "Tsakos Energy Navigation Ltd",
-    "LastSale": 25.3799,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tnp^c",
-    "": ""
-  },
-  "TNP^D": {
-    "Name": "Tsakos Energy Navigation Ltd",
-    "LastSale": 24.9499,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tnp^d",
-    "": ""
-  },
-  "TNP^E": {
-    "Name": "Tsakos Energy Navigation Ltd",
-    "LastSale": 25.11,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/tnp^e",
-    "": ""
-  },
   "TUP": {
     "Name": "Tupperware Brands Corporation",
     "LastSale": 51.57,
@@ -65139,34 +61359,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/two",
     "": ""
   },
-  "TWO^A": {
+  "TWO": {
     "Name": "Two Harbors Investments Corp",
     "LastSale": 25.9739,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/two^a",
-    "": ""
-  },
-  "TWO^B": {
-    "Name": "Two Harbors Investments Corp",
-    "LastSale": 24.73,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/two^b",
-    "": ""
-  },
-  "TWO^C": {
-    "Name": "Two Harbors Investments Corp",
-    "LastSale": 23.94,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/two^c",
+    "Summary Quote": "https://www.nasdaq.com/symbol/two",
     "": ""
   },
   "TYL": {
@@ -65199,44 +61399,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/usb",
     "": ""
   },
-  "USB^A": {
+  "USB": {
     "Name": "U.S. Bancorp",
     "LastSale": 911.9,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "Finance",
     "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/usb^a",
-    "": ""
-  },
-  "USB^H": {
-    "Name": "U.S. Bancorp",
-    "LastSale": 22.7265,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/usb^h",
-    "": ""
-  },
-  "USB^M": {
-    "Name": "U.S. Bancorp",
-    "LastSale": 27.85,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/usb^m",
-    "": ""
-  },
-  "USB^O": {
-    "Name": "U.S. Bancorp",
-    "LastSale": 25.36,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/usb^o",
+    "Summary Quote": "https://www.nasdaq.com/symbol/usb",
     "": ""
   },
   "USPH": {
@@ -65297,36 +61467,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/umh",
-    "": ""
-  },
-  "UMH^B": {
-    "Name": "UMH Properties, Inc.",
-    "LastSale": 26.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/umh^b",
-    "": ""
-  },
-  "UMH^C": {
-    "Name": "UMH Properties, Inc.",
-    "LastSale": 25.16,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/umh^c",
-    "": ""
-  },
-  "UMH^D": {
-    "Name": "UMH Properties, Inc.",
-    "LastSale": 23.68,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/umh^d",
     "": ""
   },
   "UA": {
@@ -65659,26 +61799,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/ubp",
     "": ""
   },
-  "UBP^G": {
-    "Name": "Urstadt Biddle Properties Inc.",
-    "LastSale": 25.62,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ubp^g",
-    "": ""
-  },
-  "UBP^H": {
-    "Name": "Urstadt Biddle Properties Inc.",
-    "LastSale": 24.9849,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ubp^h",
-    "": ""
-  },
   "USFD": {
     "Name": "US Foods Holding Corp.",
     "LastSale": 34.2,
@@ -65829,24 +61949,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/vr",
     "": ""
   },
-  "VR^A": {
+  "VR": {
     "Name": "Validus Holdings, Ltd.",
     "LastSale": 25.6,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vr^a",
-    "": ""
-  },
-  "VR^B": {
-    "Name": "Validus Holdings, Ltd.",
-    "LastSale": 25.35,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vr^b",
+    "Summary Quote": "https://www.nasdaq.com/symbol/vr",
     "": ""
   },
   "VLY": {
@@ -65857,36 +61967,6 @@
     "Sector": "Finance",
     "industry": "Major Banks",
     "Summary Quote": "https://www.nasdaq.com/symbol/vly",
-    "": ""
-  },
-  "VLY.WS": {
-    "Name": "Valley National Bancorp",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vly.ws",
-    "": ""
-  },
-  "VLY^A": {
-    "Name": "Valley National Bancorp",
-    "LastSale": 27.68,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "Finance",
-    "industry": "Major Banks",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vly^a",
-    "": ""
-  },
-  "VLY^B": {
-    "Name": "Valley National Bancorp",
-    "LastSale": 25.81,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vly^b",
     "": ""
   },
   "VMI": {
@@ -66007,16 +62087,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/ver",
-    "": ""
-  },
-  "VER^F": {
-    "Name": "VEREIT Inc.",
-    "LastSale": 25.57,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/ver^f",
     "": ""
   },
   "PAY": {
@@ -66289,36 +62359,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/vno",
     "": ""
   },
-  "VNO^K": {
-    "Name": "Vornado Realty Trust",
-    "LastSale": 25.42,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vno^k",
-    "": ""
-  },
-  "VNO^L": {
-    "Name": "Vornado Realty Trust",
-    "LastSale": 24.61,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vno^l",
-    "": ""
-  },
-  "VNO^M": {
-    "Name": "Vornado Realty Trust",
-    "LastSale": 24,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/vno^m",
-    "": ""
-  },
   "VJET": {
     "Name": "voxeljet AG",
     "LastSale": 4.07,
@@ -66459,36 +62499,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/wrb",
     "": ""
   },
-  "WRB^B": {
-    "Name": "W.R. Berkley Corporation",
-    "LastSale": 25.305,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wrb^b",
-    "": ""
-  },
-  "WRB^C": {
-    "Name": "W.R. Berkley Corporation",
-    "LastSale": 25.5,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wrb^c",
-    "": ""
-  },
-  "WRB^D": {
-    "Name": "W.R. Berkley Corporation",
-    "LastSale": 25.3957,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wrb^d",
-    "": ""
-  },
   "GRA": {
     "Name": "W.R. Grace & Co.",
     "LastSale": 67.24,
@@ -66599,26 +62609,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/wpg",
     "": ""
   },
-  "WPG^H": {
-    "Name": "Washington Prime Group Inc.",
-    "LastSale": 22.78,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wpg^h",
-    "": ""
-  },
-  "WPG^I": {
-    "Name": "Washington Prime Group Inc.",
-    "LastSale": 21.32,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wpg^i",
-    "": ""
-  },
   "WRE": {
     "Name": "Washington Real Estate Investment Trust",
     "LastSale": 26.77,
@@ -66719,16 +62709,6 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/wbs",
     "": ""
   },
-  "WBS^F": {
-    "Name": "Webster Financial Corporation",
-    "LastSale": 24.27,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wbs^f",
-    "": ""
-  },
   "WEC": {
     "Name": "WEC Energy Group, Inc.",
     "LastSale": 60.89,
@@ -66799,144 +62779,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/wfc",
     "": ""
   },
-  "WFC.WS": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": "n/a",
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc.ws",
-    "": ""
-  },
-  "WFC^J": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 25.75,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^j",
-    "": ""
-  },
-  "WFC^L": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 1288,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^l",
-    "": ""
-  },
-  "WFC^N": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 24.49,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^n",
-    "": ""
-  },
-  "WFC^O": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 24.46,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^o",
-    "": ""
-  },
-  "WFC^P": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 24.51,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^p",
-    "": ""
-  },
-  "WFC^Q": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 26.55,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^q",
-    "": ""
-  },
-  "WFC^R": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 27.7,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^r",
-    "": ""
-  },
-  "WFC^T": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 25.6,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^t",
-    "": ""
-  },
-  "WFC^V": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 25.83,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^v",
-    "": ""
-  },
-  "WFC^W": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 25.08,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^w",
-    "": ""
-  },
-  "WFC^X": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 24.77,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^x",
-    "": ""
-  },
-  "WFC^Y": {
-    "Name": "Wells Fargo & Company",
-    "LastSale": 24.99,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfc^y",
-    "": ""
-  },
-  "WFE^A": {
+  "WFE": {
     "Name": "Wells Fargo & Company",
     "LastSale": 26.54,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/wfe^a",
+    "Summary Quote": "https://www.nasdaq.com/symbol/wfe",
     "": ""
   },
   "EOD": {
@@ -66957,16 +62807,6 @@
     "Sector": "Consumer Services",
     "industry": "Real Estate Investment Trusts",
     "Summary Quote": "https://www.nasdaq.com/symbol/well",
-    "": ""
-  },
-  "WELL^I": {
-    "Name": "Welltower Inc.",
-    "LastSale": 56.08,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/well^i",
     "": ""
   },
   "WAIR": {
@@ -67799,34 +63639,14 @@
     "Summary Quote": "https://www.nasdaq.com/symbol/zbh",
     "": ""
   },
-  "ZB^A": {
+  "ZB": {
     "Name": "Zions Bancorporation",
     "LastSale": 24.41,
     "MarketCap": "n/a",
     "IPOyear": "n/a",
     "Sector": "n/a",
     "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/zb^a",
-    "": ""
-  },
-  "ZB^G": {
-    "Name": "Zions Bancorporation",
-    "LastSale": 26.81,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/zb^g",
-    "": ""
-  },
-  "ZB^H": {
-    "Name": "Zions Bancorporation",
-    "LastSale": 25.4,
-    "MarketCap": "n/a",
-    "IPOyear": "n/a",
-    "Sector": "n/a",
-    "industry": "n/a",
-    "Summary Quote": "https://www.nasdaq.com/symbol/zb^h",
+    "Summary Quote": "https://www.nasdaq.com/symbol/zb",
     "": ""
   },
   "ZBK": {

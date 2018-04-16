@@ -155,31 +155,44 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="companyCell" textLabel="zeR-SU-K2g" detailTextLabel="5mc-hU-01Y" rowHeight="75" style="IBUITableViewCellStyleValue1" id="eJ5-xm-z7O">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="companyCell" rowHeight="75" id="eJ5-xm-z7O" customClass="SearchCompanyTableViewCell" customModule="InBest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eJ5-xm-z7O" id="lO4-mw-YoL">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="74.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zeR-SU-K2g">
-                                            <rect key="frame" x="16.000000000000004" y="28" width="33.333333333333336" height="20.333333333333332"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5mc-hU-01Y">
-                                            <rect key="frame" x="315" y="28" width="44" height="20.333333333333332"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAa-9T-OPx">
+                                            <rect key="frame" x="16" y="27" width="343" height="20.333333333333329"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oec-Tg-UDO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="268" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SYM" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPL-Ou-xP7">
+                                                    <rect key="frame" x="268" y="0.0" width="75" height="20.333333333333332"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="2fk-he-qZw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.66608977317810059" green="0.87750554084777832" blue="0.69483953714370728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fAa-9T-OPx" secondAttribute="trailing" id="1vO-2w-bUV"/>
+                                        <constraint firstItem="fAa-9T-OPx" firstAttribute="centerY" secondItem="lO4-mw-YoL" secondAttribute="centerY" id="2C7-G5-jZ2"/>
+                                        <constraint firstItem="fAa-9T-OPx" firstAttribute="leading" secondItem="lO4-mw-YoL" secondAttribute="leadingMargin" id="yyS-TC-HDe"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.41290020942687988" green="0.60596340894699097" blue="0.44963705539703369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
+                                    <outlet property="companyNameLabel" destination="oec-Tg-UDO" id="eTi-lw-XIl"/>
+                                    <outlet property="companyTickerSymbolLabel" destination="aPL-Ou-xP7" id="fYj-IZ-XwC"/>
                                     <segue destination="fQw-mw-vlZ" kind="show" identifier="toCompanyInfo" id="BbO-VG-iB7"/>
                                 </connections>
                             </tableViewCell>
