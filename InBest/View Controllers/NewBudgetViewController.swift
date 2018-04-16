@@ -31,6 +31,11 @@ class NewBudgetViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         return 1
     }
     
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let stringWithNewColor = NSAttributedString(string: pickerData[row], attributes: [.foregroundColor: UIColor(red: 177.0/255.0, green: 218.0/255.0, blue: 177.0/255.0, alpha: 1.0)])
+        return stringWithNewColor
+    }
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData.count
     }

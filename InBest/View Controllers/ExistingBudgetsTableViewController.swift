@@ -10,7 +10,9 @@ import UIKit
 
 class ExistingBudgetsTableViewController: UITableViewController {
     
+    // MARK: -  Properties
     var currentUser = CustomUserController.shared.currentUser
+    
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()

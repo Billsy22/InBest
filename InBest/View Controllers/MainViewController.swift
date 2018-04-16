@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         CustomUserController.shared.fetchCurrentUser {
             guard let currentUser = CustomUserController.shared.currentUser else { return }
             BudgetController.shared.load(currentUser: currentUser, completion: {
-                print("CurrentUser set. Screen name is: \(currentUser)")
+                print("CurrentUser set. Screen name is: \(currentUser.screenName)")
             })
         }
         CompanyController.shared.loadAllCompanies()
