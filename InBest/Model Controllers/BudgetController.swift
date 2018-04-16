@@ -119,7 +119,7 @@ class BudgetController {
                 return
             }
             guard let records = records else { completion(); return }
-            let investments = records.flatMap( { Investment(cloudKitRecord: $0) })
+            let investments = records.compactMap( { Investment(cloudKitRecord: $0) })
             budget.investments = investments
             completion()
         }
@@ -135,7 +135,7 @@ class BudgetController {
                 return
             }
             guard let records = records else { completion(); return }
-            let companies = records.flatMap( {Company(cloudKitRecord: $0)} )
+            let companies = records.compactMap( {Company(cloudKitRecord: $0)} )
             investment.company = companies.first
             completion()
         }

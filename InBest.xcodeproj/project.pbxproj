@@ -29,6 +29,8 @@
 		1651928E206009D00051D11C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651928D206009D00051D11C /* Constants.swift */; };
 		165192902060130A0051D11C /* InvestmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651928F2060130A0051D11C /* InvestmentDetailViewController.swift */; };
 		1651929220605BC20051D11C /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651929120605BC20051D11C /* DateFormat.swift */; };
+		165939C220850A5400B64B6C /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165939C120850A5400B64B6C /* InvestmentTableViewCell.swift */; };
+		165939C42085157D00B64B6C /* SearchCompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165939C32085157D00B64B6C /* SearchCompanyTableViewCell.swift */; };
 		1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBDF205ABEF300859CAF /* StockInfoController.swift */; };
 		1672FBE2205AD12800859CAF /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE1205AD12800859CAF /* StockInfoViewController.swift */; };
 		1672FBE6205AF26700859CAF /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1672FBE5205AF26700859CAF /* Investment.swift */; };
@@ -66,6 +68,8 @@
 		1651928D206009D00051D11C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1651928F2060130A0051D11C /* InvestmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDetailViewController.swift; sourceTree = "<group>"; };
 		1651929120605BC20051D11C /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		165939C120850A5400B64B6C /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
+		165939C32085157D00B64B6C /* SearchCompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompanyTableViewCell.swift; sourceTree = "<group>"; };
 		1672FBDF205ABEF300859CAF /* StockInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoController.swift; sourceTree = "<group>"; };
 		1672FBE1205AD12800859CAF /* StockInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
 		1672FBE5205AF26700859CAF /* Investment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			children = (
 				1608E1202056D9100077D539 /* Main.storyboard */,
 				1608E1252056D9100077D539 /* LaunchScreen.storyboard */,
+				165939C120850A5400B64B6C /* InvestmentTableViewCell.swift */,
+				165939C32085157D00B64B6C /* SearchCompanyTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,7 +227,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Taylor Bills";
 				TargetAttributes = {
 					1608E1182056D9100077D539 = {
@@ -283,6 +289,7 @@
 				16800B2920615C5F00554E9C /* URLHelper.swift in Sources */,
 				1608E13A2056FE440077D539 /* StockInfo.swift in Sources */,
 				1608E11D2056D9100077D539 /* AppDelegate.swift in Sources */,
+				165939C220850A5400B64B6C /* InvestmentTableViewCell.swift in Sources */,
 				1672FBE8205B2F9E00859CAF /* InvestmentController.swift in Sources */,
 				1645F25D205827BC0087F9B3 /* Budget.swift in Sources */,
 				1608E1382056E1700077D539 /* Company.swift in Sources */,
@@ -296,6 +303,7 @@
 				160D1EE020693B9100D6414B /* LineChart.swift in Sources */,
 				1672FBE6205AF26700859CAF /* Investment.swift in Sources */,
 				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
+				165939C42085157D00B64B6C /* SearchCompanyTableViewCell.swift in Sources */,
 				1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */,
 				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,
 				16E76226206440C000114D3A /* CustomUser.swift in Sources */,
@@ -340,6 +348,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -347,6 +356,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -397,6 +407,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -404,6 +415,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

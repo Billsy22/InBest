@@ -34,12 +34,14 @@ class BudgetDetailTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "investmentCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "investmentCell", for: indexPath) as? InvestmentTableViewCell else { return UITableViewCell() }
         guard let budget = budget else { return UITableViewCell() }
         let investment = budget.investments[indexPath.row]
         guard let company = investment.company else { return UITableViewCell() }
-        cell.textLabel?.text = company.name
-        cell.detailTextLabel?.text = "Initial Investment:\n$\(investment.initialAmountOfMoney.roundedToMoney())"
+        DispatchQueue.main.async {
+            cell.investment = investment
+            cell.company = company
+        }
         return cell
     }
     
