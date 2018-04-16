@@ -64,12 +64,7 @@ class BudgetDetailTableViewController: UITableViewController {
     }
     
     // MARK: -  Actions
-    @IBAction func saveButtonTapped(_ sender: Any) {
-        guard let budget = budget else { return }
-        BudgetController.shared.save(budget: budget) {
-        }
-        self.performSegue(withIdentifier: "toBudgetList", sender: self)
-    }
+    @IBAction func unwindToBudgetDetail(segue: UIStoryboardSegue) {}
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -86,6 +81,4 @@ class BudgetDetailTableViewController: UITableViewController {
             investmentDetailVC.investment = investment
         }
     }
-    
-    @IBAction func unwindToBudgetDetailVC(segue: UIStoryboardSegue) {}
 }

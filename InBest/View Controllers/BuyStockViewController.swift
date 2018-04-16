@@ -58,7 +58,7 @@ class BuyStockViewController: UIViewController {
             BudgetController.shared.save(budget: budget) {
                 budget.currentAmount -= cost
             }
-            self.performSegue(withIdentifier: "unwindToBudgetDetailVCWithSegue", sender: self)
+            self.performSegue(withIdentifier: "toBudgetDetail", sender: self)
         }
     }
     
