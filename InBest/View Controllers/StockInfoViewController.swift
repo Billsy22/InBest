@@ -15,6 +15,8 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var companyNameLabel: UILabel!
     @IBOutlet weak var companySymbolLabel: UILabel!
     @IBOutlet weak var currentPriceLabel: UILabel!
+    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var budget: Budget?
     var company: Company?
     var stockInfo: StockInfo?
@@ -23,6 +25,9 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        buyButton.isEnabled = false
+        buyButton.setTitle("", for: .disabled)
+        activityIndicator.startAnimating()
         stockInfoTableView.delegate = self
         stockInfoTableView.dataSource = self
         updateTableView()
@@ -71,6 +76,10 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
                 guard let stockInfo = self.stockInfo else { return }
                 guard let currentPrice = Double(stockInfo.close) else { return }
                 self.currentPriceLabel.text = "$\(currentPrice.roundedToMoney())"
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
+                self.buyButton.isEnabled = true
+                self.buyButton.setTitle("Buy", for: .normal)
             }
         }
     }

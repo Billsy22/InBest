@@ -17,6 +17,8 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     @IBOutlet weak var investedAmountLabel: UILabel!
     @IBOutlet weak var sellAmountLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activitiyIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var sellButton: UIButton!
     var budget: Budget?
     var investment: Investment?
     var currentPrice: StockInfo?
@@ -26,6 +28,10 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        activitiyIndicator.color = UIColor(red: 0.666, green: 0.878, blue: 0.695, alpha: 1)
+        sellButton.isEnabled = false
+        sellButton.setTitle("", for: .disabled)
+        activitiyIndicator.startAnimating()
         tableView.delegate = self
         tableView.dataSource = self
         updateTableViewInfo()
@@ -77,6 +83,10 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
                 let sellAmount = Double(investment.numberOfShares) * currentPriceAsDouble
                 self.sellAmountLabel.text = "$\(sellAmount.roundedToMoney())"
                 print(currentPrice.dateString)
+                self.activitiyIndicator.stopAnimating()
+                self.activitiyIndicator.isHidden = true
+                self.sellButton.isEnabled = true
+                self.sellButton.setTitle("Sell", for: .normal)
             }
         }
     }
