@@ -9,16 +9,6 @@
 import Foundation
 import UIKit
 
-extension Double {
-    
-    func roundedToMoney() -> Double {
-        var largeNumber = self * 100
-        largeNumber.round(.towardZero)
-        let finalNumber = largeNumber / 100
-        return finalNumber
-    }
-}
-
 extension String {
     func size(withSystemFontSize pointSize: CGFloat) -> CGSize {
         return (self as NSString).size(withAttributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: pointSize)])

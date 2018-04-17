@@ -35,7 +35,8 @@ class BuyStockViewController: UIViewController {
         guard let sharesInput = Double(sharesInputText) else { return }
         guard let currentPrice = Double(stockInfo.close) else { return }
         let yourCost = sharesInput * currentPrice
-        yourCostsLabel.text = "$\(yourCost.roundedToMoney())"
+        let yourCostFormatted = NSString(format: "%0.2f", yourCost)
+        yourCostsLabel.text = "$\(yourCostFormatted)"
         sharesTextField.resignFirstResponder()
     }
     
@@ -79,8 +80,10 @@ class BuyStockViewController: UIViewController {
         guard let sharePrice = Double(stockInfo.close) else { return }
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
-        pricePerShareLabel.text = "$\(sharePrice.roundedToMoney())"
-        navigationItem.title = "$\(budget.currentAmount)"
+        let sharePriceFormatted = NSString(format: "%0.2f", sharePrice)
+        let budgetFormatted = NSString(format: "%0.2f", budget.currentAmount)
+        pricePerShareLabel.text = "$\(sharePriceFormatted)"
+        navigationItem.title = "$\(budgetFormatted)"
     }
     
     @objc func redrawNavigationItem() {

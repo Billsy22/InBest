@@ -48,7 +48,8 @@ class BudgetDetailTableViewController: UITableViewController {
     // MARK: -  Update Views
     func updateViews() {
         guard let budget = budget else { return }
-        navigationItem.title = "$\(budget.currentAmount.roundedToMoney())"
+        let budgetString = NSString(format: "%0.2f", budget.currentAmount)
+        navigationItem.title = "$\(budgetString)"
     } 
     
     @objc func loadInvestments() {

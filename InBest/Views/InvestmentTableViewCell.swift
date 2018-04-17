@@ -24,7 +24,7 @@ class InvestmentTableViewCell: UITableViewCell {
     func updateViews() {
         guard let investment = investment, let company = company else { return }
         companyNameLabel.text = company.name
-        print(investment.initialAmountOfMoney)
-        investedAmountLabel.text = "Initial Investment: $\(investment.initialAmountOfMoney.roundedToMoney())"
+        let initialAmountFormatted = NSString(format: "%0.2f", investment.initialAmountOfMoney)
+        investedAmountLabel.text = "Initial Investment: $\(initialAmountFormatted)"
     }
 }

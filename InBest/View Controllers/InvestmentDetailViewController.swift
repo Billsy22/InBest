@@ -50,7 +50,9 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
         cell.textLabel?.text = DateFormat.shared.convert(date: stockInfo.date)
         guard let highPrice = Double(stockInfo.high),
             let lowPrice = Double(stockInfo.low) else { return UITableViewCell() }
-        cell.detailTextLabel?.text = "High: \(highPrice.roundedToMoney())\nLow: \(lowPrice.roundedToMoney())"
+        let highPriceFormatted = NSString(format: "%0.2f", highPrice)
+        let lowPriceFormatted = NSString(format: "%0.2f", lowPrice)
+        cell.detailTextLabel?.text = "High: \(highPriceFormatted)\nLow: \(lowPriceFormatted)"
         return cell
     }
     
@@ -79,9 +81,11 @@ class InvestmentDetailViewController: UIViewController, UITableViewDataSource, U
             self.currentPrice = StockInfoController.shared.sortedStockInfo.first
             guard let currentPrice = self.currentPrice else { return }
                 guard let currentPriceAsDouble = Double(currentPrice.close) else { return }
-                self.pricePerShareLabel.text = "$\(currentPriceAsDouble.roundedToMoney())"
+                let currentPriceFormatted = NSString(format: "%0.2f", currentPriceAsDouble)
+                self.pricePerShareLabel.text = "$\(currentPriceFormatted)"
                 let sellAmount = Double(investment.numberOfShares) * currentPriceAsDouble
-                self.sellAmountLabel.text = "$\(sellAmount.roundedToMoney())"
+                let sellAmountFormatted = NSString(format: "%0.2f", sellAmount)
+                self.sellAmountLabel.text = "$\(sellAmountFormatted)"
                 print(currentPrice.dateString)
                 self.activitiyIndicator.stopAnimating()
                 self.activitiyIndicator.isHidden = true

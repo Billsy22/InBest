@@ -47,7 +47,9 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
             let stockLow = Double(stockInfo.low) else { return UITableViewCell() }
         let formattedDateString = DateFormat.shared.convert(date: stockInfo.date)
         cell.textLabel?.text = formattedDateString
-        cell.detailTextLabel?.text = "High: $\(stockHigh.roundedToMoney())\nLow: $\(stockLow.roundedToMoney())"
+        let stockHighFormatted = NSString(format: "%0.2f", stockHigh)
+        let stockLowFormatted = NSString(format: "%0.2f", stockLow)
+        cell.detailTextLabel?.text = "High: $\(stockHighFormatted)\nLow: $\(stockLowFormatted)"
         return cell
     }
     
@@ -67,7 +69,8 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: -  UpdateViews
     func updateViews() {
         guard let company = company, let budget = budget else { return }
-        navigationItem.title = "$\(budget.currentAmount.roundedToMoney())"
+        let budgetString = NSString(format: "%0.2f", budget.currentAmount)
+        navigationItem.title = "$\(budgetString)"
         companyNameLabel.text = company.name
         companySymbolLabel.text = company.symbol
         StockInfoController.shared.fetchCurrentStockInfoFor(symbol: company.symbol) {
@@ -75,7 +78,8 @@ class StockInfoViewController: UIViewController, UITableViewDelegate, UITableVie
                 self.stockInfo = StockInfoController.shared.sortedStockInfo.first
                 guard let stockInfo = self.stockInfo else { return }
                 guard let currentPrice = Double(stockInfo.close) else { return }
-                self.currentPriceLabel.text = "$\(currentPrice.roundedToMoney())"
+                let currentPriceFormatted = NSString(format: "%0.2f", currentPrice)
+                self.currentPriceLabel.text = "$\(currentPriceFormatted)"
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
                 self.buyButton.isEnabled = true

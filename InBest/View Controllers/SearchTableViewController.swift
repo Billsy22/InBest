@@ -19,7 +19,8 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         companySearchBar.delegate = self
         guard let budget = budget else { return }
-        navigationItem.title = "$\(budget.currentAmount.roundedToMoney())"
+        let budgetString = NSString(format: "%0.2f", budget.currentAmount)
+        navigationItem.title = "$\(budgetString)"
         companySearchBar.placeholder = "Enter company name or symbol..."
     }
     
