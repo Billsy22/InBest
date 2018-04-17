@@ -39,10 +39,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FinalDollarSign" translatesAutoresizingMaskIntoConstraints="NO" id="gLD-RI-iPg">
-                                        <rect key="frame" x="172.66666666666666" y="301.33333333333331" width="30" height="60"/>
+                                        <rect key="frame" x="137.66666666666666" y="231.33333333333331" width="100" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="tof-tN-6yG"/>
-                                            <constraint firstAttribute="width" constant="30" id="zTF-O7-1ZM"/>
+                                            <constraint firstAttribute="height" constant="200" id="tof-tN-6yG"/>
+                                            <constraint firstAttribute="width" constant="100" id="zTF-O7-1ZM"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-FT-Ftd">
