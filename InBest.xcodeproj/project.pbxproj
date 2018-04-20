@@ -15,6 +15,7 @@
 		1608E1382056E1700077D539 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1372056E1700077D539 /* Company.swift */; };
 		1608E13A2056FE440077D539 /* StockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E1392056FE440077D539 /* StockInfo.swift */; };
 		1608E13C2057207B0077D539 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E13B2057207B0077D539 /* MainViewController.swift */; };
+		161C262920892C240036F679 /* Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C262820892C240036F679 /* Public.swift */; };
 		1645F25D205827BC0087F9B3 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25C205827BC0087F9B3 /* Budget.swift */; };
 		1645F25F205828630087F9B3 /* NewBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F25E205828630087F9B3 /* NewBudgetViewController.swift */; };
 		1645F26120582C690087F9B3 /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645F26020582C690087F9B3 /* BudgetController.swift */; };
@@ -52,6 +53,7 @@
 		1608E1372056E1700077D539 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		1608E1392056FE440077D539 /* StockInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfo.swift; sourceTree = "<group>"; };
 		1608E13B2057207B0077D539 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		161C262820892C240036F679 /* Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Public.swift; sourceTree = "<group>"; };
 		1645F25C205827BC0087F9B3 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		1645F25E205828630087F9B3 /* NewBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBudgetViewController.swift; sourceTree = "<group>"; };
 		1645F26020582C690087F9B3 /* BudgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				1608E11C2056D9100077D539 /* AppDelegate.swift */,
 				1608E1232056D9100077D539 /* Assets.xcassets */,
 				1608E1282056D9100077D539 /* Info.plist */,
+				161C262820892C240036F679 /* Public.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				1645F26320582D7C0087F9B3 /* CloudKitManager.swift in Sources */,
 				1672FBE6205AF26700859CAF /* Investment.swift in Sources */,
 				1645F2712059D6370087F9B3 /* SearchResultsController.swift in Sources */,
+				161C262920892C240036F679 /* Public.swift in Sources */,
 				165939C42085157D00B64B6C /* SearchCompanyTableViewCell.swift in Sources */,
 				1672FBE0205ABEF300859CAF /* StockInfoController.swift in Sources */,
 				1645F26520583E8C0087F9B3 /* ExistingBudgetsTableViewController.swift in Sources */,

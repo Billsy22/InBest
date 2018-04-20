@@ -8,6 +8,7 @@
 
 import Foundation
 import CloudKit
+import UIKit
 
 class CloudKitManager {
     
@@ -52,5 +53,76 @@ class CloudKitManager {
         operation.modifyRecordsCompletionBlock = completion
         
         publicDB.add(operation)
+    }
+    
+    // MARK: -  Check for iCloud
+    func checkCloudKitAvailability(completion: @escaping(_ success: Bool)-> Void) {
+        
+        CKContainer.default().accountStatus() {
+            (accountStatus:CKAccountStatus, error:Error?) -> Void in
+            
+            switch accountStatus {
+            case .available:
+                print("CloudKit available. Initializing full sync.")
+                completion(true)
+                return
+            default:
+                self.handleCloudKitUnavailable(accountStatus, error: error)
+                completion(false)
+            }
+        }
+    }
+    
+    func handleCloudKitUnavailable(_ accountStatus: CKAccountStatus, error:Error?) {
+        
+        var errorText = "Synchronization is disabled\n"
+        if let error = error {
+            print("handleCloudKitUnavailable ERROR: \(error)")
+            print("An error occured: \(error.localizedDescription)")
+            errorText += error.localizedDescription
+        }
+        
+        switch accountStatus {
+        case .restricted:
+            errorText += "iCloud is not available due to restrictions"
+        case .noAccount:
+            errorText += "There is no CloudKit account setup.\nYou can setup iCloud in the Settings app."
+        default:
+            break
+        }
+        
+        displayCloudKitNotAvailableError(errorText)
+    }
+    
+    func displayCloudKitNotAvailableError(_ errorText: String) {
+        
+        DispatchQueue.main.async(execute: {
+            
+            let alertController = UIAlertController(title: "Sign into iCloud in your settings", message: errorText, preferredStyle: .alert)
+            
+            let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
+                guard let settingsUrl = URL(string: PreferenceType.castle.rawValue) else {
+                    return
+                }
+                if UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                        print("Settings opened: \(success)") // Prints true
+                    })
+                    
+                } else {
+                    print("bad url to settings app")
+                }
+            }
+            
+            let dismissAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil);
+            alertController.addAction(settingsAction)
+            alertController.addAction(dismissAction)
+            
+            if let appDelegate = UIApplication.shared.delegate,
+                let appWindow = appDelegate.window!,
+                let rootViewController = appWindow.rootViewController {
+                rootViewController.present(alertController, animated: true, completion: nil)
+            }
+        })
     }
 }

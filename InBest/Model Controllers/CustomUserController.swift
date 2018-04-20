@@ -40,24 +40,28 @@ class CustomUserController {
     }
     
     // Fetch User
-    func fetchCurrentUser(completion: @escaping() -> Void) {
+    func fetchCurrentUser(completion: @escaping(_ success: Bool) -> Void) {
         CKContainer.default().fetchUserRecordID { (appleUserRecordID, error) in
             if let error = error {
                 print("Error fetchin apple user info: \(#function) \(error.localizedDescription)")
+                completion(false)
+                return
             }
-            guard let recordID = appleUserRecordID else { completion(); return }
+            guard let recordID = appleUserRecordID else { completion(false); return }
             let appleUserReference = CKReference(recordID: recordID, action: .deleteSelf)
             let predicate = NSPredicate(format: "AppleUserReference == %@", appleUserReference)
             self.ckManager.fetchRecordOf(type: "CustomUser", predicate: predicate, completion: { (records, error) in
                 if let error = error {
                     print("Error fetching custom users: \(#function) \(error.localizedDescription)")
+                    let accountStatus = CKAccountStatus.couldNotDetermine
+                    self.ckManager.handleCloudKitUnavailable(accountStatus, error: error)
                     return
                 }
-                guard let record = records?.first else { return }
+                guard let record = records?.first else { completion(false); return }
                 let currentUser = CustomUser(cloudKitRecord: record)
                 self.currentUser = currentUser
                 
-                completion()
+                completion(true)
             })
         }
     }

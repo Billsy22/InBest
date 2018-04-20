@@ -16,15 +16,23 @@ class MainViewController: UIViewController {
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     private let hasCreatedScreenNameKey = "hasCreatedScreenName"
     
+    var cloudKitManager = {
+        return CloudKitManager()
+    }()
+    
     // MARK: -  Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        showCreateScreenNameAlert()
+        self.cloudKitManager.checkCloudKitAvailability { (success) in
+            if success {
+            self.showCreateScreenNameAlert()
+            }
+        }
         myBudgetsButton.isEnabled = false
         myBudgetsButton.setTitle("", for: .disabled)
         loadingActivityIndicator.color = myBudgetsButton.titleColor(for: .normal)
         loadingActivityIndicator.startAnimating()
-        CustomUserController.shared.fetchCurrentUser {
+        CustomUserController.shared.fetchCurrentUser { (success) in
             guard let currentUser = CustomUserController.shared.currentUser else { return }
             BudgetController.shared.load(currentUser: currentUser, completion: {
                 print("CurrentUser set. Screen name is: \(currentUser.screenName)")
@@ -33,6 +41,7 @@ class MainViewController: UIViewController {
         CompanyController.shared.loadAllCompanies()
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         NotificationCenter.default.addObserver(self, selector: #selector(activateButton), name: NSNotification.Name("Budgets Loaded"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(screenNameCheck), name: Notification.Name("CloudKitAvailable"), object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -68,6 +77,10 @@ class MainViewController: UIViewController {
         myBudgetsButton.setTitle("My Budgets", for: .normal)
     }
     
+    @objc func screenNameCheck() {
+        showCreateScreenNameAlert()
+    }
+    
     func showCreateScreenNameAlert() {
         guard UserDefaults.standard.bool(forKey: hasCreatedScreenNameKey) != true else { return }
         let alert = UIAlertController(title: "Welcome", message: "Please pick a screen name. This can not be changed.", preferredStyle: .alert)
@@ -80,6 +93,12 @@ class MainViewController: UIViewController {
             CustomUserController.shared.createUserWith(screenName: screenName, completion: {
                 UserDefaults.standard.set(true, forKey: self.hasCreatedScreenNameKey)
                 print("CustomUser Created")
+                CustomUserController.shared.fetchCurrentUser { (success) in
+                    guard let currentUser = CustomUserController.shared.currentUser else { return }
+                    BudgetController.shared.load(currentUser: currentUser, completion: {
+                        print("CurrentUser set. Screen name is: \(currentUser.screenName)")
+                    })
+                }
             })
         }
         alert.addAction(enter)
